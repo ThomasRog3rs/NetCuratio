@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalknHeal</title>
+
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/dux0rfm.css">
+    <link rel="stylesheet" href="vender/css/bootstrap-datepicker3.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/notLanding.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg nav-white" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Theme1 <i class="far fa-smile"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="sessions-loggedin.html">Book online</a>
+                    </li>
+                    <li class="nav-item scroll-link">
+                        <a class="nav-link" href="user-sessions.html">My Sessions</a>
+                    </li>
+                    <li class="nav-item scroll-link">
+                        <a class="nav-link" href="user-details.html">My Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Log out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+
+        <section class="section section-confirmbooking" id="confirmbooking">
+            <div class=" container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="mb-3">Let's set a date for your <span style="font-weight: 600;">Couples
+                                Therapy Session</span></h2>
+                        <p class="sub-text mb-5">Choose a date that fits you and Dr. Sabita Estrada, make
+                            the
+                            payment and we will be in contact with you soon. </p>
+                    </div>
+                </div>
+                <form action="" class="mb-3">
+                    <div class="row mb-3">
+                        <div class="col-lg-6">
+                            <div class="form-group" id="selectDateContainer">
+                                <label for="date">Choose a date for your first session</label>
+                                <input class="form-control" type="text" id="date" name="date">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="time">Choose a 1 hour time slot for your session</label>
+                                <input class="form-control" type="time" id="time" name="time">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label for="textarea">Let us know any other information you think might be
+                                    helpful</label>
+                                <textarea class="form-control" id="textarea" rows="3" ria-describedby="messageHelp"
+                                    placeholder=""></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal"
+                    id="paypal-payment"><i class="fab fa-paypal"></i> Make it
+                    offical, pay with paypal</button>
+
+            </div>
+        </section>
+
+        <footer class="p-4">
+            <div class="container">
+                <div class="footer-container mt-3">
+                    <div>
+                        <h6 class="footer-list">Useful link</h3>
+                            <ul class="footer-list">
+                                <li>
+                                    <a class="light-link" href="#!">Customer Login</a>
+                                </li>
+                                <li>
+                                    <a class="light-link" href="#!">Book Online</a>
+                                </li>
+                                <li>
+                                    <a class="light-link" href="#!">About</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <h6 class="footer-list">Contact us</h3>
+                            <ul class="footer-list">
+                                <li>
+                                    <a class="light-link" href="#!">Contact Form</a>
+                                </li>
+                                <li>
+                                    <a class="light-link" href="#!">FAQ page</a>
+                                </li>
+                                <!-- <li>
+                                    <a class="light-link" href="#!">Twitter</a>
+                                </li> -->
+                            </ul>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <h6 class="footer-list">Blog posts from us</h3>
+                            <ul class="footer-list">
+                                <li>
+                                    <a class="light-link" href="#!">Blog title 1</a>
+                                </li>
+                                <li>
+                                    <a class="light-link" href="#!">Blog title 2</a>
+                                </li>
+                                <li>
+                                    <a class="light-link" href="#!">Blog title 3</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div>
+                        <h6 class="footer-list">Our socials</h3>
+                            <ul class="footer-list">
+                                <li>
+                                    <a class="light-link" href="#!">Facebook</a>
+                                </li>
+                                <li>
+                                    <a class="light-link" href="#!">Twitter</a>
+                                </li>
+                                <li>
+                                    <a class="light-link" href="#!">Instagram</a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="site-info text-center mt-5 mb-4">
+                            Crafted by <p style="display: inline-block;"><a href="http://www.trwebdev.com"
+                                    target="_blank" class="light-link" rel="nofollow">NetCuratio.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Your session has been booked, see you soon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iusto officia,
+                        maiores eaque
+                        molestias accusantium consequatur sint, voluptate laudantium in laborum possimus incidunt
+                        deserunt eum ullam quibusdam. Accusamus deleniti fugiat culpa debitis maiores ab qui dolore
+                        aliquam repellendus, neque blanditiis corrupti ut obcaecati laborum rerum.</p>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                    <a href="user-sessions.html" class="btn btn-primary">View my booking</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live chat button -->
+    <div class="live-chat text-center" title="Live chat feature - tidio.com">
+        <i class=" far fa-comments fa-2x text-white" style="margin-top: 12px;"></i>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="js/new-user.js"></script>
+    <script src="vender/js/bootstrap-datepicker.js"></script>
+
+    <script>
+        $('#selectDateContainer input').datepicker({
+            todayBtn: "linked",
+            clearBtn: true,
+            todayHighlight: true,
+            datesDisabled: ['07/06/2020', '07/21/2020']
+        });
+    </script>
+
+</body>
+
+</html>

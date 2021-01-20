@@ -1,0 +1,24 @@
+/* Landing Image */
+section.section.section-hero{
+    background-image:     linear-gradient(
+        rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)
+      ),url("https://source.unsplash.com/1600x900/?fun");
+	background-position: center center;
+    background-size: cover;
+    height: 70vh;
+    color: #fff;
+}
+
+/* Landing Contact section Image */
+section.section.section-contact{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)
+      ),url("https://source.unsplash.com/1600x900/?email");
+}
+
+/* Buttons */
+.btn{
+    border-radius: 5px; 
+}
