@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/notLanding.css">
 
+    <style>
+        html {
+            scroll-behavior:auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -56,47 +61,66 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h2 class="text-center mb-5">Images</h2>
+                        <h2 class="text-center mb-5">Gallery</h2>
                     </div>
                 </div>
-                <div class="row mb-4">
-                    <div class="col-lg-4">
-                        <div class="card">
-                                <img src="https://source.unsplash.com/900x900/?soccer"
-                                style="border-radius: 00%; max-height: 300px; min-height: 300px;">
+                <div class="row">
+                    <ul class="nav nav-tabs mb-4" style="margin: 0px auto;">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#images">Images</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#videos">Videos</a>
+                        </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content border-left border-right border-bottom p-4" style="width:1400px;">
+                        <div class="tab-pane fade active show" id="images">
+                            <div class="row mb-4">
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                            <img src="https://source.unsplash.com/900x900/?soccer"
+                                            style="border-radius: 00%; max-height: 300px; min-height: 300px;">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <img src="https://source.unsplash.com/900x900/?soccer"
+                                        style="border-radius: 00%; max-height: 300px; min-height: 300px;">
+                                </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <img src="https://source.unsplash.com/900x900/?soccer"
+                                        style="border-radius: 00%; max-height: 300px; min-height: 300px;">
+                                </div>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <img src="https://source.unsplash.com/900x900/?soccer"
+                                        style="border-radius: 00%; max-height: 300px; min-height: 300px;">
+                                </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <img src="https://source.unsplash.com/900x900/?soccer"
+                                        style="border-radius: 00%; max-height: 300px; min-height: 300px;">
+                                </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <img src="https://source.unsplash.com/900x900/?soccer"
+                                        style="border-radius: 00%; max-height: 300px; min-height: 300px;">
+                                </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <img src="https://source.unsplash.com/900x900/?soccer"
-                            style="border-radius: 00%; max-height: 300px; min-height: 300px;">
-                    </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <img src="https://source.unsplash.com/900x900/?soccer"
-                            style="border-radius: 00%; max-height: 300px; min-height: 300px;">
-                    </div>
-                    </div>
-                </div>
-                <div class="row mb-4">
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <img src="https://source.unsplash.com/900x900/?soccer"
-                            style="border-radius: 00%; max-height: 300px; min-height: 300px;">
-                    </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <img src="https://source.unsplash.com/900x900/?soccer"
-                            style="border-radius: 00%; max-height: 300px; min-height: 300px;">
-                    </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <img src="https://source.unsplash.com/900x900/?soccer"
-                            style="border-radius: 00%; max-height: 300px; min-height: 300px;">
-                    </div>
+                        <div class="tab-pane fade" id="videos">
+                            <div class="text-center mb-4">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL-rMQNNHHNBspKusngz8nGnlXctMiKyUV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -179,7 +203,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <script>
+    <!-- <script>
         $(document).ready(function () {
             // Add smooth scrolling to all links
             $("a").on('click', function (event) {
@@ -204,7 +228,7 @@
                 } // End if
             });
         });
-    </script>
+    </script> -->
 
 
 </body>
