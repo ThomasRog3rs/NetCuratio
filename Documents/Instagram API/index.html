@@ -13,7 +13,9 @@
 <script type="text/javascript" src="instafeed.js"></script>
 <script type="text/javascript">
     var feed = new Instafeed({
-      accessToken: 'IGQVJVTDFtTFVTci1BdjJQLUZAEakEtNlJyZAno2ellGRDZA2S0RrOEFEN1dpM0p6czAzQ2dabXpJc3cxakVuQ1UzdUIxakgwNzFoRUJXRkdHZA2NiMEdEbWRjOG1FeUNub0prcTJLSjlTdDFfeVVPa1JxRAZDZD'
+      accessToken: 'IGQVJVTDFtTFVTci1BdjJQLUZAEakEtNlJyZAno2ellGRDZA2S0RrOEFEN1dpM0p6czAzQ2dabXpJc3cxakVuQ1UzdUIxakgwNzFoRUJXRkdHZA2NiMEdEbWRjOG1FeUNub0prcTJLSjlTdDFfeVVPa1JxRAZDZD',
+      limit: null,
+      template: '<img title="{{caption}}" src="{{image}}" style="border: 12px solid red;" />'
     });
     feed.run();
 </script>
