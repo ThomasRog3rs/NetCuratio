@@ -76,7 +76,9 @@
                     </ul>
                     <div id="myTabContent" class="tab-content border-left border-right border-bottom p-4" style="width:1400px;">
                         <div class="tab-pane fade active show" id="images">
-                            <div class="row mb-4">
+                            <div id="instafeed" class="image-grid">
+                              </div>
+                            <!-- <div class="row mb-4">
                                 <div class="col-lg-4">
                                     <div class="card">
                                             <img src="https://source.unsplash.com/900x900/?soccer"
@@ -115,7 +117,7 @@
                                         style="border-radius: 00%; max-height: 300px; min-height: 300px;">
                                 </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="tab-pane fade" id="videos">
                             <div class="text-center mb-4">
@@ -207,32 +209,17 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <!-- <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
+        <!-- https://github.com/stevenschobert/instafeed.js/blob/master/dist/instafeed.js -->
+        <script type="text/javascript" src="vender/js/instafeed.js"></script>
+        <script type="text/javascript">
+            var feed = new Instafeed({
+            accessToken: 'IGQVJVTDFtTFVTci1BdjJQLUZAEakEtNlJyZAno2ellGRDZA2S0RrOEFEN1dpM0p6czAzQ2dabXpJc3cxakVuQ1UzdUIxakgwNzFoRUJXRkdHZA2NiMEdEbWRjOG1FeUNub0prcTJLSjlTdDFfeVVPa1JxRAZDZD',
+            limit: null,
+            template: ' <img class="grid-image" src="{{image}}" />'
             });
-        });
-    </script> -->
+            feed.run();
+        </script>
+
 
 
 </body>
