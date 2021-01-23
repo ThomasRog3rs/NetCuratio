@@ -3,7 +3,7 @@ section.section.section-hero{
     background-image:     linear-gradient(
         rgba(0, 0, 0, 0.45), 
         rgba(0, 0, 0, 0.45)
-      ),url("https://source.unsplash.com/1600x900/?fun");
+      ),url("https://images.unsplash.com/photo-1556476874-c98062c7027a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1490&q=80");
 	background-position: center center;
     background-size: cover;
     height: 70vh;
@@ -15,10 +15,70 @@ section.section.section-contact{
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.45), 
         rgba(0, 0, 0, 0.45)
-      ),url("https://images.unsplash.com/photo-1554260570-9140fd3b7614?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MXwxfDB8MXxyYW5kb218fHx8fHx8fA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600");
+      ),url("https://source.unsplash.com/1600x900/?soccer");
 }
 
 /* Buttons */
 .btn{
     border-radius: 5px; 
 }
+
+/* Extras */
+.sponsors{
+    margin-top: 25px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+iframe{
+    max-width: 100%;
+}
+
+/* Gallery */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .grid-image {
+    display: block;
+    flex-basis: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    min-width: 100%;
+    max-width: 100%;
+  }
+   
+  @media only screen and (min-width: 640px) {
+    .grid-image {
+        min-width: 50%;
+        max-width: 50%;
+    }
+  }
+   
+  /* three images per line when browser width exceeds 960px */
+  @media only screen and (min-width: 960px) {
+    .grid-image {
+      /* flex-basis: 33.333%; */
+      min-width: 33.333%;
+      max-width: 33.333%;
+    }
+  }
+   
+  /* four images per line when browser width exceeds 1280px */
+  @media only screen and (min-width: 1280px) {
+    .grid-image {
+      min-width: 25%;
+      max-width: 25%;
+    }
+  }
+   
+  /* five images per line when browser width exceeds 1600px */
+  @media only screen and (min-width: 1600px) {
+    .grid-image {
+      flex-basis: 20%;
+    }
+  }

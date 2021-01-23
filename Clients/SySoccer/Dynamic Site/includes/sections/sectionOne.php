@@ -5,6 +5,11 @@
                 <div class="text-center mb-4">
                     <i class="far <?php echo $sectionOneIcon ?> fa-5x"></i>
                 </div>
+                <?php 
+                    include('includes/components/youtubeVideoComponent.php');
+                    $video =  new YouTubeVideo();
+                    $video->displayVideo("https://www.youtube.com/embed/5jyVjdkaAsg");
+                ?>
                 <h2 class="text-center mb-5"><?php echo $sectionOneTitle ?></h2>
                 <p class="text-center mb-5"><?php echo $sectionOneText ?></p>
             </div>

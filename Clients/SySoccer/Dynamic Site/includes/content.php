@@ -6,16 +6,16 @@
     $landingPage = true;
 
     // === Site Name ===
-    $siteTitle = "Theme 1";
+    $siteTitle = "SySoccer";
 
     // === Site Icon ===
-    $siteIcon = "fa-smile";
+    $siteIcon = "fa-futbol";
 
     // === Nav Menu Items ===
     $navItems = array(
         array(
             location => "products",
-            title => "Products"
+            title => "Sessions"
         ),
         array(
             location => "about",
@@ -24,6 +24,10 @@
         array(
             location => "testimonials",
             title => "Testimonials"
+        ),
+        array(
+            location => "gallery",
+            title => "Gallery"
         ),
         array(
             location => "contact",
@@ -35,46 +39,31 @@
 
     // === Hero Section ===
     /*Note: control the background image in ../css/custom.css */
-    $heroHeading = "This is Theme 1";
-    $heroIntro = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus harum enim, hic saepe ab maiores!";
+    $heroHeading = "SySoccer";
+    $heroIntro = "Give us 200 quid and I'll show ya kid how to kick a ball, give us 350 quid and I'll also send my pal Kez over to shag ya wife.";
+    $heroBackgroundImgURL = "https://images.unsplash.com/photo-1556476874-c98062c7027a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1490&q=80";
     $heroRaised = false;
 
     // hero CTA
     $heroCTA = array(
         array(
-            location => "#link",
-            title => "View Elements",
+            location => "#about",
+            title => "Learn More",
             classNames => "btn btn-primary btn-lg scroll-link shadow-lg ml-auto mr-3"
         ),
         array(
-            location => "#link",
+            location => "#book",
             title => "Get Started",
             classNames => "btn btn-lg scroll-link ml-auto mr-3"
         )
     );
 
     // === Section One ===
-    $sectionOneIcon = $siteIcon;
-    $sectionOneTitle = "Section One";
+    $sectionOneIcon = null;
+    $sectionOneTitle = null;
     $sectionOneText = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae voluptates atque quos. In, optio? Quo autem, natus debitis sint veniam ullam atque deleniti temporibus voluptas delectus suscipit iste recusandae eius nihil sunt molestias harum dolore! Quibusdam amet omnis tenetur facilis deserunt, porro quis distinctio!";
 
-    $infoColumns = array(
-        array(
-            icon => "fa-heart",
-            heading => "Heading 1",
-            body => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ea atque fuga."
-        ),
-        array(
-            icon => "fa-clock",
-            heading => "Heading 2",
-            body => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ea atque fuga."
-        ),
-        array(
-            icon => "fa-user",
-            heading => "Heading 3",
-            body => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ea atque fuga."
-        )
-    ); 
+    $infoColumns = null; 
 
     // === Review Section ===
     $reviewSectionTitle = "Client Reviews";
@@ -128,23 +117,37 @@
     $products = array(
         array(
             productId => 1,
-            productName => "Product Name 1",
+            productName => "Private Training",
             productPrice => "19.99",
             productDescription => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus unde iusto dolorem dolor, numquam corporis earum delectus maxime? Voluptatibus, dolorum fugiat illo aut consequatur neque. Debitis blanditiis perferendis explicabo reiciendis tempore! Aspernatur eaque doloribus alias beatae sed iste, rem dignissimos esse? Veniam sapiente eius aperiam velit illum distinctio officia id non sit et? Quo non debitis ratione accusantium laborum aliquam at nesciunt?",
             productImageURL => "https://source.unsplash.com/1600x900/?session"
         ),
         array(
             productId => 2,
-            productName => "Product Name 2",
+            productName => "Private Groups",
             productPrice => "29.99",
-            productDescription => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ea atque fuga.",
-            productImageURL => "https://source.unsplash.com/1600x900/?product"
+            productDescription => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus unde iusto dolorem dolor, numquam corporis earum delectus maxime? Voluptatibus, dolorum fugiat illo aut consequatur neque. Debitis blanditiis perferendis explicabo reiciendis tempore! Aspernatur eaque doloribus alias beatae sed iste, rem dignissimos esse? Veniam sapiente eius aperiam velit illum distinctio officia id non sit et? Quo non debitis ratione accusantium laborum aliquam at nesciunt?",
+            productImageURL => "https://source.unsplash.com/1600x900/?session"
         ),
         array(
             productId => 3,
-            productName => "Product Name 3",
-            productPrice => "39.99",
-            productDescription => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ea atque fuga.",
+            productName => "Female Training",
+            productPrice => "19.99",
+            productDescription => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus unde iusto dolorem dolor, numquam corporis earum delectus maxime? Voluptatibus, dolorum fugiat illo aut consequatur neque. Debitis blanditiis perferendis explicabo reiciendis tempore! Aspernatur eaque doloribus alias beatae sed iste, rem dignissimos esse? Veniam sapiente eius aperiam velit illum distinctio officia id non sit et? Quo non debitis ratione accusantium laborum aliquam at nesciunt?",
+            productImageURL => "https://source.unsplash.com/1600x900/?female"
+        ),
+        array(
+            productId => 4,
+            productName => "Mental Well-being",
+            productPrice => "15.00",
+            productDescription => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus unde iusto dolorem dolor, numquam corporis earum delectus maxime? Voluptatibus, dolorum fugiat illo aut consequatur neque. Debitis blanditiis perferendis explicabo reiciendis tempore! Aspernatur eaque doloribus alias beatae sed iste, rem dignissimos esse? Veniam sapiente eius aperiam velit illum distinctio officia id non sit et? Quo non debitis ratione accusantium laborum aliquam at nesciunt?",
+            productImageURL => "https://source.unsplash.com/1600x900/?brain"
+        ),
+        array(
+            productId => 5,
+            productName => "Massage therapy",
+            productPrice => "60.00",
+            productDescription => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus unde iusto dolorem dolor, numquam corporis earum delectus maxime? Voluptatibus, dolorum fugiat illo aut consequatur neque. Debitis blanditiis perferendis explicabo reiciendis tempore! Aspernatur eaque doloribus alias beatae sed iste, rem dignissimos esse? Veniam sapiente eius aperiam velit illum distinctio officia id non sit et? Quo non debitis ratione accusantium laborum aliquam at nesciunt?",
             productImageURL => "https://source.unsplash.com/1600x900/?session"
         )
     ); 
@@ -154,9 +157,9 @@
     $bookingDetails = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nam expedita tenetur similique, iure cumque numquam, commodi fugit ipsum ab, eum repudiandae deserunt quisquam. Repudiandae delectus, soluta impedit cupiditate perferendis voluptatum tempore. Sunt veritatis debitis aliquam veniam autem, accusantium quas, non obcaecati aliquid cum commodi eligendi dicta tenetur minus libero!";
 
     // === About Section ===
-    $aboutSectionTitle = "Get to know Mr. John Doe";
-    $aboutSectionText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ipsum? Totam voluptatibus cumque obcaecati ipsam! Fugit praesentium quis odit libero pariatur. Qui optio necessitatibus modi id, aspernatur officia ratione consectetur illo harum hic, ipsum omnis voluptatum aut non vel rerum deserunt accusamus dolore commodi recusandae ullam ut debitis natus? Maxime dolor officia maiores quod dolorum. ";
-    $aboutSectionProfile = "https://source.unsplash.com/900x900/?profile3";
+    $aboutSectionTitle = "Get to know your coach";
+    $aboutSectionText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ipsum? Totam voluptatibus cumque obcaecati ipsam! Fugit praesentium quis odit libero pariatur. Qui optio necessitatibus modi id, aspernatur officia ratione consectetur illo harum hic, ipsum omnis voluptatum aut non vel rerum deserunt accusamus dolore commodi recusandae ullam ut debitis natus? Maxime dolor officia maiores quod dolorum. <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ipsum? Totam voluptatibus cumque obcaecati ipsam! Fugit praesentium quis odit libero pariatur. Qui optio necessitatibus modi id, aspernatur officia ratione consectetur illo harum hic, ipsum omnis voluptatum aut non vel rerum deserunt accusamus dolore commodi recusandae ullam ut debitis natus? Maxime dolor officia maiores quod dolorum. ";
+    $aboutSectionProfile = null;
 
     // === FAQs ===
     $faqs = array(
@@ -214,52 +217,25 @@
         )
     );
 
+    // === Contact Section ===
+    $contactBackgroundImgURL = "https://source.unsplash.com/1600x900/?soccer";
+
     // === Footer Links ===
     $footerLinks = array(
         array(
-            listTitle => "Useful links",
-            links => array( 
-                array(
-                    title => "Customer Login",
-                    location => "#"
-                ),
-                array(
-                    title => "Book Online",
-                    location => "#"
-                ),
-                array(
-                    title => "About",
-                    location => "#"
-                )
-            )
-        ),
-        array(
-            listTitle => "Contact Us",
+            listTitle => "Contact us",
             links => array( 
                 array(
                     title => "Contact Form",
-                    location => "#"
+                    location => "contact"
                 ),
                 array(
                     title => "FAQ Page",
-                    location => "#"
-                )
-            )
-        ),
-        array(
-            listTitle => "Blog Posts",
-            links => array( 
-                array(
-                    title => "Blog title 1",
-                    location => "#"
+                    location => "faq"
                 ),
                 array(
-                    title => "Blog title 2",
-                    location => "#"
-                ),
-                array(
-                    title => "Blog title 3",
-                    location => "#"
+                    title => "About",
+                    location => "about"
                 )
             )
         ),
@@ -276,6 +252,10 @@
                 ),
                 array(
                     title => "Instagram",
+                    location => "#"
+                ),
+                array(
+                    title => "YouTube",
                     location => "#"
                 )
             )

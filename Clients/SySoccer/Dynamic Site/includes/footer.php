@@ -13,6 +13,9 @@
                     </ul>
                 </div>
             <?php endforeach; ?>
+            <div>
+                <img src="https://www.underarmour.com/on/demandware.static/Sites-US-Site/-/default/dw3939754e/images/logo.svg" alt="">
+            </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
@@ -44,9 +47,9 @@
     </div>
 
     <!-- Live chat button -->
-    <div class="live-chat text-center" title="Live chat feature - tidio.com">
+    <!-- <div class="live-chat text-center" title="Live chat feature - tidio.com">
         <i class=" far fa-comments fa-2x text-white" style="margin-top: 12px;"></i>
-    </div>
+    </div> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"

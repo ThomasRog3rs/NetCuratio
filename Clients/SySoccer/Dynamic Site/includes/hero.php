@@ -20,7 +20,7 @@
         </div>
     </nav>
 
-    <section class="section section-hero header-filter" id="home">
+    <section class="section section-hero header-filter" id="home" style="background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ),url('<?php echo $heroBackgroundImgURL ?>');">
         <div class="container">
             <div class="row">
                 <div class="text-left col-lg-6">
@@ -31,6 +31,9 @@
                             echo "<a href=\"$cta[location]\" class=\"$cta[classNames]\">$cta[title]</a>";
                         }
                     ?>
+                    <div class="sponsors">
+                        <img src="https://www.underarmour.com/on/demandware.static/Sites-US-Site/-/default/dw3939754e/images/logo.svg" alt="">                    
+                    </div>
                     <!-- <a href="elements.html" class="btn btn-primary btn-lg scroll-link shadow-lg ml-auto mr-3">View Elements</a>
                     <a href="#book" class="btn btn-lg scroll-link ml-auto">Get started</a> -->
                 </div>
