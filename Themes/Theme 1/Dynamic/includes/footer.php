@@ -1,59 +1,18 @@
 <footer class="p-4">
     <div class="container">
-        <div class="footer-container mt-3">
-            <div>
-                <h6 class="footer-list">Useful link</h3>
-                <ul class="footer-list">
-                    <li>
-                        <a class="light-link" href="#!">Customer Login</a>
-                    </li>
-                    <li>
-                        <a class="light-link" href="#!">Book Online</a>
-                    </li>
-                    <li>
-                        <a class="light-link" href="#!">About</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="d-none d-md-block">
-                <h6 class="footer-list">Contact us</h3>
-                <ul class="footer-list">
-                    <li>
-                        <a class="light-link" href="#!">Contact Form</a>
-                    </li>
-                    <li>
-                        <a class="light-link" href="#!">FAQ page</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="d-none d-md-block">
-                <h6 class="footer-list">Blog posts from us</h3>
-                <ul class="footer-list">
-                    <li>
-                        <a class="light-link" href="#!">Blog title 1</a>
-                    </li>
-                    <li>
-                        <a class="light-link" href="#!">Blog title 2</a>
-                    </li>
-                    <li>
-                        <a class="light-link" href="#!">Blog title 3</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h6 class="footer-list">Our socials</h3>
-                <ul class="footer-list">
-                    <li>
-                        <a class="light-link" href="#!">Facebook</a>
-                    </li>
-                    <li>
-                        <a class="light-link" href="#!">Twitter</a>
-                    </li>
-                    <li>
-                        <a class="light-link" href="#!">Instagram</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="row mt-3">
+            <?php foreach ($footerLinks as $list) : ?>
+                <div class="col">
+                    <h6 class="footer-list"><?php echo $list[listTitle] ?></h3>
+                    <ul class="footer-list">
+                        <?php foreach ($list[links] as $link) : ?>
+                            <li>
+                                <a class="light-link" href="<?php echo $link[location] ?>"><?php echo $link[title] ?></a>
+                            </li>
+                        <?php endforeach ?>
+                    </ul>
+                </div>
+            <?php endforeach; ?>
         </div>
         <div class="row">
             <div class="col-lg-12">

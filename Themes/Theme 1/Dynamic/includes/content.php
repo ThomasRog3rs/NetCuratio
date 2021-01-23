@@ -132,4 +132,80 @@
         )
     ); 
 
+    // === About Section ===
+    $aboutSectionTitle = "Get to know Mr. John Doe";
+    $aboutSectionText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ipsum? Totam voluptatibus cumque obcaecati ipsam! Fugit praesentium quis odit libero pariatur. Qui optio necessitatibus modi id, aspernatur officia ratione consectetur illo harum hic, ipsum omnis voluptatum aut non vel rerum deserunt accusamus dolore commodi recusandae ullam ut debitis natus? Maxime dolor officia maiores quod dolorum. ";
+    $aboutSectionProfile = "https://source.unsplash.com/900x900/?profile";
+
+
+
+
+    // === Footer Links ===
+    $footerLinks = array(
+        array(
+            listTitle => "Useful links",
+            links => array( 
+                array(
+                    title => "Customer Login",
+                    location => "#"
+                ),
+                array(
+                    title => "Book Online",
+                    location => "#"
+                ),
+                array(
+                    title => "About",
+                    location => "#"
+                )
+            )
+        ),
+        array(
+            listTitle => "Contact Us",
+            links => array( 
+                array(
+                    title => "Contact Form",
+                    location => "#"
+                ),
+                array(
+                    title => "FAQ Page",
+                    location => "#"
+                )
+            )
+        ),
+        array(
+            listTitle => "Blog Posts",
+            links => array( 
+                array(
+                    title => "Blog title 1",
+                    location => "#"
+                ),
+                array(
+                    title => "Blog title 2",
+                    location => "#"
+                ),
+                array(
+                    title => "Blog title 3",
+                    location => "#"
+                )
+            )
+        ),
+        array(
+            listTitle => "Our socials",
+            links => array( 
+                array(
+                    title => "Facebook",
+                    location => "#"
+                ),
+                array(
+                    title => "Twitter",
+                    location => "#"
+                ),
+                array(
+                    title => "Instagram",
+                    location => "#"
+                )
+            )
+        )
+    );
+
 ?>
