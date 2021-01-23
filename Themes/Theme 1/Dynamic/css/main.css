@@ -197,6 +197,10 @@ section.section.section-about{
     align-items: center;
 }
 
+.session:last-of-type{
+    border-bottom: none !important;
+}
+
 .session-title{
     min-width: 239px;
 }
@@ -469,5 +473,9 @@ h6.footer-list{
     /* User details */
     .section-bookedsessions > div.container > button{
         font-size: 15px;
+    }
+
+    .col{
+        min-width: 50% !important;
     }
 }
