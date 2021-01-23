@@ -38,4 +38,11 @@
         </div>
     </section>
 
-    <main class="main">
+    
+    <?php if($heroRaised != true) :?>
+        <main class="main">
+    <?php endif ?>
+
+    <?php if($heroRaised == true) :?>
+        <main class="main main-raised">
+    <?php endif ?>

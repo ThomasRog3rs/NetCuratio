@@ -5,7 +5,7 @@
         <h2 class="contact-heading">Leave Us A Message</h2>
         <p>
             For more info or inquiry about our services, and pricing please feel free to get in
-            touch with us or <a href="faq.html">view our FAQ page</a>
+            touch with us or <a href="faq.php">view our FAQ page</a>
         </p>
     </div>
     <div class="contact-form">
