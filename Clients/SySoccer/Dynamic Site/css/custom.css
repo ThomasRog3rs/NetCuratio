@@ -1,0 +1,24 @@
+/* Landing Image */
+section.section.section-hero{
+    background-image:     linear-gradient(
+        rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)
+      ),url("https://source.unsplash.com/1600x900/?fun");
+	background-position: center center;
+    background-size: cover;
+    height: 70vh;
+    color: #fff;
+}
+
+/* Landing Contact section Image */
+section.section.section-contact{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)
+      ),url("https://images.unsplash.com/photo-1554260570-9140fd3b7614?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MXwxfDB8MXxyYW5kb218fHx8fHx8fA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600");
+}
+
+/* Buttons */
+.btn{
+    border-radius: 5px; 
+}
