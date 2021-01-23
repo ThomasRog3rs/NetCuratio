@@ -1,7 +1,8 @@
 <?php 
+    $websiteEmail = "thomas@trwebdev.com";
     /* This document contains all content for the pages of the site */
-    
-    // === Does page use hero sectuon? ===
+
+    // === Does page use hero section? ===
     $landingPage = true;
 
     // === Site Name ===
@@ -22,51 +23,11 @@
         ),
         array(
             location => "testimonials.php",
-            title => "Testimonials"
+            title => "Reviews"
         ),
         array(
             location => "contact.php",
             title => "Contact"
-        )
-    );
-
-    // === Testimonials ===
-    $testimonials = array(
-        array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => "John Doe"
-        ),
-        array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => "James Smith"
-        ),
-        array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => "Jane Doe"
-        ),
-        array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => " Alvis Androkles "
-        ),
-        array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => " Bryson Homewood "
-        ),
-        array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => " Paul Eliot "
-        ),
-        array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => " Paul Eliot "
-        ),
-        array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => " Paul Eliot "
-        ),
-        array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => " Paul Eliot "
         )
     );
 
@@ -116,10 +77,49 @@
     ); 
 
     // === Review Section ===
-    /*Note: for the actual reviews see the testimonials section */
     $reviewSectionTitle = "Client Reviews";
     $reviewSectionText = "Read the wonderful feedback and success stories we have got from our current and previous clients.";
     $readAllLink = "testimonials.php";
+
+    // === Testimonials ===
+    $testimonials = array(
+        array(
+            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
+            name => "John Doe"
+        ),
+        array(
+            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
+            name => "James Smith"
+        ),
+        array(
+            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
+            name => "Jane Doe"
+        ),
+        array(
+            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
+            name => " Alvis Androkles "
+        ),
+        array(
+            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
+            name => " Bryson Homewood "
+        ),
+        array(
+            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
+            name => " Paul Eliot "
+        ),
+        array(
+            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
+            name => " Paul Eliot "
+        ),
+        array(
+            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
+            name => " Paul Eliot "
+        ),
+        array(
+            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
+            name => " Paul Eliot "
+        )
+    );
 
 
     // === Book Section (product / sessions showcase) ===
