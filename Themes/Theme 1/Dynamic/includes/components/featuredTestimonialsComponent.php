@@ -7,7 +7,7 @@
                         <div class="row">
                             <?php for($i = 0; $i < 3; $i++) : ?>  
                                 <div class="col-lg mb-3">
-                                    <div class="card testimonial-card">
+                                    <div class="card testimonial-card border">
                                         <p><span class="fa fa-quote-left"></span> <?php echo $testimonials[$i][review]?> <span class="fa fa-quote-right"></span></p>
                                         <p class="text-muted">&ndash; <?php echo $testimonials[$i][name]?></p>
                                     </div>

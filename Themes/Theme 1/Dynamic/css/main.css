@@ -77,7 +77,8 @@ input{
 }
 
 section{
-    padding: 100px
+    padding: 100px;
+    background-color: rgba(255, 255, 255, 0.856) !important;
 }
 
 .btn{
@@ -106,6 +107,10 @@ main.main.main-raised{
     box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.2);
     position: relative;
     background: #fff;
+}
+
+main.main>section:nth-of-type(odd) {
+    background-color: rgb(247, 247, 247) !important;
 }
 
 /* === Navbar stuff === */
@@ -159,9 +164,9 @@ section.section.section-hero > div.container{
 }
 
 /* About section */
-section.section.section-about{
+/* section.section.section-about{
     background-color: rgb(247, 247, 247);
-}
+} */
 
 /* Testimonials section */
 .testimonial-card{
@@ -176,9 +181,9 @@ section.section.section-about{
 }
 
 /* Booking / sessions section */
-.section-book{
+/* .section-book{
     background-color: rgb(245, 245, 245);
-}
+} */
 
 .sessions{
     padding: 10px;

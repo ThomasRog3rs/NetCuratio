@@ -55,6 +55,18 @@
         array(
             review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
             name => " Paul Eliot "
+        ),
+        array(
+            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
+            name => " Paul Eliot "
+        ),
+        array(
+            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
+            name => " Paul Eliot "
+        ),
+        array(
+            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
+            name => " Paul Eliot "
         )
     );
 
@@ -201,9 +213,6 @@
             show => null
         )
     );
-
-
-
 
     // === Footer Links ===
     $footerLinks = array(
