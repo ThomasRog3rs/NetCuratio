@@ -37,6 +37,7 @@
     /*Note: control the background image in ../css/custom.css */
     $heroHeading = "This is Theme 1";
     $heroIntro = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus harum enim, hic saepe ab maiores!";
+    $heroBackgroundImgURL = "https://source.unsplash.com/1600x900/?fun";
     $heroRaised = false;
 
     // hero CTA
@@ -213,6 +214,9 @@
             show => null
         )
     );
+
+    // === Contact Section ===
+    $contactBackgroundImgURL = "https://source.unsplash.com/1600x900/?soccer";
 
     // === Footer Links ===
     $footerLinks = array(

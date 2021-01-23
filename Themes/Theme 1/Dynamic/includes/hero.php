@@ -20,7 +20,7 @@
         </div>
     </nav>
 
-    <section class="section section-hero header-filter" id="home">
+    <section class="section section-hero header-filter" id="home" style="background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ),url('<?php echo $heroBackgroundImgURL ?>');">
         <div class="container">
             <div class="row">
                 <div class="text-left col-lg-6">
