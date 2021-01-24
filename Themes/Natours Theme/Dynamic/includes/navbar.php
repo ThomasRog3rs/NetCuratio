@@ -23,7 +23,7 @@
             <link rel="stylesheet" href="css/removeSlantedSections.css">
         <?php endif; ?>
         
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
         
         <title>Natours Theme</title>
     </head>
