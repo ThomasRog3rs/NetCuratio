@@ -22,7 +22,7 @@
         <?php if(!$slantedSections) : ?>
             <link rel="stylesheet" href="css/removeSlantedSections.css">
         <?php endif; ?>
-        <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
         <title><?php echo $siteTitle ?></title>
     </head>

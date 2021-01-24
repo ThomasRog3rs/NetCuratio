@@ -3,7 +3,7 @@
     /* This document contains all content for the pages of the site */
 
     // === Site Name ===
-    $siteTitle = "KR Wellness";
+    $siteTitle = "Natours";
 
     // === Site Icon ===
     $siteIcon = null;
@@ -12,7 +12,7 @@
 
     // === General ===
     $pageBorder = false;
-    $slantedSections = true;
+    $slantedSections = false;
 
     // === Nav Menu Items ===
     $navItems = array(
@@ -25,12 +25,8 @@
             title => "About"
         ),
         array(
-            location => "gallery",
-            title => "Gallery"
-        ),
-        array(
             location => "sessions",
-            title => "Services"
+            title => "Sessions"
         ),
         array(
             location => "testimonials",
@@ -46,26 +42,26 @@
 
     // === Hero Section ===
     /*Note: control the background image in ../css/custom.css */
-    $heroHeading = "KR Wellness";
-    $heroIntro = "Wellness is a choice";
-    $heroBackgroundImgURL = "img\5w7uv9i6.bmp";
+    $heroHeading = "Natours";
+    $heroIntro = "Modern Theme";
+    $heroBackgroundImgURL = "https://source.unsplash.com/1600x900/?food";
 
     // hero CTA
     $heroCTA = array(
-        location => "sessions",
-        title => "Discover More",
+        location => "#link",
+        title => "Learn More",
         classNames => "btn btn--white btn--animated"
     );
 
     // === Section One ===
     $sectionOneIcon = null;
-    $sectionOneTitle = "What we are about";
+    $sectionOneTitle = "About Us";
 
-    $sectionOneSubHeading1 = "About KR Welness";
-    $sectionOneParagraph1 = "Kieran has over 15 years’ experience within the Health & Fitness managing four Health & Fitness Clubs, 3 of which for Marriott Hotels within the North West, as well running successful Boot Camps, Boxerfit Courses & Fit Clubs for David Lloyd Leisure. ";
+    $sectionOneSubHeading1 = "TERTIARY HEADING";
+    $sectionOneParagraph1 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.";
 
-    $sectionOneSubHeading2 = "Our vision";
-    $sectionOneParagraph2 = "The goal is not only to view health as the physical but to also recognise the mental aspects & how these tackled together can lead to a more sustainable & fulfilled lifestyle on a day to day basis.";
+    $sectionOneSubHeading2 = "TERTIARY HEADING";
+    $sectionOneParagraph2 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.";
 
     //Section One CTA
     $sectionOneBtnTitle = null;
