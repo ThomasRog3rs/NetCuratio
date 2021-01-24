@@ -1,4 +1,11 @@
 <?php 
+    function trunc($phrase, $max_words) {
+        $phrase_array = explode(' ',$phrase);
+        if(count($phrase_array) > $max_words && $max_words > 0)
+        $phrase = implode(' ',array_slice($phrase_array, 0, $max_words)).'...';
+        return $phrase;
+    }
+
     $websiteEmail = "thomas@trwebdev.com";
     /* This document contains all content for the pages of the site */
 
@@ -18,27 +25,27 @@
     $navItems = array(
         array(
             location => "/",
-            title => "Home"
+            title => "01 - Home"
         ),
         array(
             location => "about",
-            title => "About"
+            title => "02 - About"
         ),
         array(
             location => "gallery",
-            title => "Gallery"
+            title => "03 - Gallery"
         ),
         array(
             location => "sessions",
-            title => "Services"
+            title => "04 - Services"
         ),
         array(
             location => "testimonials",
-            title => "Testimonials"
+            title => "05 - Testimonials"
         ),
         array(
             location => "contact",
-            title => "Contact"
+            title => "06 - Contact"
         )
     );
 
@@ -48,7 +55,7 @@
     /*Note: control the background image in ../css/custom.css */
     $heroHeading = "KR Wellness";
     $heroIntro = "Wellness is a choices";
-    $heroBackgroundImgURL = "img/hero-3.jpg";
+    $heroBackgroundImgURL = "img/hero3.jpg";
 
     // hero CTA
     $heroCTA = array(
@@ -284,7 +291,32 @@
     $contactBackgroundImgURL = "img/contact.jpg";
 
     // === Footer Links ===
-    $footerLinks = $navItems;
-    $footerCopyRight = "KR_Welness 2021 | Powered by NetCuratio";
+    $footerLinks = array(
+        array(
+            location => "/",
+            title => "Home"
+        ),
+        array(
+            location => "about",
+            title => "About"
+        ),
+        array(
+            location => "gallery",
+            title => "Gallery"
+        ),
+        array(
+            location => "sessions",
+            title => "Services"
+        ),
+        array(
+            location => "testimonials",
+            title => "Testimonials"
+        ),
+        array(
+            location => "contact",
+            title => "Contact"
+        )
+    );
+    $footerCopyRight = 'KR_Welness 2021 | Powered by <a class="footer__link" href="http://www.trwebdev.com">NetCuratio</a>';
 
 ?>
