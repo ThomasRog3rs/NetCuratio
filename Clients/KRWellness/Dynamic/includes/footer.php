@@ -13,10 +13,9 @@
                     </div>
                 </div>
                 <div class="col-1-of-2">
-                    <div class="footer__copyright">
+                    <p class="footer__copyright">
                         <?php echo $footerCopyRight ?>
-                    </div>
-                    
+                    </p>
                 </div>
             </div>
         </footer>
@@ -47,5 +46,4 @@
             </div>
         </div>
     </body>
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 </html>
