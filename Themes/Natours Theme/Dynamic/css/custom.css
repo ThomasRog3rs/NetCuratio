@@ -13,6 +13,17 @@ header#not-home{
     url(https://source.unsplash.com/1920x1080/?css);
 }
 
+/* Nav */
+.navigation__nav{
+    z-index: -1;
+}
+
+.navigation__checkbox:checked ~ .navigation__nav {
+	opacity: 1;
+    width: 100%;
+    z-index: 1500;
+}
+
 /* sections */
 .section-features {
     background-image: linear-gradient(to right bottom, rgba(126,213,111,0.8), rgba(40,180,133,0.8)),
