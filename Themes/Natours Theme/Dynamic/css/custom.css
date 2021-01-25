@@ -135,6 +135,10 @@ i.feature-box__icon{
     align-items: baseline;
 }
 
+main>section:nth-of-type(even) {
+    background-color: #eee !important;
+}
+
 @media(max-width: 1196px){
     .flex-row{
         max-width: 50rem;
