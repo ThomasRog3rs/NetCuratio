@@ -91,6 +91,10 @@ i.feature-box__icon{
     transition: all .3s;
 }
 
+.alert-success{
+    background-color: #28b485 !important;
+}
+
 /* other */
 .heading-secondary:hover {
 	-webkit-transform: none !important;
