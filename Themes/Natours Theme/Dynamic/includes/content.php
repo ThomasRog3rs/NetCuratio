@@ -12,7 +12,7 @@
 
     // === General ===
     $pageBorder = false;
-    $slantedSections = false;
+    $slantedSections = true;
 
     // === Nav Menu Items ===
     $navItems = array(
