@@ -11,6 +11,17 @@
 <main>
     <?php include('includes/sections/sectionSessionDetails.php'); ?>
 
+    <section class="section" style="background-color: #eee">
+        <div class="u-center-text u-margin-bottom-big">
+                        <h2 class="heading-secondary">
+                            <?php echo $bookingTitle ?>
+                        </h2>
+                    </div>
+        <div class="row">
+            <?php include('includes/components/sessionsComponent.php'); ?>
+        </div>
+    </section>
+
 <?php
     include('includes/footer.php');
 ?>
