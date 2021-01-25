@@ -35,6 +35,10 @@
         array(
             location => "contact",
             title => "Contact"
+        ),
+        array(
+            location => "faq",
+            title => "FAQs"
         )
     );
 

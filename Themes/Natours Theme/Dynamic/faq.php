@@ -10,11 +10,8 @@
 
 <main>
 
-    <section class="section">
-        <div class="row">
-            <?php include('includes/components/faqComponent.php'); ?>
-        </div>
-    </section>
+    <?php include('includes/sections/sectionFaq.php'); ?>
+
 <?php
     include('includes/footer.php');
 ?>
