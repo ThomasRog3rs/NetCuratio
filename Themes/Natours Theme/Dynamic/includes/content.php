@@ -79,22 +79,22 @@
         array(
             icon => "fa-heart",
             heading => "Heading 1",
-            body => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ea atque fuga."
+            body => "Sports Massage is tailored predominantly to those with injury or problems affecting range of motion which is impacting daily life, such as knee problems and back issues."
         ),
         array(
             icon => "fa-clock",
             heading => "Heading 2",
-            body => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ea atque fuga."
+            body => "Personal Training is bespoke exercise, tailored to your goals & needs taking in mind your past fitness experience and current fitness levels."
         ),
         array(
             icon => "fa-user",
             heading => "Heading 3",
-            body => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ea atque fuga."
+            body => "Diet is such a key part of your everyday life – diet impacts how you feel & how you look, simple as that. I do not believe in fad diets, quick fixes or magic pills."
         ),
         array(
             icon => "fa-clock",
             heading => "Heading 2",
-            body => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ea atque fuga."
+            body => "Corporate Wellness is tailored to your company needs – this can include everything I offer or simply the areas you, as a company, may be focussing on with your staff."
         )
     ); 
 
@@ -108,7 +108,7 @@
     // === Testimonials ===
     $testimonials = array(
         array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
+            review => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.",
             name => "John Doe"
         ),
         array(
