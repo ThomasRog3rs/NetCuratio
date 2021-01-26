@@ -21,6 +21,6 @@
     url(<?php echo $heroBackgroundImgURL ?>)">
         <div class="header__logo-box">
             <a href="/"><img src="<?php echo $siteLogo ?>" alt="Logo" class="header__logo"></a>
-            </div>
+        </div>
 
 
