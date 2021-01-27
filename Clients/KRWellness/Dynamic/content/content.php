@@ -8,6 +8,9 @@
 
     $websiteEmail = "thomas@trwebdev.com";
     /* This document contains all content for the pages of the site */
+	
+	// === Does page use hero section? ===
+    $landingPage = true;
 
     // === Site Name ===
     $siteTitle = "KRWellness";
@@ -28,9 +31,6 @@
 
     $primaryColor = "rgba(126,213,111,0.8)";
     $primaryColorDark = "rgba(40,180,133,0.8)";
-    
-    $pageBorder = false;
-    $slantedSections = true;
 
     // === Nav Menu Items ===
     $navItems = array(
@@ -67,12 +67,15 @@
     $heroHeading = "KR Wellness";
     $heroIntro = "Wellness is a choices";
     $heroBackgroundImgURL = "/img/hero3.jpg";
+	$heroRaised = null;
 
     // hero CTA
     $heroCTA = array(
-        location => "sessions",
-        title => "Discover More",
-        classNames => "btn btn--white btn--animated"
+		array(
+			location => "sessions",
+			title => "Discover More",
+			classNames => "btn btn--white btn--animated"
+		)
     );
 
     // === Section One ===
@@ -85,6 +88,8 @@
     $sectionOneSubHeading2 = "Our vision";
     $sectionOneParagraph2 = "The goal is not only to view health as the physical but to also recognise the mental aspects & how these tackled together can lead to a more sustainable & fulfilled lifestyle on a day to day basis. ";
 
+	$sectionOneText = "<h3>".$sectionOneSubHeading1."</h3><p>".$sectionOneParagraph1."</p><br><br>"."<h3>".$sectionOneSubHeading2."</h3><p>".$sectionOneParagraph2."</p>";
+	
     //Section One CTA
     $sectionOneBtnTitle = null;
     $sectionOneBtnLocation = null;
@@ -95,25 +100,25 @@
     // Feature cards section
     $infoColumns = array(
         array(
-            icon => "fa-spa",
+            icon => "fas fa-spa",
             heading => "Sports Massage",
             body => "Sports Massage is tailored predominantly to those with injury or problems affecting range of motion
             which is impacting daily life, such as knee problems and back issues."
         ),
         array(
-            icon => "fa-dumbbell",
+            icon => "fas fa-dumbbell",
             heading => "Personal Training",
             body => "Personal Training is bespoke exercise, tailored to your goals &amp; needs taking in mind your past fitness
             experience and current fitness levels."
         ),
         array(
-            icon => "fa-seedling",
+            icon => "fas fa-seedling",
             heading => "Nutrition",
             body => "Diet is such a key part of your everyday life – diet impacts how you feel &amp; how you look, simple as
             that. I do not believe in fad diets, quick fixes or magic pills."
         ),
         array(
-            icon => "fa-user-tie",
+            icon => "fas fa-user-tie",
             heading => "Corporate Wellness",
             body => "Corporate Wellness is tailored to your company needs – this can include everything I offer or simply
             the areas you, as a company, may be focussing on with your staff."
@@ -124,6 +129,7 @@
     $reviewSectionTitle = "We make people genuinely happy";
     $reviewSectionText = "Read the wonderful feedback and success stories we have got from our current and previous clients.";
     $readAllLink = "testimonials";
+	
     $backgroundVideo = false;
     $backgroundVideoSrc = "img/video.mp4";
 
@@ -170,7 +176,7 @@
 
     // === Book Section (product / sessions showcase) ===
     $bookingTitle = "Services we offer";
-    $learnMorePage = "session?productId=";
+    $learnMorePage = "session?sessionId=";
     $products = array(
         array(
             productId => 1,
@@ -238,9 +244,9 @@
     $bookingDetails = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nam expedita tenetur similique, iure cumque numquam, commodi fugit ipsum ab, eum repudiandae deserunt quisquam. Repudiandae delectus, soluta impedit cupiditate perferendis voluptatum tempore. Sunt veritatis debitis aliquam veniam autem, accusantium quas, non obcaecati aliquid cum commodi eligendi dicta tenetur minus libero!";
 
     // === About Section ===
-    $aboutSectionTitle = "Get to know Mr. John Doe";
-    $aboutSectionText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ipsum? Totam voluptatibus cumque obcaecati ipsam! Fugit praesentium quis odit libero pariatur. Qui optio necessitatibus modi id, aspernatur officia ratione consectetur illo harum hic, ipsum omnis voluptatum aut non vel rerum deserunt accusamus dolore commodi recusandae ullam ut debitis natus? Maxime dolor officia maiores quod dolorum. ";
-    $aboutSectionProfile = "https://source.unsplash.com/900x900/?profile3";
+    $aboutSectionTitle = $sectionOneTitle;
+    $aboutSectionText = $sectionOneText;
+    $aboutSectionProfile = null;
 
     // === FAQs ===
     $faqs = array(
@@ -303,7 +309,9 @@
 
     // === Footer Links ===
     $footerLinks = array(
-        array(
+		array(
+			listTitle => null,
+			links => array(
             location => "/",
             title => "Home"
         ),
@@ -327,8 +335,10 @@
             location => "contact",
             title => "Contact"
         )
+		)
     );
-    $footerCopyRight = 'KR_Welness 2021 | Powered by <a class="footer__link" href="http://www.trwebdev.com">NetCuratio</a>';
+	
+    $footerCopyRight = $siteTitle.' '.date("Y"). ' | Powered by <a class="light-link" href="http://www.trwebdev.com">NetCuratio</a>';
 
         //Extra Components
         $elfSightInstaFeedClass = "elfsight-app-b8cfb078-34d5-4612-a44b-ca21179d4b5b";
