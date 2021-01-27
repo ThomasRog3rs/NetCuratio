@@ -33,13 +33,7 @@
                 --primary-color-solid: <?php echo $primarySolid ?>;
                 --primary-color-dark-solid: <?php echo $primarySolidDark ?>;
 
-                --secondary-color: <?php echo $secondaryColor ?>;
-                --secondary-color-dark: <?php echo $secondaryColorDark ?>;
-
-                --tertiary-color: <?php echo $tertiaryColor ?>;
-                --tertiary-color-dark: <?php echo $tertiaryColorDark ?>;
-
-                --header-background-img: url(<?php echo $heroBackgroundImgURL ?>);
+                --header-background-img: url("<?php echo $heroBackgroundImgURL ?>");
             }
         </style>
         

@@ -1,7 +1,7 @@
 /* header */
 .header{
     background-image: linear-gradient(to right bottom, var(--primary-color), var(--primary-color-dark)),
-    var(--header-background-img);
+    var(--header-background-img) !important;
 }
 
 .not-home-header{
