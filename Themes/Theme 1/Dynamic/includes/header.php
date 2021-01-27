@@ -18,6 +18,19 @@
     <?php if($landingPage != true) : ?>
         <link rel="stylesheet" href="css/notLanding.css">
     <?php endif; ?>
+    <style>
+            :root {
+                --text-highlight: <?php echo $textHighlight ?> ;
+
+                --primary-color: <?php echo $primaryColor ?>;
+                --primary-color-dark: <?php echo $primaryColorDark ?>;
+
+                --primary-color-solid: <?php echo $primarySolid ?>;
+                --primary-color-dark-solid: <?php echo $primarySolidDark ?>;
+
+                --header-background-img: url("<?php echo $heroBackgroundImgURL ?>");
+            }
+        </style>
         
 
 </head>

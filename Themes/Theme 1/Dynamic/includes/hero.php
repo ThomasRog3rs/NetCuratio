@@ -1,4 +1,4 @@
-<?php include('includes/content.php')?>
+<?php include('content/content.php')?>
 <?php include('includes/header.php')?>
 
 <!-- Hero Section -->

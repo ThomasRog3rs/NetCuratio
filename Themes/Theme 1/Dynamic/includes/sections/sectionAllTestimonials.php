@@ -1,8 +1,9 @@
 <section class="section section-testimonials" id="testimonials">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <h2 class="text-center mb-5"><?php echo $reviewSectionTitle ?></h2>
+                    <div class="col-sm-12 text-center mb-5">
+                        <h2 class=""><?php echo $reviewSectionTitle ?></h2>
+                        <p><?php echo $reviewSectionText ?></p>
                     </div>
                 </div>
                 <div class="row">

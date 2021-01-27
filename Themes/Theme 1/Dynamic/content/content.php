@@ -1,4 +1,11 @@
 <?php 
+    function trunc($phrase, $max_words) {
+        $phrase_array = explode(' ',$phrase);
+        if(count($phrase_array) > $max_words && $max_words > 0)
+        $phrase = implode(' ',array_slice($phrase_array, 0, $max_words)).'...';
+        return $phrase;
+    }
+    
     $websiteEmail = "thomas@trwebdev.com";
     /* This document contains all content for the pages of the site */
 
@@ -11,10 +18,24 @@
     // === Site Icon ===
     $siteIcon = "fa-smile";
 
+    $siteLogo = "img/logo-white.png";
+
+    // === General ===
+    $pageBorder = null;
+    $slantedSections = true;
+    
+    $textHighlight = "#007bff";
+    
+    $primarySolid = "#007bff";
+    $primarySolidDark = "#0069d9";
+    
+    $primaryColor = "#007bff";
+    $primaryColorDark = "#0069d9";
+
     // === Nav Menu Items ===
     $navItems = array(
         array(
-            location => "products",
+            location => "sessions",
             title => "Products"
         ),
         array(
@@ -57,21 +78,34 @@
     // === Section One ===
     $sectionOneIcon = $siteIcon;
     $sectionOneTitle = "Section One";
-    $sectionOneText = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae voluptates atque quos. In, optio? Quo autem, natus debitis sint veniam ullam atque deleniti temporibus voluptas delectus suscipit iste recusandae eius nihil sunt molestias harum dolore! Quibusdam amet omnis tenetur facilis deserunt, porro quis distinctio!";
+    $sectionOneText = "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae voluptates atque quos. In, optio? Quo autem, natus debitis sint veniam ullam atque deleniti temporibus voluptas delectus suscipit iste recusandae eius nihil sunt molestias harum dolore! Quibusdam amet omnis tenetur facilis deserunt, porro quis distinctio!</p>";
+
+    // $sectionOneSubHeading1 = "TERTIARY HEADING";
+    // $sectionOneParagraph1 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.";
+
+    // $sectionOneSubHeading2 = "TERTIARY HEADING";
+    // $sectionOneParagraph2 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.";
+
+    //Section One CTA
+    $sectionOneBtnTitle = null;
+    $sectionOneBtnLocation = null;
+
+    //3 IMAGE COMPOSITION Component
+    $imageComposition = ["https://source.unsplash.com/1920x1080/?nature","https://source.unsplash.com/1920x1080/?mountain","https://source.unsplash.com/1920x1080/?snow"]; //Default values
 
     $infoColumns = array(
         array(
-            icon => "fa-heart",
+            icon => "far fa-heart",
             heading => "Heading 1",
             body => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ea atque fuga."
         ),
         array(
-            icon => "fa-clock",
+            icon => "far fa-clock",
             heading => "Heading 2",
             body => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ea atque fuga."
         ),
         array(
-            icon => "fa-user",
+            icon => "far fa-user",
             heading => "Heading 3",
             body => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ea atque fuga."
         )
@@ -81,6 +115,9 @@
     $reviewSectionTitle = "Client Reviews";
     $reviewSectionText = "Read the wonderful feedback and success stories we have got from our current and previous clients.";
     $readAllLink = "testimonials";
+
+    $backgroundVideo = null;
+    $backgroundVideoSrc = null;
 
     // === Testimonials ===
     $testimonials = array(
@@ -125,7 +162,7 @@
 
     // === Book Section (product / sessions showcase) ===
     $bookingTitle = "Sessions we offer";
-    $learnMorePage = "product?productId=";
+    $learnMorePage = "session?sessionId=";
     $products = array(
         array(
             productId => 1,
@@ -149,6 +186,8 @@
             productImageURL => "https://source.unsplash.com/1600x900/?session"
         )
     ); 
+    $sessionsBtnTitle = "View All Sessions &rarr;";
+    $sessionsBtnLocation = "sessions";
 
     // === Product / Session Details
     $bookingDetailsTitle = "What we offer";
@@ -285,5 +324,10 @@
             )
         )
     );
+
+    $footerCopyRight = $siteTitle.date("Y").' '.' | Powered by <a class="light-link" href="http://www.trwebdev.com">NetCuratio</a>';
+
+    //Extra Components
+    $elfSightInstaFeedClass = null;
 
 ?>

@@ -17,8 +17,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="site-info text-center mt-5 mb-4">
-                    powerd by <p style="display: inline-block;"><a href="http://www.trwebdev.com"
-                    target="_blank" class="light-link" rel="nofollow">NetCuratio.com</a></p>
+                    <?php echo $footerCopyRight ?>
                 </div>
             </div>
         </div>
@@ -44,9 +43,9 @@
     </div>
 
     <!-- Live chat button -->
-    <div class="live-chat text-center" title="Live chat feature - tidio.com">
+    <!-- <div class="live-chat text-center" title="Live chat feature - tidio.com">
         <i class=" far fa-comments fa-2x text-white" style="margin-top: 12px;"></i>
-    </div>
+    </div> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"

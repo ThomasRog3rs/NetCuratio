@@ -1,5 +1,5 @@
 <?php 
-    include('includes/content.php');
+    include('content/content.php');
     $landingPage = false;
 ?>
 

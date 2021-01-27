@@ -22,3 +22,58 @@ section.section.section-contact{
 .btn{
     border-radius: 5px; 
 }
+
+/* Other */
+::selection {
+    background-color: var(--text-highlight) !important;
+    color: #fff; 
+}
+
+a{
+    color: var(--primary-color-dark-solid);
+}
+
+a:hover{
+    color: var(--primary-color-dark-solid);
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--primary-color-solid);
+    border-color: var(--primary-color-dark-solid);
+}
+
+.btn-primary:hover{
+    background-color: var(--primary-color-dark-solid);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: var(--primary-color-dark-solid);
+    border-color: var(--primary-color-dark-solid);
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: var(--primary-color-dark-solid);
+    border-color: var(--primary-color-dark-solid);
+    box-shadow: none !important;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.2rem var(--primary-color) !important;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color-solid);
+    box-shadow: none !important;
+}
+
+.light-link {
+    color: var(--text-highlight);
+}
+
+.light-link:hover {
+    color: var(--primary-color-solid);
+}

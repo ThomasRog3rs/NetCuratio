@@ -1,4 +1,4 @@
-<?php $productID = intval($_GET['productId']);?>
+<?php $productID = intval($_GET['sessionId']);?>
 <section class="section section-book" id="book">
     <?php if($products[$productID - 1] != null) : ?>
         <div class="container">
