@@ -18,7 +18,7 @@
     // === Site Icon ===
     $siteIcon = "fa-smile";
 
-    $siteLogo = "img/logo-white.png";
+    $siteLogo = null;
 
     // === General ===
     $pageBorder = null;
@@ -29,8 +29,8 @@
     $primarySolid = "#007bff";
     $primarySolidDark = "#0069d9";
     
-    $primaryColor = "#007bff";
-    $primaryColorDark = "#0069d9";
+    $primaryColor = "rgba(0,123,255,0.8)";
+    $primaryColorDark = "rgba(0,105,217,0.8)";
 
     // === Nav Menu Items ===
     $navItems = array(
