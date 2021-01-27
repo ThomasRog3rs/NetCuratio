@@ -17,8 +17,7 @@
             </nav>
         </div>
 
-        <header class="header" style="background-image: linear-gradient(to right bottom, rgba(126,213,111,0.8), rgba(40,180,133,0.8)),
-    url(<?php echo $heroBackgroundImgURL ?>)">
+        <header class="header">
             <div class="header__logo-box">
                 <a href="/"><img src="<?php echo $siteLogo ?>" alt="Logo" class="header__logo"></a>
             </div>

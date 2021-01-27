@@ -14,6 +14,14 @@
     $pageBorder = false;
     $slantedSections = true;
 
+    $textHighlight = "rgba(126,213,111,1)";
+
+    $primarySolid = "rgba(126,213,111,1)";
+    $primarySolidDark = "rgba(40,180,133,1)";
+
+    $primaryColor = "rgba(126,213,111,0.8)";
+    $primaryColorDark = "rgba(40,180,133,0.8)";
+
     // === Nav Menu Items ===
     $navItems = array(
         array(
@@ -48,7 +56,7 @@
     /*Note: control the background image in ../css/custom.css */
     $heroHeading = "Natours";
     $heroIntro = "Modern Theme";
-    $heroBackgroundImgURL = "https://source.unsplash.com/1600x900/?food";
+    $heroBackgroundImgURL = "https://source.unsplash.com/1600x900/?nature";
 
     // hero CTA
     $heroCTA = array(
@@ -252,6 +260,6 @@
 
     // === Footer Links ===
     $footerLinks = $navItems;
-    $footerCopyRight = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis lectus eget ex scelerisque, ut rhoncus sapien fringilla. Nulla purus purus, tristique at sollicitudin id, mattis vitae lectus. Etiam ultrices elit ac eros cursus commodo. Quisque condimentum, ligula sed finibus.";
+    $footerCopyRight = 'KR_Welness 2021 | Powered by <a class="footer__link" href="http://www.trwebdev.com">NetCuratio</a>';
 
 ?>
