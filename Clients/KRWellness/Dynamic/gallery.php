@@ -12,7 +12,8 @@
 
     <section class="section">
         <div class="row">
-            <div class="elfsight-app-b8cfb078-34d5-4612-a44b-ca21179d4b5b"></div>
+                    <div class="<?php echo $elfSightInstaFeedClass ?>"></div>
+                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
         </div>
     </section>
 <?php

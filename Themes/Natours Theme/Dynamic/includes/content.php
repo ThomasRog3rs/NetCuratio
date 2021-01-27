@@ -262,4 +262,7 @@
     $footerLinks = $navItems;
     $footerCopyRight = 'KR_Welness 2021 | Powered by <a class="footer__link" href="http://www.trwebdev.com">NetCuratio</a>';
 
+    //Extra Components
+    $elfSightInstaFeedClass = "elfsight-app-b8cfb078-34d5-4612-a44b-ca21179d4b5b";
+
 ?>

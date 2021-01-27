@@ -21,6 +21,17 @@
     $pageBorder = false;
     $slantedSections = true;
 
+    $textHighlight = "rgba(126,213,111,1)";
+
+    $primarySolid = "rgba(126,213,111,1)";
+    $primarySolidDark = "rgba(40,180,133,1)";
+
+    $primaryColor = "rgba(126,213,111,0.8)";
+    $primaryColorDark = "rgba(40,180,133,0.8)";
+    
+    $pageBorder = false;
+    $slantedSections = true;
+
     // === Nav Menu Items ===
     $navItems = array(
         array(
