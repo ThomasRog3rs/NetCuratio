@@ -66,7 +66,7 @@
     /*Note: control the background image in ../css/custom.css */
     $heroHeading = "KR Wellness";
     $heroIntro = "Wellness is a choices";
-    $heroBackgroundImgURL = "img/hero3.jpg";
+    $heroBackgroundImgURL = "/img/hero3.jpg";
 
     // hero CTA
     $heroCTA = array(
@@ -90,7 +90,7 @@
     $sectionOneBtnLocation = null;
 
     //3 IMAGE COMPOSITION Component
-    $imageComposition = ["img/about1.jpg","img/about2.jpg","img/about3.jpg"];
+    $imageComposition = ["/img/about1.jpg","/img/about2.jpg","/img/about3.jpg"];
 
     // Feature cards section
     $infoColumns = array(
