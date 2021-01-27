@@ -28,7 +28,7 @@
                                         <span class="card__heading-span card__heading-span--2"><?php echo $product[productName] ?></span>
                                     </h4>
                                     <div class="card__details">
-                                        <p class="paragraph"><?php echo trunc($product[productDescription] , 40)?></p>
+                                        <p class="paragraph"><?php echo trunc($product[productDescription] , 22)?></p>
                                     </div>
 
                                 </div>
