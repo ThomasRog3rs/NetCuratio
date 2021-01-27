@@ -67,9 +67,11 @@
 
     // hero CTA
     $heroCTA = array(
-        location => "#link",
-        title => "Learn More",
-        classNames => "btn btn--white btn--animated"
+        array(
+            location => "#link",
+            title => "Learn More",
+            classNames => "btn btn--white btn--animated"
+        )
     );
 
     // === Section One ===
