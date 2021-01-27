@@ -1,4 +1,4 @@
-<?php include('includes/content.php'); ?>
+<?php include('content/content.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -23,6 +23,25 @@
             <link rel="stylesheet" href="css/removeSlantedSections.css">
         <?php endif; ?>
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <style>
+            :root {
+                --text-highlight: <?php echo $textHighlight ?> ;
+
+                --primary-color: <?php echo $primaryColor ?>;
+                --primary-color-dark: <?php echo $primaryColorDark ?>;
+
+                --primary-color-solid: <?php echo $primarySolid ?>;
+                --primary-color-dark-solid: <?php echo $primarySolidDark ?>;
+
+                --secondary-color: <?php echo $secondaryColor ?>;
+                --secondary-color-dark: <?php echo $secondaryColorDark ?>;
+
+                --tertiary-color: <?php echo $tertiaryColor ?>;
+                --tertiary-color-dark: <?php echo $tertiaryColorDark ?>;
+
+                --header-background-img: url(<?php echo $heroBackgroundImgURL ?>);
+            }
+        </style>
         
         <title><?php echo $siteTitle ?></title>
     </head>

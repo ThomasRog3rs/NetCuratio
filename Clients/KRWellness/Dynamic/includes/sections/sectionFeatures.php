@@ -1,5 +1,6 @@
 <section class="section-features">
     <div class="row">
+
         <div class="flex-row">
                     <?php foreach($infoColumns as $featureBox) : ?>
                         <div class="feature-box u-margin-bottom-big">
