@@ -291,6 +291,7 @@
     $footerCopyRight = $siteTitle.' '.date("Y"). ' | Powered by <a class="light-link" href="http://www.trwebdev.com">NetCuratio</a>';
 
     //Extra Components
-    $elfSightInstaFeedClass = null;
+    $elfSightInstaFeedClass = "elfsight-app-b8cfb078-34d5-4612-a44b-ca21179d4b5b";
 	$YouYubePlaylist = null;
+
 ?>
