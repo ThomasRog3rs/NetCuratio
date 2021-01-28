@@ -1,19 +1,22 @@
 <?php 
-
     function trunc($phrase, $max_words) {
         $phrase_array = explode(' ',$phrase);
         if(count($phrase_array) > $max_words && $max_words > 0)
         $phrase = implode(' ',array_slice($phrase_array, 0, $max_words)).'...';
         return $phrase;
     }
+
     $websiteEmail = "thomas@trwebdev.com";
     /* This document contains all content for the pages of the site */
+
+    // === Does page use hero section? ===
+    $landingPage = true;
 
     // === Site Name ===
     $siteTitle = "Natours";
 
     // === Site Icon ===
-    $siteIcon = null;
+    $siteIcon = "fas fa-seedling";
 
     $siteLogo = "img/logo-white.png";
 
@@ -64,25 +67,28 @@
     $heroHeading = "Natours";
     $heroIntro = "Modern Theme";
     $heroBackgroundImgURL = "https://source.unsplash.com/1600x900/?nature";
+    $heroRaised = null;
 
     // hero CTA
     $heroCTA = array(
         array(
-            location => "#link",
-            title => "Learn More",
-            classNames => "btn btn--white btn--animated"
+            location => "sessions",
+            title => "Descover More",
+            classNames => "btn btn--white btn--animated mr-3"
         )
     );
 
     // === Section One ===
-    $sectionOneIcon = null;
-    $sectionOneTitle = "About Us";
+    $sectionOneIcon = "fas fa-seedling";
+    $sectionOneTitle = "Section One";
 
     $sectionOneSubHeading1 = "TERTIARY HEADING";
     $sectionOneParagraph1 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.";
 
     $sectionOneSubHeading2 = "TERTIARY HEADING";
     $sectionOneParagraph2 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.";
+
+    $sectionOneText = "<h3>".$sectionOneSubHeading1."</h3><p>".$sectionOneParagraph1."</p><br><br>"."<h3>".$sectionOneSubHeading2."</h3><p>".$sectionOneParagraph2."</p>";
 
     //Section One CTA
     $sectionOneBtnTitle = null;
@@ -94,22 +100,22 @@
     // Feature cards section
     $infoColumns = array(
         array(
-            icon => "fa-heart",
+            icon => "far fa-heart",
             heading => "Heading 1",
             body => "Sports Massage is tailored predominantly to those with injury or problems affecting range of motion which is impacting daily life, such as knee problems and back issues."
         ),
         array(
-            icon => "fa-clock",
+            icon => "far fa-clock",
             heading => "Heading 2",
             body => "Personal Training is bespoke exercise, tailored to your goals & needs taking in mind your past fitness experience and current fitness levels."
         ),
         array(
-            icon => "fa-user",
+            icon => "far fa-user",
             heading => "Heading 3",
             body => "Diet is such a key part of your everyday life – diet impacts how you feel & how you look, simple as that. I do not believe in fad diets, quick fixes or magic pills."
         ),
         array(
-            icon => "fa-clock",
+            icon => "far fa-clock",
             heading => "Heading 2",
             body => "Corporate Wellness is tailored to your company needs – this can include everything I offer or simply the areas you, as a company, may be focussing on with your staff."
         )
@@ -119,6 +125,7 @@
     $reviewSectionTitle = "Client Reviews";
     $reviewSectionText = "Read the wonderful feedback and success stories we have got from our current and previous clients.";
     $readAllLink = "testimonials";
+
     $backgroundVideo = false;
     $backgroundVideoSrc = "img/video.mp4";
 
@@ -165,7 +172,7 @@
 
     // === Book Section (product / sessions showcase) ===
     $bookingTitle = "Sessions we offer";
-    $learnMorePage = "session?productId=";
+    $learnMorePage = "session?sessionId=";
     $products = array(
         array(
             productId => 1,
@@ -204,9 +211,9 @@
     $bookingDetails = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nam expedita tenetur similique, iure cumque numquam, commodi fugit ipsum ab, eum repudiandae deserunt quisquam. Repudiandae delectus, soluta impedit cupiditate perferendis voluptatum tempore. Sunt veritatis debitis aliquam veniam autem, accusantium quas, non obcaecati aliquid cum commodi eligendi dicta tenetur minus libero!";
 
     // === About Section ===
-    $aboutSectionTitle = "Get to know Mr. John Doe";
-    $aboutSectionText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ipsum? Totam voluptatibus cumque obcaecati ipsam! Fugit praesentium quis odit libero pariatur. Qui optio necessitatibus modi id, aspernatur officia ratione consectetur illo harum hic, ipsum omnis voluptatum aut non vel rerum deserunt accusamus dolore commodi recusandae ullam ut debitis natus? Maxime dolor officia maiores quod dolorum. ";
-    $aboutSectionProfile = "https://source.unsplash.com/900x900/?profile3";
+    $aboutSectionTitle = $sectionOneTitle;
+    $aboutSectionText = $sectionOneText;
+    $aboutSectionProfile = null;
 
     // === FAQs ===
     $faqs = array(
@@ -268,8 +275,14 @@
     $contactBackgroundImgURL = "https://source.unsplash.com/1600x900/?nature";
 
     // === Footer Links ===
-    $footerLinks = $navItems;
-    $footerCopyRight = 'KR_Welness 2021 | Powered by <a class="footer__link" href="http://www.trwebdev.com">NetCuratio</a>';
+    $footerLinks = array(
+        array(
+            listTitle => null,
+            links => $navItems
+        )
+    );
+
+    $footerCopyRight = $siteTitle.' '.date("Y"). ' | Powered by <a class="light-link" href="http://www.trwebdev.com">NetCuratio</a>';
 
     //Extra Components
     $elfSightInstaFeedClass = "elfsight-app-b8cfb078-34d5-4612-a44b-ca21179d4b5b";

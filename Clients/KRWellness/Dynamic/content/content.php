@@ -308,35 +308,35 @@
     $contactBackgroundImgURL = "img/contact.jpg";
 
     // === Footer Links ===
-    $footerLinks = array(
-		array(
-			listTitle => null,
-			links => array(
-            location => "/",
-            title => "Home"
-        ),
-        array(
-            location => "about",
-            title => "About"
-        ),
-        array(
-            location => "gallery",
-            title => "Gallery"
-        ),
-        array(
-            location => "sessions",
-            title => "Services"
-        ),
-        array(
-            location => "testimonials",
-            title => "Testimonials"
-        ),
-        array(
-            location => "contact",
-            title => "Contact"
-        )
-		)
-    );
+$footerLinks = array(
+    array(
+        listTitle => null,
+        links => array(array(
+        location => "/",
+        title => "Home"
+    ),
+    array(
+        location => "about",
+        title => "About"
+    ),
+    array(
+        location => "gallery",
+        title => "Gallery"
+    ),
+    array(
+        location => "sessions",
+        title => "Services"
+    ),
+    array(
+        location => "testimonials",
+        title => "Testimonials"
+    ),
+    array(
+        location => "contact",
+        title => "Contact"
+    )
+    ))
+);
 	
     $footerCopyRight = $siteTitle.' '.date("Y"). ' | Powered by <a class="light-link" href="http://www.trwebdev.com">NetCuratio</a>';
 

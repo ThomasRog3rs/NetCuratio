@@ -29,6 +29,11 @@
                 </h1>
 
                 <a href="<?php echo $heroCTA[location] ?>" class="<?php echo $heroCTA[classNames] ?>"><?php echo $heroCTA[title] ?></a>
+                <?php
+                        foreach($heroCTA as $cta){
+                            echo "<a href=\"$cta[location]\" class=\"$cta[classNames]\">$cta[title]</a>";
+                        }
+                   ?>
             </div>
         </header>
 

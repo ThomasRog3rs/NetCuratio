@@ -77,3 +77,16 @@ a:hover{
 .light-link:hover {
     color: var(--primary-color-solid);
 }
+
+/* Extras */
+.sponsors{
+    margin-top: 25px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+iframe{
+    max-width: 100%;
+}

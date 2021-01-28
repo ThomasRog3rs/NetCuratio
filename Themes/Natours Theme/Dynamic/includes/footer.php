@@ -3,13 +3,15 @@
             <div class="row">
                 <div class="col-1-of-2">
                     <div class="footer__navigation">
-                        <ul class="footer__list">
-                            <?php 
-                                foreach($footerLinks as $item){
-                                    echo "<li class=\"footer__item\"><a href=\"$item[location]\" class=\"footer__link\">$item[title]</a></li>";
-                                }
-                            ?>
-                        </ul>
+                        <?php foreach ($footerLinks as $list) : ?>
+                                <ul class="footer__list">
+                                    <?php 
+                                        foreach($list[links] as $item){
+                                            echo "<li class=\"footer__item\"><a href=\"$item[location]\" class=\"footer__link\">$item[title]</a></li>";
+                                        }
+                                    ?>
+                                </ul>
+                        <?php endforeach; ?>
                     </div>
                 </div>
                 <div class="col-1-of-2">

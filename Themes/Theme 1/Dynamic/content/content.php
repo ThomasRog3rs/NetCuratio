@@ -186,6 +186,7 @@
             productImageURL => "https://source.unsplash.com/1600x900/?session"
         )
     ); 
+	
     $sessionsBtnTitle = "View All Sessions &rarr;";
     $sessionsBtnLocation = "sessions";
 
@@ -325,7 +326,7 @@
         )
     );
 
-    $footerCopyRight = $siteTitle.date("Y").' '.' | Powered by <a class="light-link" href="http://www.trwebdev.com">NetCuratio</a>';
+    $footerCopyRight = $siteTitle.' '.date("Y").' '.' | Powered by <a class="light-link" href="http://www.trwebdev.com">NetCuratio</a>';
 
     //Extra Components
     $elfSightInstaFeedClass = null;

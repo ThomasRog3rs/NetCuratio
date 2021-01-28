@@ -13,6 +13,10 @@
                     </ul>
                 </div>
             <?php endforeach; ?>
+            <!-- Custom for Sy -->
+            <!-- <div>
+                <img src="https://www.underarmour.com/on/demandware.static/Sites-US-Site/-/default/dw3939754e/images/logo.svg" alt="">
+            </div> -->
         </div>
         <div class="row">
             <div class="col-lg-12">
