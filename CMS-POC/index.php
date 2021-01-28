@@ -1,7 +1,5 @@
 <?php
-    include('includes/hero.php');
+    include("content/content.php");
+    include("Themes/".$theme."/index.php");
 
-    //create your site here
-
-    include('includes/footer.php');
 ?>
