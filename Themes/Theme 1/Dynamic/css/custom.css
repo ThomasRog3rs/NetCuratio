@@ -90,3 +90,32 @@ a:hover{
 iframe{
     max-width: 100%;
 }
+
+.flex-row{
+    max-width: 114rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: flex-start;
+}
+
+.flex-row > div{
+    max-width: 30%;
+    margin: 5px;
+}
+
+@media(max-width: 1196px){
+    .flex-row{
+        max-width: 50rem;
+        padding: 0 3rem;
+    }
+
+    .flex-row > div{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+

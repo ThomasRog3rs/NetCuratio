@@ -52,6 +52,9 @@
         )
     );
 
+    //sponsor images
+    $sponsorImages = null;
+
     // ****HOME PAGE****
 
     // === Hero Section ===
@@ -79,6 +82,8 @@
     $sectionOneIcon = $siteIcon;
     $sectionOneTitle = "Section One";
     $sectionOneText = "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae voluptates atque quos. In, optio? Quo autem, natus debitis sint veniam ullam atque deleniti temporibus voluptas delectus suscipit iste recusandae eius nihil sunt molestias harum dolore! Quibusdam amet omnis tenetur facilis deserunt, porro quis distinctio!</p>";
+
+    $sectionOneVideo = null;
 
     // $sectionOneSubHeading1 = "TERTIARY HEADING";
     // $sectionOneParagraph1 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.";
@@ -198,6 +203,7 @@
     $aboutSectionTitle = "Get to know Mr. John Doe";
     $aboutSectionText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ipsum? Totam voluptatibus cumque obcaecati ipsam! Fugit praesentium quis odit libero pariatur. Qui optio necessitatibus modi id, aspernatur officia ratione consectetur illo harum hic, ipsum omnis voluptatum aut non vel rerum deserunt accusamus dolore commodi recusandae ullam ut debitis natus? Maxime dolor officia maiores quod dolorum. ";
     $aboutSectionProfile = "https://source.unsplash.com/900x900/?profile3";
+    $aboutSectionVideo = $sectionOneVideo;
 
     // === FAQs ===
     $faqs = array(
@@ -329,6 +335,7 @@
     $footerCopyRight = $siteTitle.' '.date("Y").' '.' | Powered by <a class="light-link" href="http://www.trwebdev.com">NetCuratio</a>';
 
     //Extra Components
-    $elfSightInstaFeedClass = null;
+    $elfSightInstaFeedClass = null;  
+    $YouYubePlaylist = null;
 
 ?>

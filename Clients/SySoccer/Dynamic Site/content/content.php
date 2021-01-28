@@ -56,6 +56,11 @@
         )
     );
 
+    //sponsor images
+    $sponsorImages = array(
+        "https://www.underarmour.com/on/demandware.static/Sites-US-Site/-/default/dw3939754e/images/logo.svg"
+    );
+
     // ****HOME PAGE****
 
     // === Hero Section ===
@@ -83,6 +88,8 @@
     $sectionOneIcon = null;
     $sectionOneTitle = null;
     $sectionOneText = "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae voluptates atque quos. In, optio? Quo autem, natus debitis sint veniam ullam atque deleniti temporibus voluptas delectus suscipit iste recusandae eius nihil sunt molestias harum dolore! Quibusdam amet omnis tenetur facilis deserunt, porro quis distinctio!</p>";
+
+    $sectionOneVideo = "https://www.youtube.com/embed/5jyVjdkaAsg";
 
 	// $sectionOneSubHeading1 = "TERTIARY HEADING";
     // $sectionOneParagraph1 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.";
@@ -200,6 +207,7 @@
     $aboutSectionTitle = "Get to know your coach";
     $aboutSectionText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ipsum? Totam voluptatibus cumque obcaecati ipsam! Fugit praesentium quis odit libero pariatur. Qui optio necessitatibus modi id, aspernatur officia ratione consectetur illo harum hic, ipsum omnis voluptatum aut non vel rerum deserunt accusamus dolore commodi recusandae ullam ut debitis natus? Maxime dolor officia maiores quod dolorum. <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ipsum? Totam voluptatibus cumque obcaecati ipsam! Fugit praesentium quis odit libero pariatur. Qui optio necessitatibus modi id, aspernatur officia ratione consectetur illo harum hic, ipsum omnis voluptatum aut non vel rerum deserunt accusamus dolore commodi recusandae ullam ut debitis natus? Maxime dolor officia maiores quod dolorum. ";
     $aboutSectionProfile = null;
+    $aboutSectionVideo = $sectionOneVideo;
 
     // === FAQs ===
     $faqs = array(
@@ -305,6 +313,7 @@
     $footerCopyRight = $siteTitle.' '.date("Y").' '.' | Powered by <a class="light-link" href="http://www.trwebdev.com">NetCuratio</a>';
 
     //Extra Components
-    $elfSightInstaFeedClass = "elfsight-app-b8cfb078-34d5-4612-a44b-ca21179d4b5b";
+    $elfSightInstaFeedClass = "elfsight-app-b8cfb078-34d5-4612-a44b-ca21179d4b5b";  
+    $YouYubePlaylist = "https://www.youtube.com/embed/videoseries?list=PL-rMQNNHHNBspKusngz8nGnlXctMiKyUV"
 
 ?>

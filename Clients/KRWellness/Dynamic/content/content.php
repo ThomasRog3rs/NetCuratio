@@ -60,6 +60,9 @@
         )
     );
 
+    //sponsor images
+    $sponsorImages = null;
+
     // ****HOME PAGE****
 
     // === Hero Section ===
@@ -88,7 +91,9 @@
     $sectionOneSubHeading2 = "Our vision";
     $sectionOneParagraph2 = "The goal is not only to view health as the physical but to also recognise the mental aspects & how these tackled together can lead to a more sustainable & fulfilled lifestyle on a day to day basis. ";
 
-	$sectionOneText = "<h3>".$sectionOneSubHeading1."</h3><p>".$sectionOneParagraph1."</p><br><br>"."<h3>".$sectionOneSubHeading2."</h3><p>".$sectionOneParagraph2."</p>";
+    $sectionOneText = "<h3>".$sectionOneSubHeading1."</h3><p>".$sectionOneParagraph1."</p><br><br>"."<h3>".$sectionOneSubHeading2."</h3><p>".$sectionOneParagraph2."</p>";
+    
+    $sectionOneVideo = null;
 	
     //Section One CTA
     $sectionOneBtnTitle = null;
@@ -247,6 +252,7 @@
     $aboutSectionTitle = $sectionOneTitle;
     $aboutSectionText = $sectionOneText;
     $aboutSectionProfile = null;
+    $aboutSectionVideo = $sectionOneVideo;
 
     // === FAQs ===
     $faqs = array(
@@ -340,6 +346,7 @@ $footerLinks = array(
 	
     $footerCopyRight = $siteTitle.' '.date("Y"). ' | Powered by <a class="light-link" href="http://www.trwebdev.com">NetCuratio</a>';
 
-        //Extra Components
-        $elfSightInstaFeedClass = "elfsight-app-b8cfb078-34d5-4612-a44b-ca21179d4b5b";
+    //Extra Components
+    $elfSightInstaFeedClass = "elfsight-app-b8cfb078-34d5-4612-a44b-ca21179d4b5b";  
+    $YouYubePlaylist = $sectionOneVideo;
 ?>

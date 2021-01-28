@@ -6,14 +6,12 @@
                         <p><?php echo $reviewSectionText ?></p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="flex-row">
                     <?php foreach ($testimonials as $testimonial) : ?>
-                        <div class="col-lg-4 mb-4">
-                            <div class="card testimonial-card border">
-                                <p><span class="fa fa-quote-left"></span><?php echo $testimonial[review] ?><span
-                                        class="fa fa-quote-right"></span></p>
-                                <p class="text-muted">&ndash; <?php echo $testimonial[name] ?></p>
-                            </div>
+                        <div class="card testimonial-card border mb-4">
+                            <p><span class="fa fa-quote-left"></span><?php echo $testimonial[review] ?><span
+                                    class="fa fa-quote-right"></span></p>
+                            <p class="text-muted">&ndash; <?php echo $testimonial[name] ?></p>
                         </div>
                     <?php endforeach ?>
                 </div>

@@ -13,10 +13,13 @@
                     </ul>
                 </div>
             <?php endforeach; ?>
-            <!-- Custom for Sy -->
-            <!-- <div>
-                <img src="https://www.underarmour.com/on/demandware.static/Sites-US-Site/-/default/dw3939754e/images/logo.svg" alt="">
-            </div> -->
+            <?php if($sponsorImages != null) : ?>
+                <div>
+                    <?php foreach($sponsorImages as $sponsor) : ?>
+                        <img src="<?php echo $sponsor ?>" alt="">
+                    <?php endforeach; ?>               
+                </div>
+            <?php endif; ?>
         </div>
         <div class="row">
             <div class="col-lg-12">
