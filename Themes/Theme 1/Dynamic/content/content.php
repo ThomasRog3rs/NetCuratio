@@ -98,6 +98,7 @@
     //3 IMAGE COMPOSITION Component
     $imageComposition = ["https://source.unsplash.com/1920x1080/?nature","https://source.unsplash.com/1920x1080/?mountain","https://source.unsplash.com/1920x1080/?snow"]; //Default values
 
+	// Feature Cards
     $infoColumns = array(
         array(
             icon => "far fa-heart",

@@ -1,3 +1,4 @@
+<?php if($infoColumns != null) : ?>
 <section class="section-features">
     <div class="row">
 
@@ -14,3 +15,4 @@
                     <?php endforeach; ?>
     </div>
 </section>
+<?php endif; ?>

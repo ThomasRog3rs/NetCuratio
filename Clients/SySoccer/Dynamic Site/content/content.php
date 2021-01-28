@@ -22,7 +22,7 @@
 	
 	// === General ===
     $pageBorder = null;
-    $slantedSections = true;
+    $slantedSections = null;
     
     $textHighlight = "#007bff";
     

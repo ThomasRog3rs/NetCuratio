@@ -59,6 +59,9 @@
             title => "FAQs"
         )
     );
+	
+	//sponsor images
+    $sponsorImages = null;
 
     // ****HOME PAGE****
 
@@ -89,6 +92,8 @@
     $sectionOneParagraph2 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.";
 
     $sectionOneText = "<h3>".$sectionOneSubHeading1."</h3><p>".$sectionOneParagraph1."</p><br><br>"."<h3>".$sectionOneSubHeading2."</h3><p>".$sectionOneParagraph2."</p>";
+
+	$sectionOneVideo = null;
 
     //Section One CTA
     $sectionOneBtnTitle = null;
@@ -214,6 +219,7 @@
     $aboutSectionTitle = $sectionOneTitle;
     $aboutSectionText = $sectionOneText;
     $aboutSectionProfile = null;
+	$aboutSectionVideo = $sectionOneVideo;
 
     // === FAQs ===
     $faqs = array(
@@ -285,6 +291,6 @@
     $footerCopyRight = $siteTitle.' '.date("Y"). ' | Powered by <a class="light-link" href="http://www.trwebdev.com">NetCuratio</a>';
 
     //Extra Components
-    $elfSightInstaFeedClass = "elfsight-app-b8cfb078-34d5-4612-a44b-ca21179d4b5b";
-
+    $elfSightInstaFeedClass = null;
+	$YouYubePlaylist = null;
 ?>
