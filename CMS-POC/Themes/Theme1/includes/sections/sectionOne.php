@@ -6,7 +6,7 @@
                     <i class="far <?php echo $sectionOneIcon ?> fa-5x"></i>
                 </div>
                 <?php 
-                    include('includes/components/youtubeVideoComponent.php');
+                    include('Themes/Theme1/includes/components/youtubeVideoComponent.php');
                     displayYouTubeVideo($sectionOneVideo);
                 ?>
                 <h2 class="text-center mb-5"><?php echo $sectionOneTitle ?></h2>

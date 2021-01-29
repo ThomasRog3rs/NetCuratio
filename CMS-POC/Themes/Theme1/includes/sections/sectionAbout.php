@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-sm-12">
             <?php 
-                    include('includes/components/youtubeVideoComponent.php');
+                    include('Themes/Theme1/includes/components/youtubeVideoComponent.php');
                     displayYouTubeVideo($aboutSectionVideo);
                 ?>
                 <div class="text-center mb-4">

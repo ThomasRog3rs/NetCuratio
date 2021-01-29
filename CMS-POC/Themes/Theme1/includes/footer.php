@@ -64,7 +64,7 @@
 
     <?php if($landingPage == true) : ?>
         <!-- for the navbar -->
-        <script src="js/scroll.js"></script>
+        <script src="Themes/Theme1/scripts/scroll.js"></script>
     <?php endif; ?>
 </body>
 

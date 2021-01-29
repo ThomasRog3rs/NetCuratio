@@ -1,9 +1,9 @@
 <?php 
-    include('content/content.php');
     $landingPage = false;
 ?>
 
-<?php include('includes/header.php')?>
+<?php include('Themes/Theme1/includes/header.php')?>
+
 
 <!-- Navbar -->
 <body>
@@ -18,7 +18,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <?php include('includes/nav.php') ?>
+                    <?php include('Themes/Theme1/includes/nav.php') ?>
                 </ul>
             </div>
         </div>

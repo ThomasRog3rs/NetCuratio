@@ -5,5 +5,5 @@
             <p class="sub-text mb-5"><?php echo $reviewSectionText ?></p>
         </div>
     </div>
-    <?php include('includes/components/featuredTestimonialsComponent.php') ?>
+    <?php include('Themes/Theme1/includes/components/featuredTestimonialsComponent.php') ?>
 </section>

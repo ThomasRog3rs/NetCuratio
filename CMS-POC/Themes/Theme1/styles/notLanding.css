@@ -1,0 +1,47 @@
+/* === Navbar stuff === */
+nav.navbar{
+    padding: 20px;
+    /* background-color: #fff !important; */
+}
+a.navbar-brand{
+    color: rgb(82, 82, 82) !important;
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+a.nav-link{
+    color: rgb(82, 82, 82) !important;
+    font-size: 14px;
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0px 10px;
+}
+
+a.nav-link:hover{
+    color: rgb(233, 233, 233);
+    text-decoration: underline;
+}
+
+nav.nav-white{
+    background-color: #fff;
+    box-shadow: none !important;
+}
+
+.nav-link-cta{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+.section{
+    background-color: rgb(247, 247, 247);
+}
+
+.testimonial-card{
+    box-shadow: none !important;
+    background-color: rgba(255, 255, 255, 0.856);
+}
+
+.testimonials{
+    margin-bottom: 30px;
+}

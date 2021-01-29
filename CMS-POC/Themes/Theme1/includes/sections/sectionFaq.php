@@ -7,6 +7,6 @@
                     href="contact">contact us</a> </p>
             </div>
         </div>
-        <?php include('includes/components/faqComponent.php') ?>
+        <?php include('Themes/Theme1/includes/components/faqComponent.php') ?>
     </div>
 </section>

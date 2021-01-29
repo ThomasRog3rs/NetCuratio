@@ -1,4 +1,3 @@
-<?php include('../../../content/content.php')?>
 <?php include('header.php')?>
 
 <!-- Hero Section -->

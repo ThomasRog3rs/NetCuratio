@@ -31,6 +31,6 @@
         </div>
     <?php endif ?>
     <?php if($products[$productID - 1] == null) : ?>
-        <?php include("includes/components/pageNotFoundComponent.php") ?>
+        <?php include("Themes/Theme1/includes/components/pageNotFoundComponent.php") ?>
     <?php endif ?>
 </section>

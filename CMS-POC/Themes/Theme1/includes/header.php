@@ -13,10 +13,10 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/dux0rfm.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="Themes/Theme1/styles/main.css">
+    <link rel="stylesheet" href="Themes/Theme1/styles/custom.css">
     <?php if($landingPage != true) : ?>
-        <link rel="stylesheet" href="css/notLanding.css">
+        <link rel="stylesheet" href="Themes/Theme1/styles/notLanding.css">
     <?php endif; ?>
     <style>
             :root {

@@ -5,6 +5,6 @@
                     </h2>
                 </div>
                 <div class="row">
-                    <?php include('includes/components/sessionsComponent.php'); ?>
+                    <?php include('Themes/Theme1/includes/components/sessionsComponent.php'); ?>
                 </div>
             </section>

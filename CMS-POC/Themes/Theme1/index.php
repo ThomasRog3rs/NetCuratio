@@ -1,10 +1,10 @@
 <?php
-    include('includes/hero.php');
+    include('Themes/Theme1/includes/hero.php');
 
-    include('includes/sections/sectionOne.php');
-    include('includes/sections/sectionFeaturedTestimonials.php');
-    include('includes/sections/sectionSessions.php');
-    include('includes/sections/sectionContact.php');
+    include('Themes/Theme1/includes/sections/sectionOne.php');
+    include('Themes/Theme1/includes/sections/sectionFeaturedTestimonials.php');
+    include('Themes/Theme1/includes/sections/sectionSessions.php');
+    include('Themes/Theme1/includes/sections/sectionContact.php');
 
-    include('includes/footer.php');
+    include('Themes/Theme1/includes/footer.php');
 ?>
