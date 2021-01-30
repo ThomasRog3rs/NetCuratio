@@ -1,4 +1,4 @@
-<?php include('helpers/emails/contactForm.php') ?>
+<?php include('Themes/Theme1/helpers/emails/contactForm.php') ?>
 <div class="card contact-card mt-5 p-5" id="contact-form">
     <div class="mr-4">
         <h1 class="contact-heading">Contact</h1>

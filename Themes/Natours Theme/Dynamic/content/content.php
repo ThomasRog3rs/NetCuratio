@@ -6,6 +6,8 @@
         return $phrase;
     }
 
+    $theme = "Natours";
+
     $websiteEmail = "thomas@trwebdev.com";
     /* This document contains all content for the pages of the site */
 

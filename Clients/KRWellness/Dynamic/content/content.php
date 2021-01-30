@@ -36,27 +36,27 @@
     $navItems = array(
         array(
             location => "/",
-            title => "01 - Home"
+            title => "Home"
         ),
         array(
             location => "about",
-            title => "02 - About"
+            title => "About"
         ),
         array(
             location => "gallery",
-            title => "03 - Gallery"
+            title => "Gallery"
         ),
         array(
             location => "sessions",
-            title => "04 - Services"
+            title => "Services"
         ),
         array(
             location => "testimonials",
-            title => "05 - Testimonials"
+            title => "Testimonials"
         ),
         array(
             location => "contact",
-            title => "06 - Contact"
+            title => "Contact"
         )
     );
 

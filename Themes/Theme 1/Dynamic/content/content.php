@@ -5,6 +5,8 @@
         $phrase = implode(' ',array_slice($phrase_array, 0, $max_words)).'...';
         return $phrase;
     }
+
+    $theme = "Theme1";
     
     $websiteEmail = "thomas@trwebdev.com";
     /* This document contains all content for the pages of the site */
