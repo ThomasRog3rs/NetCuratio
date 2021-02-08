@@ -6,6 +6,8 @@
         return $phrase;
     }
 
+    $theme = "Natours";
+
     $websiteEmail = "thomas@trwebdev.com";
     /* This document contains all content for the pages of the site */
 	
@@ -18,7 +20,7 @@
     // === Site Icon ===
     $siteIcon = null;
 
-    $siteLogo = "img/kr-logo-white.png";
+    $siteLogo = "content/img/kr-logo-white.png";
 
     // === General ===
     $pageBorder = false;
@@ -51,6 +53,10 @@
             title => "Services"
         ),
         array(
+            location => "faq",
+            title => "FAQs"
+        ),
+        array(
             location => "testimonials",
             title => "Testimonials"
         ),
@@ -68,8 +74,8 @@
     // === Hero Section ===
     /*Note: control the background image in ../css/custom.css */
     $heroHeading = "KR Wellness";
-    $heroIntro = "Wellness is a choices";
-    $heroBackgroundImgURL = "/img/hero3.jpg";
+    $heroIntro = "Wellness is a choice";
+    $heroBackgroundImgURL = "/content/img/hero3.jpg";
 	$heroRaised = null;
 
     // hero CTA
@@ -86,7 +92,7 @@
     $sectionOneTitle = "What we are about";
 
     $sectionOneSubHeading1 = "About KR Welness";
-    $sectionOneParagraph1 = "Kieran has over 15 years’ experience within the Health & Fitness managing four Health & Fitness Clubs, 3 of which for Marriott Hotels within the North West, as well running successful Boot Camps, Boxerfit Courses & Fit Clubs for David Lloyd Leisure.";
+    $sectionOneParagraph1 = "Kieran has over 15 years’ experience within the Health & Fitness managing four Health & Fitness Clubs, three of which for Marriott Hotels within the North West, as well running successful Boot Camps, Boxerfit Courses & Fit Clubs for David Lloyd Leisure.";
 
     $sectionOneSubHeading2 = "Our vision";
     $sectionOneParagraph2 = "The goal is not only to view health as the physical but to also recognise the mental aspects & how these tackled together can lead to a more sustainable & fulfilled lifestyle on a day to day basis. ";
@@ -100,7 +106,7 @@
     $sectionOneBtnLocation = null;
 
     //3 IMAGE COMPOSITION Component
-    $imageComposition = ["/img/about1.jpg","/img/about2.jpg","/img/about3.jpg"];
+    $imageComposition = ["content/img/about1.jpg","content/img/about2.jpg","content/img/about3.jpg"];
 
     // Feature cards section
     $infoColumns = array(
@@ -109,6 +115,12 @@
             heading => "Sports Massage",
             body => "Sports Massage is tailored predominantly to those with injury or problems affecting range of motion
             which is impacting daily life, such as knee problems and back issues."
+        ),
+        array(
+            icon => "far fa-heart",
+            heading => "Deep Tissue Massage",
+            body => "Deep tissue massage is designed to be a step up depth wise from holistic massage therapy to
+            target those tight and aching muscles."
         ),
         array(
             icon => "fas fa-dumbbell",
@@ -136,7 +148,7 @@
     $readAllLink = "testimonials";
 	
     $backgroundVideo = false;
-    $backgroundVideoSrc = "img/video.mp4";
+    $backgroundVideoSrc = "content/img/video.mp4";
 
     // === Testimonials ===
     $testimonials = array(
@@ -186,7 +198,7 @@
         array(
             productId => 1,
             productName => "Sports Massage &amp; Deep Tissue",
-            productPrice => "59.99",
+            productPrice => "25",
             productDescription => "Sports Massage is tailored predominantly to those with injury or problems affecting range of motion
             which is impacting daily life, such as knee problems and back issues.<br><br>
             This type of massage can also be effective in a proactive sense for sports persons &amp; athletes. Regular
@@ -201,44 +213,61 @@
             treatment.
             <br><br>
             I have provided massage treatments for a range of reasons on a deep tissue level for people of all
-            shapes and size &amp; most muscular/joint issues you could think of.",
-            productImageURL => "img/contact.jpg"
+            shapes and size &amp; most muscular/joint issues you could think of.
+            <br><br>
+            £25 Half Body<br>
+            £40 Full Body<br><br>
+            Injury specific dependant on time/treatment required",
+            productImageURL => "content/img/contact.jpg"
         ),
         array(
             productId => 2,
             productName => "Personal Training",
-            productPrice => "59.99",
-            productDescription => "Personal Training is bespoke exercise, tailored to your goals &amp; needs taking in mind your past fitness
-            experience and current fitness levels.<br><br>
+            productPrice => "30",
+            productDescription => "Personal Training is bespoke exercise, tailored to your goals &amp; needs taking in mind both your past and current fitness levels and
+            lifestyle.<br><br>
             I look at personal training as a lifestyle piece and really work with you to make a sustainable plan
             that really fits into your lifestyle in order to maintain. The plan with personal training should never
             be a temporary solution and I aim to give you the tools to not only achieve your goals but to
-            maintain them and evolve goals as you progress.",
-            productImageURL => "https://source.unsplash.com/1600x900/?gym"
+            maintain them and evolve goals as you progress.
+            <br><br>
+            £30 Pay as you go<br>
+            £135 For 5 sessions<br>
+            £220 For 10 sessions
+            <br><br>",
+            productImageURL => "content/img/ropes.jpg"
         ),
         array(
             productId => 3,
             productName => "Nutrition",
-            productPrice => "39.99",
+            productPrice => "20",
             productDescription => "Diet is such a key part of your everyday life – diet impacts how you feel &amp; how you look, simple as
             that. I do not believe in fad diets, quick fixes or magic pills.<br><br>
             Food diaries are a great way for me to gain a greater understanding of your diet as well as lifestyle
             given the detail around the times you are eating. By making gradual adjustments to your own diet
             we can work together to work toward a balanced diet that you will stick to.<br><br>
-            This will not be ‘A Diet’, it will be your diet!",
-            productImageURL => "https://source.unsplash.com/1600x900/?food"
+            This will not be ‘A Diet’, it will be your diet!
+            <br><br>
+            Food diary review £20<br>
+            Template and Advice sheet included<br>
+            Fortnightly reviews available",
+            productImageURL => "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
         ),
         array(
             productId => 4,
-            productName => "Corp Wellness",
-            productPrice => "299.99",
+            productName => "Corporate Wellness",
+            productPrice => "",
             productDescription => "Corporate Wellness is tailored to your company needs – this can include everything I offer or simply
             the areas you, as a company, may be focussing on with your staff. This is key in staff retention &amp;
             productivity. A happier workforce is a healthy workforce.<br><br>
             Group training is always a good place to start, especially for moral boosting &amp; team building.<br><br>
             Speak with me to discuss the needs of your business &amp; we’ll work toward a bespoke wellness
-            package to compliment your business.",
-            productImageURL => "https://source.unsplash.com/1600x900/?business"
+            package to compliment your business.
+            <br><br>
+            Corporate Wellness<br>
+            Prices available on request<br>
+            Packages can be tailored to suit your company budget",
+            productImageURL => "https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
         )
     ); 
     $sessionsBtnTitle = "View All Sessions &rarr;";
@@ -246,7 +275,8 @@
 
     // === Product / Session Details
     $bookingDetailsTitle = "What we offer";
-    $bookingDetails = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nam expedita tenetur similique, iure cumque numquam, commodi fugit ipsum ab, eum repudiandae deserunt quisquam. Repudiandae delectus, soluta impedit cupiditate perferendis voluptatum tempore. Sunt veritatis debitis aliquam veniam autem, accusantium quas, non obcaecati aliquid cum commodi eligendi dicta tenetur minus libero!";
+    $bookingDetails = "<b>Prices reflect M28 and surrounding areas – charges may change outside of this area.
+    Services are provided in Greater Manchester &amp; Manchester.</b> To make your booking please use the contact form and state, in your message, what services you require.";
 
     // === About Section ===
     $aboutSectionTitle = $sectionOneTitle;
@@ -258,91 +288,57 @@
     $faqs = array(
         array(
             id => 1,
-            question => "Random Question One?",
-            answer => "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
-            squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-            craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-            butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
-            nesciunt you probably haven't heard of them accusamus labore sustainable VHS.",
+            question => "Sport massage &amp; Deep Tissue – Will it be painful?",
+            answer => "All treatments and pressures will be discussed prior to treatment and constantly mentioned during
+            massage – sometimes ‘pain’ may be necessary but never beyond anything you couldn’t handle and
+            never without consent. This is often described as ‘that good pain’ so there is absolutely nothing to
+            worry about",
             activeOnLoad => "true",
             show => "show"
         ),
         array(
             id => 2,
-            question => "Random Question Two?",
-            answer => "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
-            squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-            craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-            butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
-            nesciunt you probably haven't heard of them accusamus labore sustainable VHS.",
-            activeOnLoad => "false",
-            show => null
-        ),
-        array(
-            id => 3,
-            question => "Random Question Three?",
-            answer => "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
-            squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-            craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-            butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
-            nesciunt you probably haven't heard of them accusamus labore sustainable VHS.",
-            activeOnLoad => "false",
-            show => null
-        ),
-        array(
-            id => 4,
-            question => "Random Question Four?",
-            answer => "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
-            squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-            craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-            butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
-            nesciunt you probably haven't heard of them accusamus labore sustainable VHS.",
+            question => "Personal Training – Do I have enough space in my home to do personal training?",
+            answer => "You would be surprised how little space is needed bear in mind we don’t have large treadmills or
+            cross trainers, just you, myself and a few pieces of equipment – and hard work obviously!",
             activeOnLoad => "false",
             show => null
         )
     );
 
     // === Contact Section ===
-    $contactBackgroundImgURL = "img/contact.jpg";
+    $contactBackgroundImgURL = "content/img/contact.jpg";
 
     // === Footer Links ===
-$footerLinks = array(
-    array(
-        listTitle => null,
-        links => array(array(
-        location => "/",
-        title => "Home"
-    ),
-    array(
-        location => "about",
-        title => "About"
-    ),
-    array(
-        location => "gallery",
-        title => "Gallery"
-    ),
-    array(
-        location => "sessions",
-        title => "Services"
-    ),
-    array(
-        location => "testimonials",
-        title => "Testimonials"
-    ),
-    array(
-        location => "contact",
-        title => "Contact"
-    )
-    ))
-);
+    $footerLinks = array(
+        array(
+            listTitle => null,
+            links => array(array(
+            location => "/",
+            title => "Home"
+        ),
+        array(
+            location => "about",
+            title => "About"
+        ),
+        array(
+            location => "gallery",
+            title => "Gallery"
+        ),
+        array(
+            location => "sessions",
+            title => "Services"
+        ),
+        array(
+            location => "testimonials",
+            title => "Testimonials"
+        ),
+        array(
+            location => "contact",
+            title => "Contact"
+        )
+        ))
+    );
 	
     $footerCopyRight = $siteTitle.' '.date("Y"). ' | Powered by <a class="light-link" href="http://www.trwebdev.com">NetCuratio</a>';
 
