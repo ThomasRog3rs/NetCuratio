@@ -6,7 +6,7 @@
         return $phrase;
     }
 
-    $theme = "Theme1";
+    $theme = "Natours";
 
     $websiteEmail = "thomas@trwebdev.com";
     /* This document contains all content for the pages of the site */
@@ -20,7 +20,7 @@
     // === Site Icon ===
     $siteIcon = "fas fa-seedling";
 
-    $siteLogo = "content/imgs/logo-white.png";
+    $siteLogo = "img/logo-white.png";
 
     // === General ===
     $pageBorder = false;

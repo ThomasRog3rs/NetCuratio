@@ -35,7 +35,7 @@
                                 <div class="card__side card__side--back card__side--back-2">
                                     <div class="card__cta">
                                         <div class="card__price-box">
-                                            <p class="card__price-only">Only</p>
+                                            <p class="card__price-only">From Only</p>
                                             <p class="card__price-value">&pound;<?php echo $product[productPrice] ?></p>
                                         </div>
                                         <a href="<?php echo $learnMorePage.$product[productId] ?>" class="btn btn--white">Learn More</a>

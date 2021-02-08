@@ -4,7 +4,9 @@
             <div class="row">
                     <div class="session-heading u-margin-bottom-medium">
                         <h2 class="heading-tertiary"><?php echo $products[$productID - 1][productName]; ?></h2>
-                        <p class="paragraph">Price: &ThickSpace; <?php echo $products[$productID - 1][productPrice]; ?>/hr</p>
+                        <?php if($products[$productID - 1][productPrice] != "" ||  $products[$productID - 1][productPrice] != null) : ?>
+                            <p class="paragraph">Starts from: &ThickSpace;&pound;<?php echo $products[$productID - 1][productPrice]; ?></p>
+                        <?php endif; ?>
                     </div>
 
                 <div class="col-1-of-2">
