@@ -20,7 +20,7 @@
     // === Site Icon ===
     $siteIcon = null;
 
-    $siteLogo = "content/img/kr-logo-white.jpg";
+    $siteLogo = "content/img/kr-logo-white-new.png";
 
     // === General ===
     $pageBorder = false;
@@ -133,13 +133,13 @@
             heading => "Nutrition",
             body => "Diet is such a key part of your everyday life – diet impacts how you feel &amp; how you look, simple as
             that. I do not believe in fad diets, quick fixes or magic pills."
-        ),
-        array(
-            icon => "fas fa-user-tie",
-            heading => "Corporate Wellness",
-            body => "Corporate Wellness is tailored to your company needs – this can include everything I offer or simply
-            the areas you, as a company, may be focussing on with your staff."
         )
+        // array(
+        //     icon => "fas fa-user-tie",
+        //     heading => "Corporate Wellness",
+        //     body => "Corporate Wellness is tailored to your company needs – this can include everything I offer or simply
+        //     the areas you, as a company, may be focussing on with your staff."
+        // )
     ); 
 
     // === Review Section ===
@@ -276,7 +276,7 @@
     // === Product / Session Details
     $bookingDetailsTitle = "What we offer";
     $bookingDetails = "<b>Prices reflect M28 and surrounding areas – charges may change outside of this area.
-    Services are provided in Greater Manchester &amp; Manchester.</b> To make your booking please use the contact form and state, in your message, what services you require.";
+    Services are provided in Greater Manchester &amp; Manchester.</b> To make your booking please use the contact form and state, in your message, what services you require. Mobile visits in &amp; arround Manchester are available, or you can visit my place in Walkden";
 
     // === About Section ===
     $aboutSectionTitle = $sectionOneTitle;
