@@ -20,7 +20,7 @@
     // === Site Icon ===
     $siteIcon = null;
 
-    $siteLogo = "content/img/kr-logo-white.png";
+    $siteLogo = "content/img/kr-logo-white.jpg";
 
     // === General ===
     $pageBorder = false;
@@ -343,6 +343,6 @@
     $footerCopyRight = $siteTitle.' '.date("Y"). ' | Powered by <a class="light-link" href="http://www.trwebdev.com">NetCuratio</a>';
 
     //Extra Components
-    $elfSightInstaFeedClass = "elfsight-app-b8cfb078-34d5-4612-a44b-ca21179d4b5b";  
+    $elfSightInstaFeedClass = "elfsight-app-2b4ca0a5-c47e-4f51-b27b-57598e110579";  
     $YouYubePlaylist = $sectionOneVideo;
 ?>
