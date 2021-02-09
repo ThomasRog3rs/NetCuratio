@@ -25,7 +25,7 @@
                     <h3 class="heading-tertiary">Interested in making a booking?</h3>
                     <p class="paragraph"><?php echo $bookingDetails ?></p>
                 </div>
-                <a href="mailto:<?php echo $websiteEmail ?>" class="btn btn--green">Contact Us &nbsp; <i class="fas fa-envelope"></i></a>
+                <a href="/contact" class="btn btn--green">Contact Us &nbsp; <i class="fas fa-envelope"></i></a>
             </div>  
     <?php endif ?>
     <?php if($products[$productID - 1] == null) : ?>
