@@ -21,7 +21,7 @@
         <?php if(!$slantedSections) : ?>
             <link rel="stylesheet" href="Themes/Natours/styles/removeSlantedSections.css">
         <?php endif; ?>
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link rel="shortcut icon" type="image/png" href="content/img/kr-logo-white-new.png">
         <style>
             :root {
                 --text-highlight: <?php echo $textHighlight ?> ;
