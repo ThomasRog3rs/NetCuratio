@@ -91,7 +91,7 @@
     $sectionOneIcon = null;
     $sectionOneTitle = "What we are about";
 
-    $sectionOneSubHeading1 = "About KR Welness";
+    $sectionOneSubHeading1 = "About KR Wellness";
     $sectionOneParagraph1 = "Kieran has over 15 years’ experience within the Health & Fitness managing four Health & Fitness Clubs, three of which for Marriott Hotels within the North West, as well running successful Boot Camps, Boxerfit Courses & Fit Clubs for David Lloyd Leisure.";
 
     $sectionOneSubHeading2 = "Our vision";
@@ -153,40 +153,12 @@
     // === Testimonials ===
     $testimonials = array(
         array(
-            review => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.",
-            name => "John Doe"
+            review => "I have been training with Keiran for the best part of 6 months and he has helped me so much. I feel so much more active and healthy and as though my mental health has improved alongside my physical strength. Kez has been so great at adapting to the ever-changing government restrictions and we have managed to keep our sessions going, even in a National lockdown. Could not recommend him enough!",
+            name => "Phoebe"
         ),
         array(
-            review => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.",
-            name => "James Smith"
-        ),
-        array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => "Jane Doe"
-        ),
-        array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => " Alvis Androkles "
-        ),
-        array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => "James Smith"
-        ),
-        array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => "Jane Doe"
-        ),
-        array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => " Alvis Androkles "
-        ),
-        array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => "Jane Doe"
-        ),
-        array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => " Alvis Androkles "
+            review => "Following an ACL rupture, my days went from very sport-heavy to limited exercise. Kieran took me under his wing and devised plans, adequate enough for substantial progress to be made, without causing further injury to my knee. 6 sessions down, and I have lost 15lbs and noticeable inches around my body. Each session is then followed by an intense sports massage - what a difference this makes! I have noticed credible changes to my muscle tightness, and feel like a new woman! I will 100% be continuing with Kieran post surgery for the best recovery outcome.",
+            name => "Dani"
         )
     );
 
