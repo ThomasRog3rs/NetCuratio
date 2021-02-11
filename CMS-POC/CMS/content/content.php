@@ -294,6 +294,7 @@
 
     //Extra Components
     $elfSightInstaFeedClass = "elfsight-app-b8cfb078-34d5-4612-a44b-ca21179d4b5b";
+    $elfSightSocialLinks = null; 
 	$YouYubePlaylist = null;
 
 ?>

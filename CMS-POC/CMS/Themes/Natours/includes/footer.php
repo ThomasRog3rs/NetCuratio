@@ -15,14 +15,20 @@
                     </div>
                 </div>
                 <div class="col-1-of-2">
-                    <p class="footer__copyright">
-                        <?php echo $footerCopyRight ?>
-                    </p>
+                    <div class="footer__copyright">
+                        <p>
+                            <?php echo $footerCopyRight ?>
+                        </p>
+                        <?php if($elfSightInstaFeedClass != null) : ?>
+                            <div class="<?php echo $elfSightSocialLinks?>"></div>
+                            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                        <?endif; ?>
+                    </div>
                 </div>
             </div>
         </footer>
 
-        <div class="popup" id="popup">
+        <!-- <div class="popup" id="popup">
             <div class="popup__content">
                 <div class="popup__left">
                     <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
@@ -46,6 +52,6 @@
                     <a href="#" class="btn btn--green">Book now</a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </body>
 </html>

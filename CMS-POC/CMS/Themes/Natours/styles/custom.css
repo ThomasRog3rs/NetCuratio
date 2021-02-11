@@ -267,6 +267,14 @@ p{
     transform: rotate(5deg) scale(1.3);
 }
 
+.composition__photo--p3 {
+    z-index: 110 !important;
+}
+
+.composition__photo:hover {
+    z-index: 120 !important;
+}
+
 @media(max-width: 1196px){
     .flex-row{
         max-width: 50rem;
