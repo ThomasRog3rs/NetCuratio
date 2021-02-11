@@ -1,0 +1,5 @@
+C:\Users\matth\source\repos\NetCuratio\NetCuratio_CommonLayer\bin\Debug\NetCuratio_CommonLayer.dll
+C:\Users\matth\source\repos\NetCuratio\NetCuratio_CommonLayer\bin\Debug\NetCuratio_CommonLayer.pdb
+C:\Users\matth\source\repos\NetCuratio\NetCuratio_CommonLayer\obj\Debug\NetCuratio_CommonLayer.csproj.CoreCompileInputs.cache
+C:\Users\matth\source\repos\NetCuratio\NetCuratio_CommonLayer\obj\Debug\NetCuratio_CommonLayer.dll
+C:\Users\matth\source\repos\NetCuratio\NetCuratio_CommonLayer\obj\Debug\NetCuratio_CommonLayer.pdb

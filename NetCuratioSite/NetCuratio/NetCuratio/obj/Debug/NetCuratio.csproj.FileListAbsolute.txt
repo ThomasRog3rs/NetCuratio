@@ -48,6 +48,8 @@ C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\Microsoft.Owin.Security.Mi
 C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\Microsoft.Owin.Security.OAuth.dll
 C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\Microsoft.Owin.Security.Twitter.dll
 C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\NetCuratio_CommonLayer.dll
+C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\NetCuratio_ServiceLayer.dll
 C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\Newtonsoft.Json.dll
 C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\Owin.dll
 C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\System.Web.Helpers.dll
@@ -58,6 +60,8 @@ C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\System.Web.WebPages.Deploy
 C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\System.Web.WebPages.dll
 C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\System.Web.WebPages.Razor.dll
 C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\WebGrease.dll
+C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\NetCuratio_CommonLayer.pdb
+C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\NetCuratio_ServiceLayer.pdb
 C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\EntityFramework.xml
 C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\EntityFramework.SqlServer.xml
 C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
@@ -87,3 +91,5 @@ C:\Users\matth\source\repos\NetCuratio\NetCuratio\obj\Debug\NetCuratio.csproj.Co
 C:\Users\matth\source\repos\NetCuratio\NetCuratio\obj\Debug\NetCuratio.csproj.CopyComplete
 C:\Users\matth\source\repos\NetCuratio\NetCuratio\obj\Debug\NetCuratio.dll
 C:\Users\matth\source\repos\NetCuratio\NetCuratio\obj\Debug\NetCuratio.pdb
+C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\NetCuratio_DataAccessLayer.dll
+C:\Users\matth\source\repos\NetCuratio\NetCuratio\bin\NetCuratio_DataAccessLayer.pdb

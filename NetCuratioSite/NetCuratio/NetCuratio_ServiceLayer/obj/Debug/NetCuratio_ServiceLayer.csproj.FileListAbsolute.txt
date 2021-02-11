@@ -1,0 +1,11 @@
+C:\Users\matth\source\repos\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NetCuratio_ServiceLayer.dll
+C:\Users\matth\source\repos\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NetCuratio_ServiceLayer.pdb
+C:\Users\matth\source\repos\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NetCuratio_CommonLayer.dll
+C:\Users\matth\source\repos\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NetCuratio_DataAccessLayer.dll
+C:\Users\matth\source\repos\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NetCuratio_CommonLayer.pdb
+C:\Users\matth\source\repos\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NetCuratio_DataAccessLayer.pdb
+C:\Users\matth\source\repos\NetCuratio\NetCuratio_ServiceLayer\obj\Debug\NetCuratio_ServiceLayer.csprojAssemblyReference.cache
+C:\Users\matth\source\repos\NetCuratio\NetCuratio_ServiceLayer\obj\Debug\NetCuratio_ServiceLayer.csproj.CoreCompileInputs.cache
+C:\Users\matth\source\repos\NetCuratio\NetCuratio_ServiceLayer\obj\Debug\NetCuratio_ServiceLayer.csproj.CopyComplete
+C:\Users\matth\source\repos\NetCuratio\NetCuratio_ServiceLayer\obj\Debug\NetCuratio_ServiceLayer.dll
+C:\Users\matth\source\repos\NetCuratio\NetCuratio_ServiceLayer\obj\Debug\NetCuratio_ServiceLayer.pdb

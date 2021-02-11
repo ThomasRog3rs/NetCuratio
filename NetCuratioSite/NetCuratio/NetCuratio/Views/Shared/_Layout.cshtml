@@ -44,7 +44,7 @@
                 <li><a href="@Url.Action("Index", "Home")">Home</a></li>
                 <li><a href="@Url.Action("About", "Home")">About us</a></li>
                 <li><a href="@Url.Action("Services", "Home")">Services</a></li>
-                <li><a href="#contact-section">Contact</a></li>
+                <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -53,32 +53,42 @@
     @RenderBody()
 
     <!-- Footer top section -->
-<section class="footer-top-section text-white spad">
-    <div class="row justify-content-center">
-        <h2>Get in touch</h2>
-    </div>
-    <div class="container" id="contact-section">
-        <div class="row justify-content-center">           
-            <div class="col-lg-9">
-                <form class="contact-form">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input type="text" placeholder="Your name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" placeholder="Your e-mail">
-                        </div>
-                        <div class="col-md-12">
-                            <input type="text" placeholder="Subject">
-                            <textarea placeholder="Message"></textarea>
-                            <button class="site-btn">Send</button>
-                        </div>
+    <!-- Milestones section -->
+    <section class="milestones-section set-bg" data-setbg="../Content/img/milestones-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="milestone-item text-white">
+                        <i class="fas fa-users mb-2"></i>
+                        <h2>700+</h2>
+                        <p>Happy clients</p>
                     </div>
-                </form>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="milestone-item text-white">
+                        <i class="far fa-clock mb-2"></i>
+                        <h2>1k</h2>
+                        <p>Hours of support</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="milestone-item text-white">
+                        <i class="fas fa-laptop-code mb-2"></i>
+                        <h2>25</h2>
+                        <p>Industry specialists</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="milestone-item text-white">
+                        <i class="fas fa-shield-alt mb-2 mr-4"></i>
+                        <h2>24/7</h2>
+                        <p>Security monitoring</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <!-- Milestones section end -->
     <!-- Footer top section end -->
     <!-- Footer section -->
     <footer class="footer-section">
@@ -87,6 +97,7 @@
                 <li><a href="@Url.Action("Index", "Home")">Home</a></li>
                 <li><a href="@Url.Action("About", "Home")">About us</a></li>
                 <li><a href="@Url.Action("Services", "Home")">Services</a></li>
+                <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
             </ul>
             <div class="copyright">
                 Copyright &copy;
@@ -101,6 +112,8 @@
     <script src="~/Scripts/js/owl.carousel.min.js"></script>
     <script src="~/Scripts/js/circle-progress.min.js"></script>
     <script src="~/Scripts/js/main.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
     <script src="https://kit.fontawesome.com/c59cb3ca97.js" crossorigin="anonymous"></script>
 </body>
 </html>
