@@ -7,15 +7,7 @@
 
                 <div class="row">
                     <div class="col-1-of-2">
-                        <h3 class="heading-tertiary u-margin-bottom-small"><?php echo $sectionOneSubHeading1 ?></h3>
-                        <p class="paragraph">
-                            <?php echo $sectionOneParagraph1 ?>
-                        </p>
-
-                        <h3 class="heading-tertiary u-margin-bottom-small"><?php echo $sectionOneSubHeading2 ?></h3>
-                        <p class="paragraph">
-                            <?php echo $sectionOneParagraph2 ?>
-                        </p>
+                        <?php echo $sectionOneText ?>
 
                         <?php if($sectionOneBtnTitle != null) : ?>
                             <a href="<?php echo $sectionOneBtnLocation ?>" class="btn-text"><?php echo $sectionOneBtnTitle ?></a>

@@ -1,25 +1,47 @@
 <?php 
+
+    function trunc($phrase, $max_words) {
+        $phrase_array = explode(' ',$phrase);
+        if(count($phrase_array) > $max_words && $max_words > 0)
+        $phrase = implode(' ',array_slice($phrase_array, 0, $max_words)).'...';
+        return $phrase;
+    }
     $websiteEmail = "thomas@trwebdev.com";
     /* This document contains all content for the pages of the site */
 
-    // === Does page use hero section? ===
-    $landingPage = true;
-
     // === Site Name ===
-    $siteTitle = "Theme 1";
+    $siteTitle = "Natours";
 
     // === Site Icon ===
-    $siteIcon = "fa-smile";
+    $siteIcon = null;
+
+    $siteLogo = "img/logo-white.png";
+
+    // === General ===
+    $pageBorder = false;
+    $slantedSections = true;
+
+    $textHighlight = "rgba(126,213,111,1)";
+
+    $primarySolid = "rgba(126,213,111,1)";
+    $primarySolidDark = "rgba(40,180,133,1)";
+
+    $primaryColor = "rgba(126,213,111,0.8)";
+    $primaryColorDark = "rgba(40,180,133,0.8)";
 
     // === Nav Menu Items ===
     $navItems = array(
         array(
-            location => "products",
-            title => "Products"
+            location => "/",
+            title => "Home"
         ),
         array(
             location => "about",
             title => "About"
+        ),
+        array(
+            location => "sessions",
+            title => "Sessions"
         ),
         array(
             location => "testimonials",
@@ -28,6 +50,10 @@
         array(
             location => "contact",
             title => "Contact"
+        ),
+        array(
+            location => "faq",
+            title => "FAQs"
         )
     );
 
@@ -35,45 +61,55 @@
 
     // === Hero Section ===
     /*Note: control the background image in ../css/custom.css */
-    $heroHeading = "This is Theme 1";
-    $heroIntro = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus harum enim, hic saepe ab maiores!";
-    $heroBackgroundImgURL = "https://source.unsplash.com/1600x900/?fun";
-    $heroRaised = false;
+    $heroHeading = "Natours";
+    $heroIntro = "Modern Theme";
+    $heroBackgroundImgURL = "https://source.unsplash.com/1600x900/?nature";
 
     // hero CTA
     $heroCTA = array(
-        array(
-            location => "#link",
-            title => "View Elements",
-            classNames => "btn btn-primary btn-lg scroll-link shadow-lg ml-auto mr-3"
-        ),
-        array(
-            location => "#link",
-            title => "Get Started",
-            classNames => "btn btn-lg scroll-link ml-auto mr-3"
-        )
+        location => "#link",
+        title => "Learn More",
+        classNames => "btn btn--white btn--animated"
     );
 
     // === Section One ===
-    $sectionOneIcon = $siteIcon;
-    $sectionOneTitle = "Section One";
-    $sectionOneText = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae voluptates atque quos. In, optio? Quo autem, natus debitis sint veniam ullam atque deleniti temporibus voluptas delectus suscipit iste recusandae eius nihil sunt molestias harum dolore! Quibusdam amet omnis tenetur facilis deserunt, porro quis distinctio!";
+    $sectionOneIcon = null;
+    $sectionOneTitle = "About Us";
 
+    $sectionOneSubHeading1 = "TERTIARY HEADING";
+    $sectionOneParagraph1 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.";
+
+    $sectionOneSubHeading2 = "TERTIARY HEADING";
+    $sectionOneParagraph2 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.";
+
+    //Section One CTA
+    $sectionOneBtnTitle = null;
+    $sectionOneBtnLocation = null;
+
+    //3 IMAGE COMPOSITION Component
+    $imageComposition = ["https://source.unsplash.com/1920x1080/?nature","https://source.unsplash.com/1920x1080/?mountain","https://source.unsplash.com/1920x1080/?snow"];
+
+    // Feature cards section
     $infoColumns = array(
         array(
             icon => "fa-heart",
             heading => "Heading 1",
-            body => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ea atque fuga."
+            body => "Sports Massage is tailored predominantly to those with injury or problems affecting range of motion which is impacting daily life, such as knee problems and back issues."
         ),
         array(
             icon => "fa-clock",
             heading => "Heading 2",
-            body => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ea atque fuga."
+            body => "Personal Training is bespoke exercise, tailored to your goals & needs taking in mind your past fitness experience and current fitness levels."
         ),
         array(
             icon => "fa-user",
             heading => "Heading 3",
-            body => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ea atque fuga."
+            body => "Diet is such a key part of your everyday life – diet impacts how you feel & how you look, simple as that. I do not believe in fad diets, quick fixes or magic pills."
+        ),
+        array(
+            icon => "fa-clock",
+            heading => "Heading 2",
+            body => "Corporate Wellness is tailored to your company needs – this can include everything I offer or simply the areas you, as a company, may be focussing on with your staff."
         )
     ); 
 
@@ -81,11 +117,13 @@
     $reviewSectionTitle = "Client Reviews";
     $reviewSectionText = "Read the wonderful feedback and success stories we have got from our current and previous clients.";
     $readAllLink = "testimonials";
+    $backgroundVideo = false;
+    $backgroundVideoSrc = "img/video.mp4";
 
     // === Testimonials ===
     $testimonials = array(
         array(
-            review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
+            review => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.",
             name => "John Doe"
         ),
         array(
@@ -102,53 +140,62 @@
         ),
         array(
             review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => " Bryson Homewood "
+            name => "James Smith"
         ),
         array(
             review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => " Paul Eliot "
+            name => "Jane Doe"
         ),
         array(
             review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => " Paul Eliot "
+            name => " Alvis Androkles "
         ),
         array(
             review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => " Paul Eliot "
+            name => "Jane Doe"
         ),
         array(
             review => "Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla non laoreet eleifend.",
-            name => " Paul Eliot "
+            name => " Alvis Androkles "
         )
     );
 
 
     // === Book Section (product / sessions showcase) ===
     $bookingTitle = "Sessions we offer";
-    $learnMorePage = "product?productId=";
+    $learnMorePage = "session?productId=";
     $products = array(
         array(
             productId => 1,
             productName => "Product Name 1",
             productPrice => "19.99",
-            productDescription => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus unde iusto dolorem dolor, numquam corporis earum delectus maxime? Voluptatibus, dolorum fugiat illo aut consequatur neque. Debitis blanditiis perferendis explicabo reiciendis tempore! Aspernatur eaque doloribus alias beatae sed iste, rem dignissimos esse? Veniam sapiente eius aperiam velit illum distinctio officia id non sit et? Quo non debitis ratione accusantium laborum aliquam at nesciunt?",
-            productImageURL => "https://source.unsplash.com/1600x900/?session"
+            productDescription => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus unde iusto dolorem dolor, numquam corporis earum delectus maxime?",
+            productImageURL => "https://source.unsplash.com/1600x900/?session1"
         ),
         array(
             productId => 2,
             productName => "Product Name 2",
             productPrice => "29.99",
-            productDescription => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ea atque fuga.",
-            productImageURL => "https://source.unsplash.com/1600x900/?product"
+            productDescription => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus unde iusto dolorem dolor, numquam corporis earum delectus maxime?",
+            productImageURL => "https://source.unsplash.com/1600x900/?session2"
         ),
         array(
             productId => 3,
             productName => "Product Name 3",
             productPrice => "39.99",
-            productDescription => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ea atque fuga.",
-            productImageURL => "https://source.unsplash.com/1600x900/?session"
+            productDescription => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus unde iusto dolorem dolor, numquam corporis earum delectus maxime?",
+            productImageURL => "https://source.unsplash.com/1600x900/?session3"
+        ),
+        array(
+            productId => 4,
+            productName => "Product Name 4",
+            productPrice => "39.99",
+            productDescription => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus unde iusto dolorem dolor, numquam corporis earum delectus maxime?",
+            productImageURL => "https://source.unsplash.com/1600x900/?session4"
         )
     ); 
+    $sessionsBtnTitle = "View All Sessions &rarr;";
+    $sessionsBtnLocation = "sessions";
 
     // === Product / Session Details
     $bookingDetailsTitle = "What we offer";
@@ -216,74 +263,13 @@
     );
 
     // === Contact Section ===
-    $contactBackgroundImgURL = "https://source.unsplash.com/1600x900/?soccer";
+    $contactBackgroundImgURL = "https://source.unsplash.com/1600x900/?nature";
 
     // === Footer Links ===
-    $footerLinks = array(
-        array(
-            listTitle => "Useful links",
-            links => array( 
-                array(
-                    title => "Customer Login",
-                    location => "#"
-                ),
-                array(
-                    title => "Book Online",
-                    location => "#"
-                ),
-                array(
-                    title => "About",
-                    location => "#"
-                )
-            )
-        ),
-        array(
-            listTitle => "Contact Us",
-            links => array( 
-                array(
-                    title => "Contact Form",
-                    location => "#"
-                ),
-                array(
-                    title => "FAQ Page",
-                    location => "#"
-                )
-            )
-        ),
-        array(
-            listTitle => "Blog Posts",
-            links => array( 
-                array(
-                    title => "Blog title 1",
-                    location => "#"
-                ),
-                array(
-                    title => "Blog title 2",
-                    location => "#"
-                ),
-                array(
-                    title => "Blog title 3",
-                    location => "#"
-                )
-            )
-        ),
-        array(
-            listTitle => "Our socials",
-            links => array( 
-                array(
-                    title => "Facebook",
-                    location => "#"
-                ),
-                array(
-                    title => "Twitter",
-                    location => "#"
-                ),
-                array(
-                    title => "Instagram",
-                    location => "#"
-                )
-            )
-        )
-    );
+    $footerLinks = $navItems;
+    $footerCopyRight = 'KR_Welness 2021 | Powered by <a class="footer__link" href="http://www.trwebdev.com">NetCuratio</a>';
+
+    //Extra Components
+    $elfSightInstaFeedClass = "elfsight-app-b8cfb078-34d5-4612-a44b-ca21179d4b5b";
 
 ?>

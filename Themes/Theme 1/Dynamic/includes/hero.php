@@ -1,4 +1,4 @@
-<?php include('includes/content.php')?>
+<?php include('content/content.php')?>
 <?php include('includes/header.php')?>
 
 <!-- Hero Section -->
@@ -31,8 +31,13 @@
                             echo "<a href=\"$cta[location]\" class=\"$cta[classNames]\">$cta[title]</a>";
                         }
                     ?>
-                    <!-- <a href="elements.html" class="btn btn-primary btn-lg scroll-link shadow-lg ml-auto mr-3">View Elements</a>
-                    <a href="#book" class="btn btn-lg scroll-link ml-auto">Get started</a> -->
+                    <?php if($sponsorImages != null) : ?>
+                        <div class="sponsors">
+                            <?php foreach($sponsorImages as $sponsor) : ?>
+                                <img src="<?php echo $sponsor ?>" alt="">
+                            <?php endforeach; ?>               
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
