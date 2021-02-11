@@ -92,10 +92,10 @@
     $sectionOneTitle = "What we are about";
 
     $sectionOneSubHeading1 = "About KR Wellness";
-    $sectionOneParagraph1 = "Kieran has over 15 years’ experience within the Health & Fitness managing four Health & Fitness Clubs, three of which for Marriott Hotels within the North West, as well running successful Boot Camps, Boxerfit Courses & Fit Clubs for David Lloyd Leisure.";
+    $sectionOneParagraph1 = "Kieran specialises in mobile sports and deep tissue massage therapy, personal and group fitness as well as nutrition. He has over 15 years experience within the Health & Fitness industry managing four Health & Fitness Clubs, three of which for Marriott Hotels within the North West, as well running successful Boot Camps, Boxerfit Courses & Fit Clubs for David Lloyd Leisure.";
 
     $sectionOneSubHeading2 = "Our vision";
-    $sectionOneParagraph2 = "The goal is not only to view health as the physical but to also recognise the mental aspects & how these tackled together can lead to a more sustainable & fulfilled lifestyle on a day to day basis. ";
+    $sectionOneParagraph2 = "The goal is not only to view health as the physical but to also recognise the mental aspects & how these tackled together can lead to a more sustainable & fulfilled lifestyle.";
 
     $sectionOneText = "<h3>".$sectionOneSubHeading1."</h3><p>".$sectionOneParagraph1."</p><br><br>"."<h3>".$sectionOneSubHeading2."</h3><p>".$sectionOneParagraph2."</p>";
     
@@ -106,7 +106,7 @@
     $sectionOneBtnLocation = null;
 
     //3 IMAGE COMPOSITION Component
-    $imageComposition = ["content/img/about1.jpg","content/img/about2.jpg","content/img/about3.jpg"];
+    $imageComposition = ["content/img/about1.jpg","content/img/about3.jpg","content/img/about2.jpg"];
 
     // Feature cards section
     $infoColumns = array(
@@ -170,7 +170,7 @@
         array(
             productId => 1,
             productName => "Sports Massage &amp; Deep Tissue",
-            productPrice => "25",
+            productPrice => "30",
             productDescription => "Sports Massage is tailored predominantly to those with injury or problems affecting range of motion
             which is impacting daily life, such as knee problems and back issues.<br><br>
             This type of massage can also be effective in a proactive sense for sports persons &amp; athletes. Regular
@@ -187,8 +187,8 @@
             I have provided massage treatments for a range of reasons on a deep tissue level for people of all
             shapes and size &amp; most muscular/joint issues you could think of.
             <br><br>
-            £25 Half Body<br>
-            £40 Full Body<br><br>
+            £30 Half Body<br>
+            £45 Full Body<br><br>
             Injury specific dependant on time/treatment required",
             productImageURL => "content/img/contact.jpg"
         ),
@@ -231,7 +231,7 @@
             productPrice => "",
             productDescription => "Corporate Wellness is tailored to your company needs – this can include everything I offer or simply
             the areas you, as a company, may be focussing on with your staff. This is key in staff retention &amp;
-            productivity. A happier workforce is a healthy workforce.<br><br>
+            productivity. A healthy workforce is a happy workforce.<br><br>
             Group training is always a good place to start, especially for moral boosting &amp; team building.<br><br>
             Speak with me to discuss the needs of your business &amp; we’ll work toward a bespoke wellness
             package to compliment your business.
@@ -248,7 +248,7 @@
     // === Product / Session Details
     $bookingDetailsTitle = "What we offer";
     $bookingDetails = "<b>Prices reflect M28 and surrounding areas – charges may change outside of this area.
-    Services are provided in Greater Manchester &amp; Manchester.</b> To make your booking please use the contact form and state, in your message, what services you require. Mobile visits in &amp; arround Manchester are available, or you can visit my place in Walkden";
+    Services are provided in Greater Manchester &amp; Manchester.</b> To make your booking please use the contact form and state, in your message, what services you require. Mobile visits in &amp; around Manchester are available, or you can visit my place in Walkden.";
 
     // === About Section ===
     $aboutSectionTitle = $sectionOneTitle;
@@ -271,7 +271,7 @@
         array(
             id => 2,
             question => "Personal Training – Do I have enough space in my home to do personal training?",
-            answer => "You would be surprised how little space is needed bear in mind we don’t have large treadmills or
+            answer => "You would be surprised how little space is needed. Bear in mind, we don’t have large treadmills or
             cross trainers, just you, myself and a few pieces of equipment – and hard work obviously!",
             activeOnLoad => "false",
             show => null
@@ -312,9 +312,10 @@
         ))
     );
 	
-    $footerCopyRight = $siteTitle.' '.date("Y"). ' | Powered by <a class="light-link" href="http://www.trwebdev.com">NetCuratio</a>';
+    $footerCopyRight = $siteTitle.' '.date("Y"). ' | Powered by <a class="footer__link" href="http://www.trwebdev.com">NetCuratio</a>';
 
     //Extra Components
-    $elfSightInstaFeedClass = "elfsight-app-2b4ca0a5-c47e-4f51-b27b-57598e110579";  
+    $elfSightInstaFeedClass = "elfsight-app-2b4ca0a5-c47e-4f51-b27b-57598e110579";
+    $elfSightSocialLinks = "elfsight-app-fdb84ca3-eae8-4a96-84c1-fc819671b83c";  
     $YouYubePlaylist = $sectionOneVideo;
 ?>
