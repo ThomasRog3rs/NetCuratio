@@ -9,3 +9,14 @@ C:\Users\matth\source\repos\NetCuratio\NetCuratio_ServiceLayer\obj\Debug\NetCura
 C:\Users\matth\source\repos\NetCuratio\NetCuratio_ServiceLayer\obj\Debug\NetCuratio_ServiceLayer.csproj.CopyComplete
 C:\Users\matth\source\repos\NetCuratio\NetCuratio_ServiceLayer\obj\Debug\NetCuratio_ServiceLayer.dll
 C:\Users\matth\source\repos\NetCuratio\NetCuratio_ServiceLayer\obj\Debug\NetCuratio_ServiceLayer.pdb
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NetCuratio_ServiceLayer.dll
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NetCuratio_ServiceLayer.pdb
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NetCuratio_CommonLayer.dll
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NetCuratio_DataAccessLayer.dll
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NetCuratio_CommonLayer.pdb
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NetCuratio_DataAccessLayer.pdb
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Debug\NetCuratio_ServiceLayer.csprojAssemblyReference.cache
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Debug\NetCuratio_ServiceLayer.csproj.CoreCompileInputs.cache
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Debug\NetCuratio_ServiceLayer.csproj.CopyComplete
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Debug\NetCuratio_ServiceLayer.dll
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Debug\NetCuratio_ServiceLayer.pdb

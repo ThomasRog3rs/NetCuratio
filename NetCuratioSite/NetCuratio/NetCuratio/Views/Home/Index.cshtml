@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-lg-6 pr-0">
                     <h2>Your friendly neighbourhood web developers</h2>
-                    <p><span><label class="text-accent">@ViewBag.CatchPhrase</label></span> Get your business online today for as little as <span><label class="text-accent">£19.99/month</label></span>. That's half the price of your average monthly phone bill. Not bad, hey!</p>
+                    <p><span class="text-accent">@ViewBag.CatchPhrase</span> Get your business online today for as little as <span class="text-accent">£19.99/month</span>. That's half the price of your average monthly phone bill. Not bad, hey!</p>
                     <a href="#services-section" class="site-btn">Start your journey</a>
                 </div>
             </div>
@@ -32,13 +32,22 @@
             <h2>We'll help you create an online presence to be remembered</h2>
         </div>
         <div class="row">
-            <div class="col-lg-6 col-md-12 feature-item">
+            <div class="col-lg-6 col-md-12 feature-item u-text-left u-small-text-center">
                 <p>We understand how daunting it can be trying to establish yourself online. With so much competition, it can be frustrating trying to carve out your own space on the web. </p>
                 <p>At Net Curatio, we are here to help you create an impactful online presence by designing you a website that achieves the four key tennants of attracting and keeping victors. </p>
-                <p>1. Your website will have a clear direction and purpose.</p>
+                <p>
+                    <ol>
+                        <li>Your website will have a clear direction and purpose.</li>
+                        <li>Your website will deliver your brand message in a positive and focused way.</li>
+                        <li>Your website will deliver value to the visitors immediately.</li>
+                        <li>Your website will be visually appealing and engage users straight away.</li>
+                    </ol>
+                </p>
+
+                @*<p>1. Your website will have a clear direction and purpose.</p>
                 <p>2. Your website will deliver your brand message in a positive and focused way.</p>
                 <p>3. Your website will deliver value to the visitors immediately.</p>
-                <p>4. Your website will be visually appealing and engage users straight away.</p>
+                <p>4. Your website will be visually appealing and engage users straight away.</p>*@
             </div>
             <div class="col-lg-6 col-md-12 feature-item">
                 <div class="image-box">
@@ -53,7 +62,7 @@
 <section class="banner-section set-bg" data-setbg="../Content/img/banner-bg.jpg">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9 banner-text text-white">
+            <div class="col-lg-9 banner-text text-white u-margin-bottom">
                 <h3>Bespoke website, hosting, and maintenance for as little as £19.99/month</h3>
             </div>
             <div class="col-lg-3 text-left text-lg-right">
@@ -79,7 +88,7 @@
                 <h4>No upfront cost</h4>
                 <p>Save thousands on upfront development costs and on going maintenance. Get your business online with no risk.  </p>
             </div>
-            <div class="col-lg-4 col-md-6 feature-item fi-center-top">
+            <div class="col-lg-4 col-md-6 feature-item">
                 <div class="ft-icon">
                     <i class="far fa-money-bill-alt"></i>
                 </div>
@@ -131,7 +140,7 @@
             {
                 @Html.AntiForgeryToken()
                 @Html.TextBoxFor(x => x.Email, new { placeholder = Html.DisplayNameFor(x => x.Email).ToHtmlString(), @class = "mb-1" })
-                <button class="site-btn">Join</button>
+                <button class="site-btn" type="submit">Join</button>
                 <div>
                     @Html.ValidationMessageFor(m => m.Email, null, new { @class = "pt-1" })
                 </div>
@@ -155,7 +164,8 @@
                         <h4>Basic Plan</h4>
                     </div>
                     <div class="pricing-body">
-                        <h2>£19.99<span>/Month</span></h2>
+                        <h2>£19.99</h2>
+                        <span>per month</span>
                         <ul>
                             <li>No upfront costs</li>
                             <li>Bespoke website</li>
@@ -175,7 +185,8 @@
                         <h4>STAR Plan</h4>
                     </div>
                     <div class="pricing-body">
-                        <h2>£39.99<span>/Month</span></h2>
+                        <h2>£39.99</h2>
+                        <span>per month</span>
                         <ul>
                             <li>No upfront costs</li>
                             <li>Bespoke website</li>
@@ -195,7 +206,8 @@
                         <h4>VIP Plan</h4>
                     </div>
                     <div class="pricing-body">
-                        <h2>£29.99<span>/Month</span></h2>
+                        <h2>£29.99</h2>
+                        <span>per month</span>
                         <ul>
                             <li>No upfront costs</li>
                             <li>Bespoke website</li>
@@ -207,6 +219,7 @@
                         </ul>
                         <a href="@Url.Action("RegisterInterest", "Home", new { packageCode = "Vip" })" class="site-btn">Get Plan</a>
                     </div>
+                    
                 </div>
             </div>
         </div>

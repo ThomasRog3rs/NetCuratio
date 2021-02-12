@@ -7,3 +7,12 @@ C:\Users\matth\source\repos\NetCuratio\NetCuratio_DataAccessLayer\obj\Debug\NetC
 C:\Users\matth\source\repos\NetCuratio\NetCuratio_DataAccessLayer\obj\Debug\NetCuratio_DataAccessLayer.csproj.CopyComplete
 C:\Users\matth\source\repos\NetCuratio\NetCuratio_DataAccessLayer\obj\Debug\NetCuratio_DataAccessLayer.dll
 C:\Users\matth\source\repos\NetCuratio\NetCuratio_DataAccessLayer\obj\Debug\NetCuratio_DataAccessLayer.pdb
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\bin\Debug\NetCuratio_DataAccessLayer.dll
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\bin\Debug\NetCuratio_DataAccessLayer.pdb
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\bin\Debug\NetCuratio_CommonLayer.dll
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\bin\Debug\NetCuratio_CommonLayer.pdb
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\obj\Debug\NetCuratio_DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\obj\Debug\NetCuratio_DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\obj\Debug\NetCuratio_DataAccessLayer.csproj.CopyComplete
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\obj\Debug\NetCuratio_DataAccessLayer.dll
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\obj\Debug\NetCuratio_DataAccessLayer.pdb
