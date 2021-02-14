@@ -58,18 +58,18 @@ $(window).on('load', function () {
         Gallery
     --------------------*/
 
-    $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
-    });
+    //$(".fancybox").fancybox({
+    //    openEffect: "none",
+    //    closeEffect: "none"
+    //});
 
-    $(".zoom").hover(function () {
+    //$(".zoom").hover(function () {
 
-        $(this).addClass('transition');
-    }, function () {
+    //    $(this).addClass('transition');
+    //}, function () {
 
-        $(this).removeClass('transition');
-    });
+    //    $(this).removeClass('transition');
+    //});
 
     /*------------------
         Testimonials

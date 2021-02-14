@@ -107,12 +107,12 @@ ol {
     margin-bottom: 20px !important;
 }
 
-.pricing-body h2{
+.pricing-body h2 {
     margin-bottom: 10px !important;
 }
 
 .pricing-body span {
-    color:#585858;
+    color: #585858;
 }
 
 .pricing-body ul {
@@ -126,6 +126,17 @@ ol {
     width: 100%;
 }
 
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23eb2b63' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23eb2b63' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-inner > a {
+    color: red !important;
+}
 /*---------------------
   Image box CSS
 -----------------------*/
@@ -817,7 +828,7 @@ textarea.input-validation-error {
 
 .feature-item {
     text-align: center;
-    margin-bottom: 55px;
+    /*margin-bottom: 55px;*/
 }
 
     .feature-item .ft-icon {
@@ -1226,8 +1237,8 @@ textarea.input-validation-error {
 }
 
 .page-top-section {
-    height: 506px;
-    padding-top: 215px;
+    height: 450px;
+    padding-top: 120px;
 }
 
     .page-top-section h2 {
@@ -1921,7 +1932,11 @@ textarea.input-validation-error {
         }
 }
 
+
+
 /* === Custom media querys ===*/
+
+
 @media (max-width: 990px) {
     div.section-title {
         margin-bottom: 105px;
@@ -1933,6 +1948,35 @@ textarea.input-validation-error {
 
     h2 {
         font-size: 40px !important;
+    }
+
+    .page-top-section {
+        max-height: 300px;
+    }
+
+    .page-top-section h2 {
+        font-size: 20px !important;
+    }
+
+    .about-section h3{
+        margin-bottom: 1.5rem;
+    }
+
+    .about-section p {
+        margin-bottom: 1.5rem;
+    }
+
+    #carouselExampleControls{
+        max-height: 380px;
+    }
+
+    .team-section .section-title{
+        margin-bottom: 75px !important;
+    }
+
+    .team-section.spad {
+        padding-top: 90px !important;
+        padding-bottom: 75px !important;
     }
 }
 
@@ -1971,14 +2015,22 @@ textarea.input-validation-error {
 }
 
 @media (max-width: 479px) {
-    form.domain-search-form > input#Email{
+    form.domain-search-form > input#Email {
         margin-bottom: 25px !important;
     }
 
-    form.domain-search-form > button.site-btn{
+    form.domain-search-form > button.site-btn {
         display: block !important;
         width: 100% !important;
     }
+
+    .page-top-section {
+        max-height: 300px;
+    }
+
+        .page-top-section h2 {
+            font-size: 20px !important;
+        }
 }
 
 @media (max-width: 435px) {
@@ -2008,5 +2060,13 @@ textarea.input-validation-error {
     .spad {
         padding-top: 60px;
         padding-bottom: 60px;
+    }
+
+    .page-top-section {
+        max-height: 300px;
+    }
+
+    .page-top-section h2 {
+        font-size: 20px !important;
     }
 }
