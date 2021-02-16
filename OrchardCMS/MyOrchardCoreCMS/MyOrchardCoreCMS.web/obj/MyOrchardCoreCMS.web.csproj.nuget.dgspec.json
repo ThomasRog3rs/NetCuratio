@@ -45,6 +45,10 @@
             "OrchardCore.Application.Cms.Targets": {
               "target": "Package",
               "version": "[1.0.0-rc1-13433, )"
+            },
+            "OrchardCore.Logging.NLog": {
+              "target": "Package",
+              "version": "[1.0.0-rc2-13450, )"
             }
           },
           "imports": [
