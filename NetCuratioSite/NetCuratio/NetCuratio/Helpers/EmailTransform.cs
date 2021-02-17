@@ -51,7 +51,7 @@ namespace NetCuratio.Helpers
 
             email.From = "netcuratio@gmail.com";
             email.To.Add("matthewajc@outlook.com");
-            //email.To.Add("thomasrogerswebdev@gmail.com");
+            email.To.Add("thomasrogerswebdev@gmail.com");
 
             email.Subject = "Customer signed up to mailing list.";
 

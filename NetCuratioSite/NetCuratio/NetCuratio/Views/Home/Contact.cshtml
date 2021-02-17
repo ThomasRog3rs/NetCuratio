@@ -18,31 +18,47 @@
                 @using (Html.BeginForm("Contact", "Home", FormMethod.Post, new { @class = "contact-form", enctype = "multipart/form-data" }))
                 {
                     @Html.AntiForgeryToken()
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    @Html.TextBoxFor(x => x.SendersName, new { placeholder = Html.DisplayNameFor(x => x.SendersName).ToHtmlString(), @class = "mb-1" })
-                    @Html.ValidationMessageFor(m => m.SendersName, null, new { @class = "pt-1" })
-                </div>
-                <div class="col-md-6 mb-4">
-                    @Html.TextBoxFor(x => x.SendersEmail, new { placeholder = Html.DisplayNameFor(x => x.SendersEmail).ToHtmlString(), @class = "mb-1" })
-                    @Html.ValidationMessageFor(m => m.SendersEmail, null, new { @class = "pt-1" })
-                </div>
-                <div class="col-md-12 mb-4">
-                    @Html.TextBoxFor(x => x.Subject, new { placeholder = Html.DisplayNameFor(x => x.Subject).ToHtmlString(), @class = "mb-1" })
-                    @Html.ValidationMessageFor(m => m.Subject)
-                </div>
-                <div class="col-md-12 mb-4">
-                    @Html.TextAreaFor(x => x.Message, new { placeholder = Html.DisplayNameFor(x => x.Message).ToHtmlString(),  @class = "mb-0" })
-                    @Html.ValidationMessageFor(m => m.Message)
-                </div>
-                <div class="col-md-12">
-                    <button class="site-btn float-right">Send</button>
-                </div>
-            </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            @Html.TextBoxFor(x => x.SendersName, new { placeholder = Html.DisplayNameFor(x => x.SendersName).ToHtmlString(), @class = "mb-1" })
+                            @Html.ValidationMessageFor(m => m.SendersName, null, new { @class = "pt-1" })
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            @Html.TextBoxFor(x => x.SendersEmail, new { placeholder = Html.DisplayNameFor(x => x.SendersEmail).ToHtmlString(), @class = "mb-1" })
+                            @Html.ValidationMessageFor(m => m.SendersEmail, null, new { @class = "pt-1" })
+                        </div>
+                        <div class="col-md-12 mb-4">
+                            @Html.TextBoxFor(x => x.Subject, new { placeholder = Html.DisplayNameFor(x => x.Subject).ToHtmlString(), @class = "mb-1" })
+                            @Html.ValidationMessageFor(m => m.Subject)
+                        </div>
+                        <div class="col-md-12 mb-4">
+                            @Html.TextAreaFor(x => x.Message, new { placeholder = Html.DisplayNameFor(x => x.Message).ToHtmlString(), @class = "mb-0" })
+                            @Html.ValidationMessageFor(m => m.Message)
+                        </div>
+                        <div class="col-md-12">
+                            <button class="site-btn float-right">Send</button>
+                        </div>
+                        @if (ViewBag.ShowSuccessMessage == true)
+                        {
+                            <div class="col-md-12">
+                                <div class="alert alert-success mt-5 w-100" id="sign-up-success" role="alert">
+                                    Thank you for contacting us! We will respond to your message as soon as we can.
+                                </div>
+                            </div>
+                        }
+                    </div>
                 }
-
             </div>
         </div>
     </div>
 </section>
 <!-- Contact section end -->
+@if (ViewBag.Section != null)
+{
+    <script>
+    document.onload = (function () {
+        var anchor = document.querySelector('#email-sign-up');
+        anchor.scrollIntoView();
+    })();
+    </script>
+}

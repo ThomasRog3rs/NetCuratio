@@ -118,6 +118,11 @@ ol {
 .pricing-body ul {
     margin-top: 50px !important;
 }
+
+.contact-alert{
+    margin: 0px 20px;
+}
+
 /*---------------------
   Carousel CSS
 -----------------------*/
@@ -1628,6 +1633,9 @@ textarea.input-validation-error {
 /* Tablet :768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .about-section a{
+        margin-bottom: 35px;
+    }
     .user-panel {
         margin-left: 30px;
         margin-right: 20px;

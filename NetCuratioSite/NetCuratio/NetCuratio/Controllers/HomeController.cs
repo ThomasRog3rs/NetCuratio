@@ -15,7 +15,7 @@ namespace NetCuratio.Controllers
         public ActionResult Index()
         {
             ViewBag.CatchPhrase = PhrasesAndMessagesModel.CatchPhrase;
-            ViewBag.ValidEmail = true;
+            ViewBag.ShowSuccessMessage = false;
 
             var model = new EmailSignUpModel();
             return View(model);
@@ -32,6 +32,7 @@ namespace NetCuratio.Controllers
         public ActionResult Services()
         {
             ViewBag.CatchPhrase = PhrasesAndMessagesModel.CatchPhrase;
+            ViewBag.ShowSuccessMessage = false;
 
             return View();
         }
@@ -40,6 +41,7 @@ namespace NetCuratio.Controllers
         public ActionResult Contact()
         {
             ViewBag.CatchPhrase = PhrasesAndMessagesModel.CatchPhrase;
+            ViewBag.ShowSuccessMessage = false;
 
             var model = new ContactViewModel();
 
@@ -58,12 +60,13 @@ namespace NetCuratio.Controllers
 
                 emailService.SendEmail(email);
 
-                var thanksMessage = PhrasesAndMessagesModel.ContactThanksMessage;
+                ViewBag.ShowSuccessMessage = true;
 
-                return RedirectToAction("Thanks", "Home", new { message = thanksMessage });
+                return View("Contact"); 
             }
             else
             {
+                ViewBag.ShowSuccessMessage = false;
                 return View("Contact", model);
             }
         }
@@ -78,6 +81,7 @@ namespace NetCuratio.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult RegisterInterest(RegisterInterestViewModel model)
         {
             if (ModelState.IsValid)
@@ -88,9 +92,7 @@ namespace NetCuratio.Controllers
 
                 emailService.SendEmail(email);
 
-                var thanksMessage = PhrasesAndMessagesModel.RegisterInterestThanksMessage;
-
-                return RedirectToAction("Thanks",  "Home", new { message = thanksMessage });
+                return RedirectToAction("Thanks",  "Home");
             }
 
             else
@@ -100,6 +102,7 @@ namespace NetCuratio.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult EmailSignUp(EmailSignUpModel model)
         {
             if (ModelState.IsValid)
@@ -108,22 +111,23 @@ namespace NetCuratio.Controllers
 
                 var email = new EmailTransform().TransformEmailSignUp(model);
 
+                ViewBag.ShowSuccessMessage = true;
+                ViewBag.Section = "register";
+
                 emailService.SendEmail(email);
 
-                var thanksMessage = PhrasesAndMessagesModel.EmailSignUpThanksMessage;
-
-                return RedirectToAction("Thanks", "Home", new { message = thanksMessage });
+                return View("Index");
             }
             else
             {
-                ViewBag.ValidEmail = false;
+                ViewBag.ShowSuccessMessage = false;
+
                 return View("Index");
             }
         }
 
-        public ActionResult Thanks(string message)
+        public ActionResult Thanks()
         {
-            ViewBag.ThanksMessage = message;
 
             return View();
         }
