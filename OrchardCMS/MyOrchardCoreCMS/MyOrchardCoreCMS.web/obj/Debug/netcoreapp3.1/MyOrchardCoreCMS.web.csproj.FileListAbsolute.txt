@@ -665,3 +665,8 @@ C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\OrchardCMS\MyOrchardCoreCMS\
 C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\OrchardCMS\MyOrchardCoreCMS\MyOrchardCoreCMS.web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\OrchardCMS\MyOrchardCoreCMS\MyOrchardCoreCMS.web\obj\Debug\netcoreapp3.1\MyOrchardCoreCMS.web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\OrchardCMS\MyOrchardCoreCMS\MyOrchardCoreCMS.web\obj\Debug\netcoreapp3.1\MyOrchardCoreCMS.web.csproj.CopyComplete
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\OrchardCMS\MyOrchardCoreCMS\MyOrchardCoreCMS.web\bin\Debug\netcoreapp3.1\NLog.config
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\OrchardCMS\MyOrchardCoreCMS\MyOrchardCoreCMS.web\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\OrchardCMS\MyOrchardCoreCMS\MyOrchardCoreCMS.web\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\OrchardCMS\MyOrchardCoreCMS\MyOrchardCoreCMS.web\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\OrchardCMS\MyOrchardCoreCMS\MyOrchardCoreCMS.web\bin\Debug\netcoreapp3.1\OrchardCore.Logging.NLog.dll
