@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\matth\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\app.publish\</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/NetCuratio.dll">
+      <publishTime>02/17/2021 18:33:48</publishTime>
+    </File>
+    <File Include="bin/NetCuratio.pdb">
+      <publishTime>02/17/2021 18:33:48</publishTime>
+    </File>
+    <File Include="bin/NetCuratio_CommonLayer.dll">
+      <publishTime>02/17/2021 18:33:46</publishTime>
+    </File>
+    <File Include="bin/NetCuratio_CommonLayer.pdb">
+      <publishTime>02/17/2021 18:33:46</publishTime>
+    </File>
+    <File Include="bin/NetCuratio_DataAccessLayer.dll">
+      <publishTime>02/17/2021 18:33:47</publishTime>
+    </File>
+    <File Include="bin/NetCuratio_DataAccessLayer.pdb">
+      <publishTime>02/17/2021 18:33:47</publishTime>
+    </File>
+    <File Include="bin/NetCuratio_ServiceLayer.dll">
+      <publishTime>02/17/2021 18:33:47</publishTime>
+    </File>
+    <File Include="bin/NetCuratio_ServiceLayer.pdb">
+      <publishTime>02/17/2021 18:33:47</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Buffers.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Memory.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Numerics.Vectors.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>02/14/2021 15:40:04</publishTime>
+    </File>
+    <File Include="Content/css/animate.css">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.min.css">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/css/flaticon.css">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/css/font-awesome.min.css">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/css/owl.carousel.min.css">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/css/style.css">
+      <publishTime>02/17/2021 00:14:53</publishTime>
+    </File>
+    <File Include="Content/icon-fonts/Flaticon.eot">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/icon-fonts/Flaticon.svg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/icon-fonts/Flaticon.ttf">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/icon-fonts/Flaticon.woff">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/icon-fonts/fontawesome-webfont.eot">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/icon-fonts/fontawesome-webfont.svg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/icon-fonts/fontawesome-webfont.woff">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/icon-fonts/fontawesome-webfont.woff2">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/about.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/add.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/banner-bg.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/bg.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/blog/1.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/blog/2.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/blog/3.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/client-logo.png">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/domain-bg.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/faq.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/favicon.png">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/footer-thumb/1.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/footer-thumb/2.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/footer-thumb/3.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/icons/1.png">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/icons/2.png">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/icons/3.png">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/KRWelnessPreview1.PNG">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/KRWelnessPreview2.PNG">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/KRWelnessPreview3.PNG">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/logo.png">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/map-marker.png">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/milestones-bg.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/NaxianCastlePreview1.PNG">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/NaxianCastlePreview2.PNG">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/NaxianCastlePreview3.PNG">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/page-top-bg.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/review/1.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/rocket.png">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/section-title-icon.png">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/service.png">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/TalkNHealPreview1.PNG">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/TalkNHealPreview2.PNG">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/team/1.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/team/2.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/team/3.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Content/img/team/4.jpg">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>02/14/2021 15:40:03</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Scripts/js/bootstrap.min.js">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Scripts/js/circle-progress.min.js">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Scripts/js/jquery-3.2.1.min.js">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Scripts/js/main.js">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Scripts/js/map.js">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Scripts/js/owl.carousel.min.js">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Account/ConfirmEmail.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginFailure.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPassword.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPasswordConfirmation.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Account/ResetPassword.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Account/ResetPasswordConfirmation.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Account/SendCode.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Account/VerifyCode.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>02/17/2021 00:09:57</publishTime>
+    </File>
+    <File Include="Views/Home/Blog.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>02/17/2021 00:00:51</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>02/17/2021 00:15:29</publishTime>
+    </File>
+    <File Include="Views/Home/RegisterInterest.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Home/Services.cshtml">
+      <publishTime>02/17/2021 00:15:29</publishTime>
+    </File>
+    <File Include="Views/Home/Thanks.cshtml">
+      <publishTime>02/16/2021 23:49:43</publishTime>
+    </File>
+    <File Include="Views/Manage/AddPhoneNumber.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Manage/ChangePassword.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Manage/Index.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Manage/ManageLogins.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Manage/SetPassword.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Manage/VerifyPhoneNumber.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Shared/Lockout.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>02/14/2021 15:40:02</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/17/2021 18:33:49</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
