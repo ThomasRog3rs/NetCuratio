@@ -6,7 +6,7 @@
 
 
 <!-- Hero section -->
-<section class="hero-section set-bg" data-setbg="../Content/img/bg.jpg">
+<section class="hero-section set-bg" data-setbg="@Url.Content("~/Content/img/bg.jpg")">
     <div class="container h-100">
         <div class="hero-content text-white">
             <div class="row">
@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="hero-rocket">
-                <img src="../Content/img/rocket.png" alt="Rocket">
+                <img src="@Url.Content("~/Content/img/rocket.png")" alt="Rocket">
             </div>
         </div>
     </div>
@@ -27,7 +27,7 @@
 <section class="features-section spad">
     <div class="container">
         <div class="section-title">
-            <img src="../Content/img/section-title-icon.png" alt="#">
+            <img src="@Url.Content("~/Content/img/section-title-icon.png")" alt="Rocket icon">
             <p>@ViewBag.CatchPhrase</p>
             <h2>We'll help you create an online presence to be remembered</h2>
         </div>
@@ -49,15 +49,9 @@
                     <p>3. Your website will deliver value to the visitors immediately.</p>
                     <p>4. Your website will be visually appealing and engage users straight away.</p>*@
             </div>
-<<<<<<< HEAD
-            <div class="col-lg-6 col-md-12 feature-item mb-4">
-                <div class="">
-                    <img style="max-height:350px; width:auto" src="~/Content/img/Startup_PNG.png" />
-=======
             <div class="col-lg-6 col-md-12 feature-item">
                 <div>
-                    <img src="~/Content/img/Startup_PNG.png" style="max-height:350px; width:auto" alt="Start up image" />
->>>>>>> 84bd3ee86687e71b28ac29ac01ace7586b9df75c
+                    <img src="@Url.Content("~/Content/img/Startup_PNG.png")" style="max-height:350px; width:auto" alt="Start up image" />
                 </div>
             </div>
         </div>
@@ -65,7 +59,7 @@
 </section>
 <!-- Features section end -->
 <!-- Banner section -->
-<section class="banner-section set-bg mt-4" data-setbg="../Content/img/banner-bg.jpg">
+<section class="banner-section set-bg mt-4" data-setbg="@Url.Content("~/Content/img/banner-bg.jpg")">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 banner-text text-white u-margin-bottom">
@@ -82,7 +76,7 @@
 <section class="features-section spad">
     <div class="container">
         <div class="section-title">
-            <img src="../Content/img/section-title-icon.png" alt="#">
+            <img src="@Url.Content("~/Content/img/section-title-icon.png")" alt="#">
             <p>@ViewBag.CatchPhrase</p>
             <h2>We'll make it as easy as possible for you</h2>
         </div>
@@ -134,10 +128,10 @@
 </section>
 <!-- Features section end -->
 <!-- Sign up section -->
-<section class="domain-search-section spad set-bg" data-setbg="../Content/img/domain-bg.jpg" id="email-sign-up">
+<section class="domain-search-section spad set-bg" data-setbg="@Url.Content("~/Content/img/domain-bg.jpg")" id="email-sign-up">
     <div class="container">
         <div class="section-title st-white">
-            <img src="../Content/img/section-title-icon.png" alt="Space Background">
+            <img src="@Url.Content("~/Content/img/section-title-icon.png")" alt="Space Background">
             <p>@ViewBag.CatchPhrase</p>
             <h2>Ready for a website that is out of this world?</h2>
         </div>
@@ -165,7 +159,7 @@
 <section class="pricing-section spad pt-0 mt-5">
     <div class="container h-100">
         <div class="section-title">
-            <img src="../Content/img/section-title-icon.png" alt="Rocket Icon">
+            <img src="@Url.Content("~/Content/img/section-title-icon.png")" alt="Rocket Icon">
             <p>@ViewBag.CatchPhrase</p>
             <h2 id="services-section">Chose the perfect plan for you</h2>
         </div>
