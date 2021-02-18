@@ -1,0 +1,9 @@
+C:\Users\matth\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\bin\Release\NetCuratio_DataAccessLayer.dll
+C:\Users\matth\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\bin\Release\NetCuratio_DataAccessLayer.pdb
+C:\Users\matth\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\bin\Release\NetCuratio_CommonLayer.dll
+C:\Users\matth\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\bin\Release\NetCuratio_CommonLayer.pdb
+C:\Users\matth\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\obj\Release\NetCuratio_DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\matth\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\obj\Release\NetCuratio_DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\matth\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\obj\Release\NetCuratio_DataAccessLayer.csproj.CopyComplete
+C:\Users\matth\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\obj\Release\NetCuratio_DataAccessLayer.dll
+C:\Users\matth\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\obj\Release\NetCuratio_DataAccessLayer.pdb

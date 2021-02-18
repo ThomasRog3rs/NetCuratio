@@ -1,0 +1,244 @@
+﻿@model NetCuratio.Models.EmailSignUpModel
+@{
+    ViewBag.Title = "Home Page";
+
+}
+
+
+<!-- Hero section -->
+<section class="hero-section set-bg" data-setbg="../Content/img/bg.jpg">
+    <div class="container h-100">
+        <div class="hero-content text-white">
+            <div class="row">
+                <div class="col-lg-6 pr-0">
+                    <h2>Your friendly neighbourhood web developers</h2>
+                    <p><span class="text-accent">@ViewBag.CatchPhrase</span> Get your business online today for as little as <span class="text-accent">£19.99/month</span>. That's half the price of your average monthly phone bill. Not bad, hey!</p>
+                    <a href="#services-section" class="site-btn">Start your journey</a>
+                </div>
+            </div>
+            <div class="hero-rocket">
+                <img src="../Content/img/rocket.png" alt="Rocket">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero section end -->
+<!-- Features section -->
+<section class="features-section spad">
+    <div class="container">
+        <div class="section-title">
+            <img src="../Content/img/section-title-icon.png" alt="#">
+            <p>@ViewBag.CatchPhrase</p>
+            <h2>We'll help you create an online presence to be remembered</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 feature-item u-text-left u-small-text-center">
+                <p>We understand how daunting it can be trying to establish yourself online. With so much competition, it can be frustrating trying to carve out your niche on the web.</p>
+                <p>At Net Curatio, we specialise in helping small businesses excel in the digital world. We thrive on helping our customers establish a truly impactful online presence. We live to create memorable and engaging experiences on the web. </p>          
+                    <ol>
+                        <li>We will help you create a clear and concise direction for your site.</li>
+                        <li>Your website will deliver your brand message in a positive and focused way.</li>
+                        <li>Your website will deliver value to visitors immediately.</li>
+                        <li>Your website will be visually appealing and engage your users.</li>
+                        <li>We will help you capitalize on your online presence and grow your business. </li>
+                    </ol>
+                </p>
+
+                @*<p>1. Your website will have a clear direction and purpose.</p>
+                    <p>2. Your website will deliver your brand message in a positive and focused way.</p>
+                    <p>3. Your website will deliver value to the visitors immediately.</p>
+                    <p>4. Your website will be visually appealing and engage users straight away.</p>*@
+            </div>
+            <div class="col-lg-6 col-md-12 feature-item">
+                <div>
+                    <img src="~/Content/img/Startup_PNG.png" style="max-height:350px; width:auto" alt="Start up image" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Features section end -->
+<!-- Banner section -->
+<section class="banner-section set-bg mt-4" data-setbg="../Content/img/banner-bg.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 banner-text text-white u-margin-bottom">
+                <h3>Bespoke website, hosting, and maintenance for as little as £19.99/month</h3>
+            </div>
+            <div class="col-lg-3 text-left text-lg-right">
+                <a href="#services-section" class="site-btn">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Banner section end -->
+<!-- Features section -->
+<section class="features-section spad">
+    <div class="container">
+        <div class="section-title">
+            <img src="../Content/img/section-title-icon.png" alt="#">
+            <p>@ViewBag.CatchPhrase</p>
+            <h2>We'll make it as easy as possible for you</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 feature-item">
+                <div class="ft-icon">
+                    <i class="fas fa-pound-sign"></i>
+                </div>
+                <h4>No upfront cost</h4>
+                <p>Save thousands on upfront development costs and ongoing maintenance. Get your business online with no risk.  </p>
+            </div>
+            <div class="col-lg-4 col-md-6 feature-item">
+                <div class="ft-icon">
+                    <i class="far fa-money-bill-alt"></i>
+                </div>
+                <h4>Cost-effective</h4>
+                <p>Our subscription model is the most cost-effective way to get your business online. Everything you need in one very reasonable monthly fee. </p>
+            </div>
+            <div class="col-lg-4 col-md-6 feature-item">
+                <div class="ft-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h4>Free hosting</h4>
+                <p>Our packages come with everything you need to keep your business online. This includes hosting, maintenance, and security. </p>
+            </div>
+            <div class="col-lg-4 col-md-6 feature-item">
+                <div class="ft-icon">
+                    <i class="far fa-clock"></i>
+                </div>
+                <h4>24/7 Support</h4>
+                <p>We make sure that your website is always in working order by providing 24/7 support. Never miss out on a potential customer again.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 feature-item">
+                <div class="ft-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h4>Boost your revenue</h4>
+                <p>Our data-driven design approach has a proven record in boosting revenue. We specialise in converting visitors to customers. </p>
+            </div>
+            <div class="col-lg-4 col-md-6 feature-item">
+                <div class="ft-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h4>SEO optimised</h4>
+                <p>We develop sites that are Search Engine Optimised. This means that your site will look good in the eyes of Google and rank higher as a result.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Features section end -->
+<!-- Sign up section -->
+<section class="domain-search-section spad set-bg" data-setbg="../Content/img/domain-bg.jpg" id="email-sign-up">
+    <div class="container">
+        <div class="section-title st-white">
+            <img src="../Content/img/section-title-icon.png" alt="Space Background">
+            <p>@ViewBag.CatchPhrase</p>
+            <h2>Ready for a website that is out of this world?</h2>
+        </div>
+        <div class="domain-form-warp">
+            @using (Html.BeginForm("EmailSignUp", "Home", FormMethod.Post, new { @class = "domain-search-form", enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.TextBoxFor(x => x.Email, new { placeholder = Html.DisplayNameFor(x => x.Email).ToHtmlString(), @class = "mb-1" })
+                <button class="site-btn" type="submit">Join</button>
+                <div>
+                    @Html.ValidationMessageFor(m => m.Email, null, new { @class = "pt-1" })
+                </div>
+                if (ViewBag.ShowSuccessMessage == true)
+                {
+                    <div class="alert alert-success mt-3" id="sign-up-success" role="alert">
+                        Thank you for joining our mailing list.
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</section>
+<!-- Sign up section end -->
+<!-- Pricing section -->
+<section class="pricing-section spad pt-0 mt-5">
+    <div class="container h-100">
+        <div class="section-title">
+            <img src="../Content/img/section-title-icon.png" alt="Rocket Icon">
+            <p>@ViewBag.CatchPhrase</p>
+            <h2 id="services-section">Chose the perfect plan for you</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-8 offset-md-2 offset-lg-0 h-100">
+                <div class="pricing-plan flex-grow-1">
+                    <div class="pricing-title">
+                        <h4>Basic Plan</h4>
+                    </div>
+                    <div class="pricing-body">
+                        <h2>£19.99</h2>
+                        <span>per month</span>
+                        <ul>
+                            <li>No upfront costs</li>
+                            <li>Bespoke website</li>
+                            <li>Free hosting</li>
+                            <li>20 monthly support credits</li>
+                            <li>24/7 security monitoring</li>
+                            <li>10GB storage</li>
+                            <li>20GB bandwith</li>
+                        </ul>
+                        <a href="@Url.Action("RegisterInterest", "Home", new { packageCode = "Basic" })" class="site-btn">Get Plan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-8 offset-md-2 offset-lg-0 h-100">
+                <div class="pricing-plan gold-plan flex-grow-1">
+                    <div class="pricing-title">
+                        <h4>STAR Plan</h4>
+                    </div>
+                    <div class="pricing-body">
+                        <h2>£39.99</h2>
+                        <span>per month</span>
+                        <ul>
+                            <li>No upfront costs</li>
+                            <li>Bespoke website</li>
+                            <li>Free hosting</li>
+                            <li>100 monthly support credits</li>
+                            <li>24/7 security monitoring</li>
+                            <li>20GB storage</li>
+                            <li>Unlimited bandwith</li>
+                        </ul>
+                        <a href="@Url.Action("RegisterInterest", "Home", new { packageCode = "Star" })" class="site-btn">Get Plan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-8 offset-md-2 offset-lg-0 h-100">
+                <div class="pricing-plan flex-grow-1">
+                    <div class="pricing-title">
+                        <h4>VIP Plan</h4>
+                    </div>
+                    <div class="pricing-body">
+                        <h2>£29.99</h2>
+                        <span>per month</span>
+                        <ul>
+                            <li>No upfront costs</li>
+                            <li>Bespoke website</li>
+                            <li>Free hosting</li>
+                            <li>400 anual support credits</li>
+                            <li>24/7 security monitoring</li>
+                            <li>15GB storage</li>
+                            <li>100GB bandwith</li>
+                        </ul>
+                        <a href="@Url.Action("RegisterInterest", "Home", new { packageCode = "Vip" })" class="site-btn">Get Plan</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pricing section end -->
+
+@if (ViewBag.Section != null)
+{
+<script>
+    document.onload = (function () {
+        var anchor = document.querySelector('#email-sign-up');
+        anchor.scrollIntoView();
+    })();
+</script>
+}
