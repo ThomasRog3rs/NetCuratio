@@ -17,6 +17,7 @@ namespace NetCuratio.Controllers
         {
             ViewBag.CatchPhrase = PhrasesAndMessagesModel.CatchPhrase;
             ViewBag.ShowSuccessMessage = false;
+            ViewBag.Plans = PlansModel.GetAllPlans();
 
             var model = new EmailSignUpModel();
             return View(model);

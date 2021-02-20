@@ -11,6 +11,7 @@ namespace NetCuratio_CommonLayer.Objects
         public static Plan BasicPlan = new Plan()
         {
             Price = "£19.99",
+            Name = "Basic",
             Features = new List<string>() {
                 "No upfront costs",
                 "Bespoke website",
@@ -25,6 +26,7 @@ namespace NetCuratio_CommonLayer.Objects
         public static Plan StarPlan = new Plan()
         {
             Price = "£39.99",
+            Name = "Star",
             Features = new List<string>() {
                 "No upfront costs", 
                 "Bespoke website", 
@@ -39,6 +41,7 @@ namespace NetCuratio_CommonLayer.Objects
         public static Plan VipPlan = new Plan()
         {
             Price = "£29.99",
+            Name = "Vip",
             Features = new List<string>() {
                 "No upfront costs",
                 "Bespoke website",
@@ -64,11 +67,16 @@ namespace NetCuratio_CommonLayer.Objects
                     return null;
             }
         }
+        public static List<Plan> GetAllPlans()
+        {
+            return new List<Plan>() { BasicPlan, StarPlan, VipPlan};
+        }
     }
 
     public class Plan
     {
         public string Price { get; set; }
+        public string Name { get; set; }
         public List<string> Features { get; set; }
     }
 }
