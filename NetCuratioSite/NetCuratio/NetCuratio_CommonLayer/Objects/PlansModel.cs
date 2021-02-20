@@ -49,7 +49,7 @@ namespace NetCuratio_CommonLayer.Objects
                 "40 monthly support credits",
                 "24/7 security monitoring",
                 "15GB storage",
-                "1000GB bandwith"
+                "100GB bandwith"
             }
         };
 

@@ -146,10 +146,10 @@
                 </div>
                 if (ViewBag.ShowSuccessMessage == true)
                 {
-                    <div class="alert alert-success mt-3" id="sign-up-success" role="alert">
+                    <div class="alert-box alert-box-success mt-3" id="sign-up-success" role="alert">
                         Thank you for joining our mailing list.
                     </div>
-                }
+            }
             }
         </div>
     </div>
@@ -163,72 +163,29 @@
             <p>@ViewBag.CatchPhrase</p>
             <h2 id="services-section">Chose the perfect plan for you</h2>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-8 offset-md-2 offset-lg-0 h-100">
-                <div class="pricing-plan flex-grow-1">
-                    <div class="pricing-title">
-                        <h4>Basic Plan</h4>
-                    </div>
-                    <div class="pricing-body">
-                        <h2>£19.99</h2>
-                        <span>per month</span>
-                        <ul>
-                            <li>No upfront costs</li>
-                            <li>Bespoke website</li>
-                            <li>Free hosting</li>
-                            <li>20 monthly support credits</li>
-                            <li>24/7 security monitoring</li>
-                            <li>10GB storage</li>
-                            <li>20GB bandwith</li>
-                        </ul>
-                        <a href="@Url.Action("RegisterInterest", "Home", new { packageCode = "Basic" })" class="site-btn">Get Plan</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-8 offset-md-2 offset-lg-0 h-100">
-                <div class="pricing-plan gold-plan flex-grow-1">
-                    <div class="pricing-title">
-                        <h4>STAR Plan</h4>
-                    </div>
-                    <div class="pricing-body">
-                        <h2>£39.99</h2>
-                        <span>per month</span>
-                        <ul>
-                            <li>No upfront costs</li>
-                            <li>Bespoke website</li>
-                            <li>Free hosting</li>
-                            <li>100 monthly support credits</li>
-                            <li>24/7 security monitoring</li>
-                            <li>20GB storage</li>
-                            <li>Unlimited bandwith</li>
-                        </ul>
-                        <a href="@Url.Action("RegisterInterest", "Home", new { packageCode = "Star" })" class="site-btn">Get Plan</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-8 offset-md-2 offset-lg-0 h-100">
-                <div class="pricing-plan flex-grow-1">
-                    <div class="pricing-title">
-                        <h4>VIP Plan</h4>
-                    </div>
-                    <div class="pricing-body">
-                        <h2>£29.99</h2>
-                        <span>per month</span>
-                        <ul>
-                            <li>No upfront costs</li>
-                            <li>Bespoke website</li>
-                            <li>Free hosting</li>
-                            <li>400 anual support credits</li>
-                            <li>24/7 security monitoring</li>
-                            <li>15GB storage</li>
-                            <li>100GB bandwith</li>
-                        </ul>
-                        <a href="@Url.Action("RegisterInterest", "Home", new { packageCode = "Vip" })" class="site-btn">Get Plan</a>
-                    </div>
+    <div class="row">
+        @foreach (var plan in ViewBag.Plans)
+        {
+        <div class="col-lg-4 col-md-8 offset-md-2 offset-lg-0 h-100">
 
+            <div class="pricing-plan flex-grow-1 @(plan.Name == "Star" ? "gold-plan" : "")">
+                <div class="pricing-title">
+                    <h4>@plan.Name Plan</h4>
+                </div>
+                <div class="pricing-body">
+                    <h2>@plan.Price</h2>
+                    <span>per month</span>
+                    <ul>
+                        @foreach (var detail in plan.Features) { 
+                            <li>@detail</li>
+                        }
+                    </ul>
+                    <a href="@Url.Action("RegisterInterest", "Home", new { packageCode = plan.Name })" class="site-btn">Get Plan</a>
                 </div>
             </div>
         </div>
+        }
+    </div>
     </div>
 </section>
 <!-- Pricing section end -->

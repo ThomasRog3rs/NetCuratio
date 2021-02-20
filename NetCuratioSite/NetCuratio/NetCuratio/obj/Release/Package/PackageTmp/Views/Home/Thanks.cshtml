@@ -3,15 +3,16 @@
 </section>
 <!-- Page Top section end -->
 <!-- Contact section -->
-<section class="full-height">
+<section class="spad">
     <div class="container h-90 mt-5">
-        <div class="text-center h-90">
-            <h1 class="display-3 mb-2">Thank You!</h1>
-            <hr class="MB-2"/>
-            <p class="lead mb-5">Thank you for registering your interest. Your Getting Started pack will be with you soon. This pack contains everything we need to know to get your project off the launch pad.</p>
-        </div>
         <div class="text-center">
-            <img src="@Url.Content("~/Content/img/blog/1.jpg")" class="mb-5" />
+            @*<i class="fas fa-rocket fa-4x icon-gradient mb-4"></i>*@
+            <div class="section-title">
+                <img src="@Url.Content("~/Content/img/rocket.png")" alt="Rocket" style="max-height: 200px">
+                <h2>Thanks for signing up!</h2>
+            </div>
+            <p class="lead mt-3 mb-5">Thank you for registering your interest. A member of our team will be in contact with you shortly. They will discuss your needs with you in more detail and send you a Getting Started pack. This pack contains everything we need to know to get your project off the launch pad.</p>
+            <a href="@Url.Action("Index","Home")" class="site-btn site-btn-lg">Go Home</a>
         </div>
     </div>
 </section>
