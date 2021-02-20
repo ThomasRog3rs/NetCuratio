@@ -1,5 +1,6 @@
 ﻿using NetCuratio.Helpers;
 using NetCuratio.Models;
+using NetCuratio_CommonLayer.Objects;
 using NetCuratio_ServiceLayer.IServices;
 using System;
 using System.Collections.Generic;
@@ -75,7 +76,26 @@ namespace NetCuratio.Controllers
         public ActionResult RegisterInterest(string packageCode)
         {
             var model = new RegisterInterestViewModel();
+            var plans = new PlansModel();
             model.SelectedPackage = packageCode;
+
+            switch (packageCode)
+            {
+                case "Basic":
+                    model.PackageDetails = plans.BasicPlan;
+                    model.PlanPrice = "£19.99";
+                    break;
+                case "Star":
+                    model.PackageDetails = plans.StarPlan;
+                    model.PlanPrice = "£39.99";
+                    break;
+                case "Vip":
+                    model.PackageDetails = plans.VipPlan;
+                    model.PlanPrice = "£29.99";
+                    break;
+                default:
+                    return RedirectToAction("Services", "Home");
+            }
 
             return View(model);
         }

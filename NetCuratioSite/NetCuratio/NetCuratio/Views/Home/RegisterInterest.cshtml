@@ -2,7 +2,6 @@
 
 <!-- Page Top section -->
 <section class="page-top-section-small set-bg" data-setbg="@Url.Content("~/Content/img/page-top-bg.jpg")">
-
 </section>
 <!-- Page Top section end -->
 <!-- Contact section -->
@@ -10,29 +9,84 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="section-title">Where should we send your 'Getting Started' pack to?</h2>
-
-                @using (Html.BeginForm("RegisterInterest", "Home", FormMethod.Post, new { @class = "contact-form", enctype = "multipart/form-data" }))
-                {
-                    @Html.AntiForgeryToken()
-                    @Html.HiddenFor(x => x.SelectedPackage)
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
-                            @Html.TextBoxFor(x => x.Name, new { placeholder = Html.DisplayNameFor(x => x.Name).ToHtmlString(), @class = "mb-1" })
-                            @Html.ValidationMessageFor(m => m.Name, null, new { @class = "pt-1" })
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            @Html.TextBoxFor(x => x.Email, new { placeholder = Html.DisplayNameFor(x => x.Email).ToHtmlString(), @class = "mb-1" })
-                            @Html.ValidationMessageFor(m => m.Email, null, new { @class = "pt-1" })
-                        </div>
-                        <div class="col-md-12 mb-4">
-                            <button class="site-btn float-right">Send</button>
-                        </div>
+                <h2 class="section-title">Thanks for choosing our @Model.SelectedPackage Plan </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="pricing-plan">
+                    <div class="pricing-title pricing-title-selected">
+                        <h4>Your contact details</h4>
                     </div>
-                }
+                    <div class="pricing-body pricing-body-selected package-details-form">
+                        @using (Html.BeginForm("RegisterInterest", "Home", FormMethod.Post, new { @class = "contact-form plan-form", enctype = "multipart/form-data", style = "padding-top: 0px;" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.HiddenFor(x => x.SelectedPackage)
+                            <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <label>@Html.DisplayNameFor(x => x.Name)</label>
+                                    @Html.TextBoxFor(x => x.Name, new { @class = "mb-1 bg-white" })
+                                    @Html.ValidationMessageFor(m => m.Name, null, new { @class = "pt-1" })
+                                </div>
+                                <div class="col-lg-12 mb-4">
+                                    <label>@Html.DisplayNameFor(x => x.Email)</label>
+                                    @Html.TextBoxFor(x => x.Email, new { @class = "mb-1 bg-white" })
+                                    @Html.ValidationMessageFor(m => m.Email, null, new { @class = "pt-1" })
+                                </div>
+                                <div class="col-lg-12 mb-4">
+                                    <label>@Html.DisplayNameFor(x => x.PhoneNumber)</label>
+                                    @Html.TextBoxFor(x => x.PhoneNumber, new { @class = "mb-1 bg-white" })
+                                    @Html.ValidationMessageFor(m => m.PhoneNumber, null, new { @class = "pt-1" })
+                                </div>
+                                <div class="col-lg-12 mb-4">
+                                    <label>@Html.DisplayNameFor(x => x.WebsiteType)</label>
+                                    @Html.DropDownListFor(x => x.WebsiteType, Model.WebsiteTypeLookUp, new { @class = "mb-1 bg-white form-select" })
+                                    @Html.ValidationMessageFor(m => m.Email, null, new { @class = "pt-1" })
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <p>A member of our team will contact you soon!</p>
+                                    <button class="site-btn float-right bg-purple">Send</button>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
 
+                <div class="pricing-plan gold-plan">
+                    <div class="pricing-title pricing-title-selected">
+                        <h4>@Model.SelectedPackage Plan Selected</h4>
+                    </div>
+                    <div class="pricing-body pricing-body-selected">
+                        <h2>@Model.PlanPrice</h2>
+                        <span>per month</span>
+                        <ul class="mb-0">
+                            @foreach (var detail in Model.PackageDetails) { 
+                                <li>@detail</li>
+                            }
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <!-- Contact section end -->
+
+
+<script>
+    document.onLoad = (function () {
+        document.getElementById("WebsiteType").firstChild.setAttribute("selected", "selected");
+        document.getElementById("WebsiteType").firstChild.setAttribute("disabled", "disabled");
+
+   
+        list = document.querySelectorAll("option");
+        for (var i = 0; i < list.length; ++i) {
+            list[i].classList.add('text-grey-light');
+        };
+
+    })();
+
+</script>
