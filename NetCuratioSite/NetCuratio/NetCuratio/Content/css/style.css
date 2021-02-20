@@ -14,6 +14,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    overflow-x: hidden !important;
+}
+
 ::selection {
     background-color: #431483 !important;
     color: #fff;

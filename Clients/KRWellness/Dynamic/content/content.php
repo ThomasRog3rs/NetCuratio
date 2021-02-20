@@ -312,7 +312,7 @@
         ))
     );
 	
-    $footerCopyRight = $siteTitle.' '.date("Y"). ' | Powered by <a class="footer__link" href="http://www.trwebdev.com">NetCuratio</a>';
+    $footerCopyRight = $siteTitle.' '.date("Y"). ' | Powered by <a class="footer__link" href="http://www.netcuratio.com">Net Curatio</a>';
 
     //Extra Components
     $elfSightInstaFeedClass = "elfsight-app-2b4ca0a5-c47e-4f51-b27b-57598e110579";
