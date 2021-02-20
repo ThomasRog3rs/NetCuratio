@@ -35,12 +35,15 @@ namespace NetCuratio.Helpers
             email.To.Add("matthewajc@outlook.com");
             email.To.Add("thomasrogerswebdev@gmail.com");
 
-            email.Subject = "Customer interest registered";
+            email.Subject = $"Customer registed for {contact.SelectedPackage} Plan";
 
-            email.Body = "<h1>Net Curatio Customer Interest</h1><br/>";
-            email.Body += $"<p>Package interested in: {contact.SelectedPackage}</p><br/>";
+            email.Body = $"<h1>Net Curatio Customer Registed - {contact.SelectedPackage} Plan</h1><br/>";
+            email.Body += $"<p>Package registed for: {contact.SelectedPackage} ({contact.PackageDetails.Price}/month)</p><br/>";
             email.Body += $"<p>From: {contact.Name}</p><br/>";
-            email.Body += $"<p>Sender e-mail: {contact.Email}</p><br/>";
+            email.Body += $"<p>Sender Email: {contact.Email}</p><br/>";
+            email.Body += $"<p>Sender Phone: {contact.PhoneNumber}</p><br/>";
+            email.Body += $"<p>Website customer needs: {contact.WebsiteType}</p><br/>";
+
 
             return email;
         }

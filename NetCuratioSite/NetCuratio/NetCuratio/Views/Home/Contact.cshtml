@@ -20,19 +20,23 @@
                     @Html.AntiForgeryToken()
                     <div class="row">
                         <div class="col-md-6 mb-4">
-                            @Html.TextBoxFor(x => x.SendersName, new { placeholder = Html.DisplayNameFor(x => x.SendersName).ToHtmlString(), @class = "mb-1" })
+                            <label for="SendersName">@Html.DisplayNameFor(x => x.SendersName).ToHtmlString()</label>
+                            @Html.TextBoxFor(x => x.SendersName, new { @class = "mb-1" })
                             @Html.ValidationMessageFor(m => m.SendersName, null, new { @class = "pt-1" })
                         </div>
                         <div class="col-md-6 mb-4">
-                            @Html.TextBoxFor(x => x.SendersEmail, new { placeholder = Html.DisplayNameFor(x => x.SendersEmail).ToHtmlString(), @class = "mb-1" })
+                            <label for="SendersEmail">@Html.DisplayNameFor(x => x.SendersEmail).ToHtmlString()</label>
+                            @Html.TextBoxFor(x => x.SendersEmail, new {@class = "mb-1" })
                             @Html.ValidationMessageFor(m => m.SendersEmail, null, new { @class = "pt-1" })
                         </div>
                         <div class="col-md-12 mb-4">
-                            @Html.TextBoxFor(x => x.Subject, new { placeholder = Html.DisplayNameFor(x => x.Subject).ToHtmlString(), @class = "mb-1" })
+                            <label for="Subject">@Html.DisplayNameFor(x => x.Subject).ToHtmlString()</label>
+                            @Html.TextBoxFor(x => x.Subject, new { @class = "mb-1" })
                             @Html.ValidationMessageFor(m => m.Subject)
                         </div>
                         <div class="col-md-12 mb-4">
-                            @Html.TextAreaFor(x => x.Message, new { placeholder = Html.DisplayNameFor(x => x.Message).ToHtmlString(), @class = "mb-0" })
+                            <label for="Subject">@Html.DisplayNameFor(x => x.Message).ToHtmlString()</label>
+                            @Html.TextAreaFor(x => x.Message, new {@class = "mb-0" })
                             @Html.ValidationMessageFor(m => m.Message)
                         </div>
                         <div class="col-md-12">

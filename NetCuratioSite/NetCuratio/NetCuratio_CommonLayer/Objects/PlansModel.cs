@@ -8,9 +8,67 @@ namespace NetCuratio_CommonLayer.Objects
 {
     public class PlansModel
     {
-        public List<string> BasicPlan = new List<string>() { "No upfront costs", "Bespoke website", "Free hosting", "20 monthly support credits", "24/7 security monitoring", "10GB storage", "20GB bandwith" };
-        public List<string> StarPlan = new List<string>() { "No upfront costs", "Bespoke website", "Free hosting", "100 monthly support credits", "24/7 security monitoring", "20GB storage", "Unlimited bandwith" };
-        public List<string> VipPlan = new List<string>() { "No upfront costs", "Bespoke website", "Free hosting", "40 monthly support credits", "24/7 security monitoring", "15GB storage", "100GB bandwith" };
+        public static Plan BasicPlan = new Plan()
+        {
+            Price = "£19.99",
+            Features = new List<string>() {
+                "No upfront costs",
+                "Bespoke website",
+                "Free hosting",
+                "20 monthly support credits",
+                "24/7 security monitoring",
+                "10GB storage",
+                "20GB bandwith"
+            }
+        };
 
+        public static Plan StarPlan = new Plan()
+        {
+            Price = "£39.99",
+            Features = new List<string>() {
+                "No upfront costs", 
+                "Bespoke website", 
+                "Free hosting", 
+                "100 monthly support credits", 
+                "24/7 security monitoring", 
+                "20GB storage", 
+                "Unlimited bandwith"
+            }
+        };
+
+        public static Plan VipPlan = new Plan()
+        {
+            Price = "£29.99",
+            Features = new List<string>() {
+                "No upfront costs",
+                "Bespoke website",
+                "Free hosting",
+                "40 monthly support credits",
+                "24/7 security monitoring",
+                "15GB storage",
+                "1000GB bandwith"
+            }
+        };
+
+        public static Plan GetPlan(string packageCode)
+        {
+            switch (packageCode)
+            {
+                case "Basic":
+                    return BasicPlan;
+                case "Star":
+                    return StarPlan;
+                case "Vip":
+                    return VipPlan;
+                default:
+                    return null;
+            }
+        }
+    }
+
+    public class Plan
+    {
+        public string Price { get; set; }
+        public List<string> Features { get; set; }
     }
 }

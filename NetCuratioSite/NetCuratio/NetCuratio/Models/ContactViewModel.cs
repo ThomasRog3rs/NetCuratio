@@ -9,21 +9,21 @@ namespace NetCuratio.Models
 {
     public class ContactViewModel
     {
-        [Required(ErrorMessage = "The e-mail field is required.")]
-        [RegularExpression(@"^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-‌​]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$", ErrorMessage = "Please enter a valid email.")]
-        [DisplayName("Your e-mail")]
+        [Required(ErrorMessage = "The Email field is required.")]
+        [RegularExpression(@"^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-‌​]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$", ErrorMessage = "Please enter a valid Email.")]
+        [DisplayName("Your Email")]
         public string SendersEmail { get; set; }
 
-        [Required(ErrorMessage = "The subject field is required.")]
+        [Required(ErrorMessage = "The Subject field is required.")]
         [DisplayName("Subject")]
         public string Subject { get; set; }
 
-        [Required(ErrorMessage = "The message field is required.")]
+        [Required(ErrorMessage = "The Message field is required.")]
         [DisplayName("Message")]
         public string Message { get; set; }
 
-        [Required(ErrorMessage = "The name field is required.")]
-        [DisplayName("Your name")]
+        [Required(ErrorMessage = "The Name field is required.")]
+        [DisplayName("Your Name")]
         public string SendersName { get; set; }
     }
 }

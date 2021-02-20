@@ -25,24 +25,24 @@
                             @Html.HiddenFor(x => x.SelectedPackage)
                             <div class="row">
                                 <div class="col-lg-12 mb-4">
-                                    <label>@Html.DisplayNameFor(x => x.Name)</label>
+                                    <label for="Name">@Html.DisplayNameFor(x => x.Name).ToHtmlString()</label>
                                     @Html.TextBoxFor(x => x.Name, new { @class = "mb-1 bg-white" })
                                     @Html.ValidationMessageFor(m => m.Name, null, new { @class = "pt-1" })
                                 </div>
                                 <div class="col-lg-12 mb-4">
-                                    <label>@Html.DisplayNameFor(x => x.Email)</label>
+                                    <label for="Email">@Html.DisplayNameFor(x => x.Email).ToHtmlString()</label>
                                     @Html.TextBoxFor(x => x.Email, new { @class = "mb-1 bg-white" })
                                     @Html.ValidationMessageFor(m => m.Email, null, new { @class = "pt-1" })
                                 </div>
                                 <div class="col-lg-12 mb-4">
-                                    <label>@Html.DisplayNameFor(x => x.PhoneNumber)</label>
+                                    <label for="PhoneNumber">@Html.DisplayNameFor(x => x.PhoneNumber).ToHtmlString()</label>
                                     @Html.TextBoxFor(x => x.PhoneNumber, new { @class = "mb-1 bg-white" })
                                     @Html.ValidationMessageFor(m => m.PhoneNumber, null, new { @class = "pt-1" })
                                 </div>
                                 <div class="col-lg-12 mb-4">
-                                    <label>@Html.DisplayNameFor(x => x.WebsiteType)</label>
-                                    @Html.DropDownListFor(x => x.WebsiteType, Model.WebsiteTypeLookUp, new { @class = "mb-1 bg-white form-select" })
-                                    @Html.ValidationMessageFor(m => m.Email, null, new { @class = "pt-1" })
+                                    <label for="WebsiteType">@Html.DisplayNameFor(x => x.WebsiteType).ToHtmlString()</label>
+                                    @Html.DropDownListFor(x => x.WebsiteType, Model.WebsiteTypeLookUp, "-- Please select a type of site --", new { @class = "mb-1 bg-white form-select" })
+                                    @Html.ValidationMessageFor(m => m.WebsiteType, null, new { @class = "pt-1" })
                                 </div>
                                 <div class="col-md-12 mb-4">
                                     <p>A member of our team will contact you soon!</p>
@@ -60,10 +60,11 @@
                         <h4>@Model.SelectedPackage Plan Selected</h4>
                     </div>
                     <div class="pricing-body pricing-body-selected">
-                        <h2>@Model.PlanPrice</h2>
+                        <h2>@Model.PackageDetails.Price</h2>
                         <span>per month</span>
                         <ul class="mb-0">
-                            @foreach (var detail in Model.PackageDetails) { 
+                            @foreach (var detail in Model.PackageDetails.Features)
+                            {
                                 <li>@detail</li>
                             }
                         </ul>
@@ -81,12 +82,18 @@
         document.getElementById("WebsiteType").firstChild.setAttribute("selected", "selected");
         document.getElementById("WebsiteType").firstChild.setAttribute("disabled", "disabled");
 
-   
+
         list = document.querySelectorAll("option");
         for (var i = 0; i < list.length; ++i) {
             list[i].classList.add('text-grey-light');
         };
 
     })();
-
 </script>
+
+@if (Model.WebsiteType != null)
+{
+    <script>
+        document.getElementById("WebsiteType").value = "@Model.WebsiteType";
+    </script>
+}

@@ -75,26 +75,15 @@ namespace NetCuratio.Controllers
         [HttpGet]
         public ActionResult RegisterInterest(string packageCode)
         {
-            var model = new RegisterInterestViewModel();
-            var plans = new PlansModel();
-            model.SelectedPackage = packageCode;
-
-            switch (packageCode)
+            var model = new RegisterInterestViewModel
             {
-                case "Basic":
-                    model.PackageDetails = plans.BasicPlan;
-                    model.PlanPrice = "£19.99";
-                    break;
-                case "Star":
-                    model.PackageDetails = plans.StarPlan;
-                    model.PlanPrice = "£39.99";
-                    break;
-                case "Vip":
-                    model.PackageDetails = plans.VipPlan;
-                    model.PlanPrice = "£29.99";
-                    break;
-                default:
-                    return RedirectToAction("Services", "Home");
+                SelectedPackage = packageCode
+            };
+
+            model.PackageDetails = PlansModel.GetPlan(model.SelectedPackage);
+            if(model.PackageDetails == null)
+            {
+                return RedirectToAction("Services", "Home");
             }
 
             return View(model);
@@ -104,6 +93,7 @@ namespace NetCuratio.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult RegisterInterest(RegisterInterestViewModel model)
         {
+            model.PackageDetails = PlansModel.GetPlan(model.SelectedPackage);
             if (ModelState.IsValid)
             {
                 IEmailService emailService = new NetCuratio_ServiceLayer.Services.EmailService();
