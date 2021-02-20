@@ -14,6 +14,15 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="justify-content-center">Get in touch</h2>
+                <p class="mt-2 info">For more info or inquiry about our <a href="@Url.Action("Services", "Home")">services</a> and pricing, please feel free to get in touch with us or view our <a href="#Faqs">FAQs</a></p>
+                @if (ViewBag.ShowSuccessMessage == true)
+                {
+                    <div class="col-md-12">
+                        <div class="alert-box alert-box-success mt-5 w-100" id="contact-success" role="alert">
+                            Thank you for contacting us! We will respond to your message as soon as we can.
+                        </div>
+                    </div>
+                }
 
                 @using (Html.BeginForm("Contact", "Home", FormMethod.Post, new { @class = "contact-form", enctype = "multipart/form-data" }))
                 {
@@ -26,7 +35,7 @@
                         </div>
                         <div class="col-md-6 mb-4">
                             <label for="SendersEmail">@Html.DisplayNameFor(x => x.SendersEmail).ToHtmlString()</label>
-                            @Html.TextBoxFor(x => x.SendersEmail, new {@class = "mb-1" })
+                            @Html.TextBoxFor(x => x.SendersEmail, new { @class = "mb-1" })
                             @Html.ValidationMessageFor(m => m.SendersEmail, null, new { @class = "pt-1" })
                         </div>
                         <div class="col-md-12 mb-4">
@@ -36,20 +45,12 @@
                         </div>
                         <div class="col-md-12 mb-4">
                             <label for="Subject">@Html.DisplayNameFor(x => x.Message).ToHtmlString()</label>
-                            @Html.TextAreaFor(x => x.Message, new {@class = "mb-0" })
+                            @Html.TextAreaFor(x => x.Message, new { @class = "mb-0" })
                             @Html.ValidationMessageFor(m => m.Message)
                         </div>
                         <div class="col-md-12">
-                            <button class="site-btn float-right">Send</button>
+                            <button class="site-btn float-right">Send &nbsp;<i class="fas fa-paper-plane"></i></button>
                         </div>
-                        @if (ViewBag.ShowSuccessMessage == true)
-                        {
-                            <div class="col-md-12">
-                                <div class="alert alert-success mt-5 w-100" id="sign-up-success" role="alert">
-                                    Thank you for contacting us! We will respond to your message as soon as we can.
-                                </div>
-                            </div>
-                        }
                     </div>
                 }
             </div>
@@ -57,12 +58,97 @@
     </div>
 </section>
 <!-- Contact section end -->
+<!-- Faq section -->
+<section class="faq-section spad bg-light" id="Faqs">
+    <div class="container">
+        <div class="section-title">
+            <img src="@Url.Content("~/Content/img/section-title-icon.png")" alt="Rocket icon">
+            <p>@ViewBag.CatchPhrase</p>
+            <h2>FAQ</h2>
+        </div>
+        <div id="accordion" class="accordion-area faq-accordion">
+            <div class="panel">
+                <div class="panel-header" id="headingOne">
+                    <button class="panel-link active" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Do I have to sign a contract?</button>
+                </div>
+                <div id="collapse1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-8 mb-5">
+                                <h4>No, we provide no minimum term subscription service.  </h4>
+                                <p>Our business is based on a subscription model with no contract necessary. This means, if you want to leave at any time, you are free to do so. We're so sure that you'll be happy with our service that we don't see any need to tie you down.  </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-header" id="headingTwo">
+                    <button class="panel-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">What is the process to get my website online? </button>
+                </div>
+                <div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-8 mb-5">
+                                <h4>We have perfected a simple and effective solution for this one.</h4>
+                                <p>Once you have selected a package and registered your interest with us, we will send you a Getting Started Pack. We will read this information and then arrange a quick chat with you so that we can get a better feel for your business and what you need. We will then conduct our research. Once we feel like we have enough information to get started, we will create your website for you. Then, through working with you in a process of review and changes, we will end up with the perfect site for your business.  </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-header" id="headingThree">
+                    <button class="panel-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3"> Do I need to buy a domain?</button>
+                </div>
+                <div id="collapse3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-8 mb-5">
+                                <h4>Yes, you will need to buy a domain for your site.</h4>
+                                <p>Don't worry if you aren't sure how to do this. We will guide you through the process. Your domain name may be your most valuable asset one day, so we’ll instruct you on how to keep it safely in your possession. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-header" id="headingFour">
+                    <button class="panel-link" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse3">Do I need any technical skills to keep my website up and running? </button>
+                </div>
+                <div id="collapse4" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-8 mb-5">
+                                <h4>We take care of all of the technical stuff for you.</h4>
+                                <p>Once you are happy with your website, we will deploy it to our servers and maintain it for you. We will make sure that your website stays up and running, that it’s secure, and that your data is safe.   </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Faq section end -->
 @if (ViewBag.Section != null)
 {
     <script>
-    document.onload = (function () {
-        var anchor = document.querySelector('#email-sign-up');
-        anchor.scrollIntoView();
-    })();
+        document.onload = (function () {
+            var anchor = document.querySelector('#email-sign-up');
+            anchor.scrollIntoView();
+        })();
+    </script>
+}
+
+@if (ViewBag.ShowSuccessMessage == true)
+{
+    <script>
+        document.getElementById("SendersName").value = null;
+        document.getElementById("SendersEmail").value = null;
+        document.getElementById("Subject").value = null;
+        document.getElementById("Message").inner = null;
+
+
     </script>
 }

@@ -35,6 +35,7 @@ namespace NetCuratio.Controllers
         {
             ViewBag.CatchPhrase = PhrasesAndMessagesModel.CatchPhrase;
             ViewBag.ShowSuccessMessage = false;
+                        ViewBag.Plans = PlansModel.GetAllPlans();
 
             return View();
         }
@@ -63,8 +64,9 @@ namespace NetCuratio.Controllers
                 emailService.SendEmail(email);
 
                 ViewBag.ShowSuccessMessage = true;
+                
 
-                return View("Contact"); 
+                return View("Contact", model); 
             }
             else
             {
@@ -127,12 +129,14 @@ namespace NetCuratio.Controllers
 
                 emailService.SendEmail(email);
 
+                ViewBag.Plans = PlansModel.GetAllPlans();
                 return View("Index");
             }
             else
             {
                 ViewBag.ShowSuccessMessage = false;
 
+                ViewBag.Plans = PlansModel.GetAllPlans();
                 return View("Index");
             }
         }
