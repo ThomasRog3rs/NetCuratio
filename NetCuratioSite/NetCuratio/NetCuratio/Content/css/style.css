@@ -51,7 +51,7 @@ h2 {
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 h4 {
@@ -67,7 +67,7 @@ h6 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     color: #585858;
     line-height: 2;
 }
@@ -86,7 +86,7 @@ p.info {
     }
 
 ol {
-    font-size: 14px;
+    font-size: 16px;
     color: #585858;
     line-height: 2;
     margin-left: 12px !important;
@@ -117,6 +117,11 @@ ol {
 
 .bg-purple {
     background: linear-gradient(to right, #7246b3 0%, #431483 100%) !important;
+}
+
+label.hidden-label {
+    color: white;
+    opacity: 0;
 }
 
 i.icon-gradient {
@@ -153,6 +158,10 @@ i.icon-gradient {
         color: #fff;
     }
 
+.catch-phrase {
+    color: #575757 !important;
+}
+
 .plan-form {
     text-align: left !important;
 }
@@ -164,6 +173,7 @@ i.icon-gradient {
     .plan-form input {
         border: 1px solid #585858 !important;
     }
+
 
 .form-select {
     display: block;
@@ -385,9 +395,9 @@ select.input-validation-error {
 
 .site-btn {
     display: inline-block;
-    border: none;
-    font-size: 14px;
-    font-weight: 400;
+    border: 2px solid transparent;
+    font-size: 18px;
+    font-weight: 600;
     min-width: 186px;
     padding: 17px 25px;
     border-radius: 14px;
@@ -413,6 +423,17 @@ select.input-validation-error {
         font-size: 1.5rem;
         line-height: 1.5;
     }
+
+.btn-ghost {
+    background-color: transparent;
+    border: 2px solid #eb2b63;
+    transition: all .3s;
+}
+
+.btn-ghost:hover {
+    border: 2px solid transparent;
+    background-color: #eb2b63;
+}
 
 .text-accent {
     font-weight: bold;
@@ -577,6 +598,10 @@ select.input-validation-error {
         margin-bottom: 25px;
     }
 
+    .accordion-area .panel-body h3 {
+        margin-bottom: 25px;
+    }
+
     .accordion-area .panel-body p {
         font-size: 15px;
         margin-bottom: 0;
@@ -595,8 +620,12 @@ select.input-validation-error {
         padding-top: 25px;
     }
 
+    .faq-accordion .panel-body h3 {
+        padding-top: 25px;
+    }
+
     .faq-accordion .panel-body p {
-        font-size: 15px;
+        font-size: 16px;
         margin-bottom: 0;
         line-height: 1.8;
     }
@@ -855,6 +884,9 @@ select.input-validation-error {
         font-size: 18px;
         line-height: 1.7;
         margin-bottom: 40px;
+        background: #0a02287a;
+        padding: 20px;
+        border-radius: 14px;
     }
 
 .hero-rocket {
@@ -975,6 +1007,10 @@ select.input-validation-error {
         margin-bottom: 28px;
     }
 
+    .feature-item h3 {
+        margin-bottom: 28px;
+    }
+
     .feature-item.fi-center-top .ft-icon {
         -webkit-transform-origin: bottom center;
         -ms-transform-origin: bottom center;
@@ -1012,7 +1048,7 @@ select.input-validation-error {
 }
 
     .domain-search-form input {
-        width: calc(100% - 239px);
+        width: 100%;
         height: 59px;
         font-size: 14px;
         border: none;
@@ -1026,6 +1062,7 @@ select.input-validation-error {
     .domain-search-form .site-btn {
         height: 59px;
         min-width: 229px;
+        width: 100%;
     }
 
     .domain-search-form.df-white-bg input {
@@ -1179,6 +1216,12 @@ select.input-validation-error {
 }
 
 .pricing-plan .pricing-title h4 {
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.pricing-plan .pricing-title h3 {
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
@@ -1861,6 +1904,14 @@ select.input-validation-error {
     .milestone-item {
         margin-bottom: 40px;
     }
+
+    label.hidden-label{
+        display: none;
+    }
+
+    button#submit{
+        margin-top: 1rem;
+    }
 }
 
 /* Large Mobile :480px. */
@@ -2022,6 +2073,12 @@ select.input-validation-error {
     .milestone-item {
         margin-bottom: 40px;
     }
+    label.hidden-label {
+        display: none;
+    }
+    button#submit {
+        margin-top: 1rem;
+    }
 }
 
 /* Medium Mobile :480px. */
@@ -2029,6 +2086,12 @@ select.input-validation-error {
 @media only screen and (min-width: 576px) and (max-width: 766px) {
     .hero-section {
         height: 600px;
+    }
+    label.hidden-label {
+        display: none;
+    }
+    button#submit {
+        margin-top: 1rem;
     }
 }
 
@@ -2056,6 +2119,10 @@ select.input-validation-error {
         text-align: center;
     }
 
+    .domain-search-form label{
+        text-align: left !important;
+    }
+
         .domain-search-form input {
             width: 100%;
             margin-bottom: 20px;
@@ -2073,6 +2140,12 @@ select.input-validation-error {
         .faq-accordion.accordion-area .panel-link:after {
             right: 20px;
         }
+    label.hidden-label {
+        display: none;
+    }
+    button#submit {
+        margin-top: 1rem;
+    }
 }
 
 
@@ -2131,7 +2204,8 @@ select.input-validation-error {
     .hero-content h2 {
         max-width: 80%;
         font-size: 40px !important;
-        margin-top: 45px;
+        margin-top: 55px;
+        margin-left: 5px;
     }
 
     .hero-content p {
@@ -2154,6 +2228,10 @@ select.input-validation-error {
 
     h2 {
         font-size: 30px !important;
+    }
+    .contact-submit {
+        display: block !important;
+        min-width: 100% !important;
     }
 }
 
@@ -2189,11 +2267,15 @@ select.input-validation-error {
 
     .hero-content h2 {
         max-width: 90%;
-        font-size: 30px !important;
+        font-size: 20px !important;
+        margin-top: 100px;
     }
 
     .hero-content p {
         font-size: 15px !important;
+        max-width: 90%;
+        margin-top: 0px;
+        margin-bottom: 20px;
     }
 
     div.section-title {

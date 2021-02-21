@@ -44,7 +44,7 @@ namespace NetCuratio.Models
             retrunList.Add(new SelectListItem { Text = "E-commerce", Value = "E-commerce" });
             retrunList.Add(new SelectListItem { Text = "News", Value = "News" });
             retrunList.Add(new SelectListItem { Text = "Portfolio/Resume", Value = "Portfolio/Resume" });
-            retrunList.Add(new SelectListItem { Text = "Praise, testimonials, and recommendations, press mentions", Value = "Testimonials" });
+            retrunList.Add(new SelectListItem { Text = "Praise, testimonials, recommendations, press mentions", Value = "Testimonials" });
             retrunList.Add(new SelectListItem { Text = "Other", Value = "Other" });
             return retrunList;
 
