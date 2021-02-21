@@ -1,12 +1,15 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "About us";
 }
 <!-- Page Top section -->
 <section class="page-top-section set-bg" data-setbg="@Url.Content("~/Content/img/page-top-bg.jpg")">
     <div class="container text-white">
         <div class="row">
             <div class="col-lg-8 pr-0">
-                <h2 class="mb-5">We specialise in helping small businesses and entrepreneurs effectively reach their customers with a truly engaging online experience.  </h2>
+                <h2 class="mb-3">We specialise in helping small businesses and entrepreneurs effectively reach their customers with a truly engaging online experience.  </h2>
+                <div class="site-breadcrumb">
+                    <a href="@Url.Action("Index", "Home")">Home</a> / <span>@ViewBag.Title</span>
+                </div>
             </div>
         </div>
     </div>

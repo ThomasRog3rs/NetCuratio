@@ -1,9 +1,19 @@
 ﻿<!-- Page Top section -->
 <section class="page-top-section-small set-bg" data-setbg="@Url.Content("~/Content/img/page-top-bg.jpg")">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 pr-0">
+                <h2 class="mb-3">Thanks</h2>
+                <div class="site-breadcrumb">
+                    <a href="@Url.Action("Index", "Home")">Home</a> / <a href="@Url.Action("Services", "Home")">Services</a> / <a href="@Url.Action("RegisterInterest", "Home")">Register Interest</a> / <span>Thanks</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- Page Top section end -->
 <!-- Contact section -->
-<section class="spad">
+<section class="spad" id="Thanks">
     <div class="container h-90 mt-5">
         <div class="text-center">
             @*<i class="fas fa-rocket fa-4x icon-gradient mb-4"></i>*@
@@ -17,3 +27,9 @@
     </div>
 </section>
 <!-- Contact section end -->
+<script>
+    document.onload = (function () {
+        var anchor = document.querySelector('#Thanks');
+        anchor.scrollIntoView();
+    })();
+</script>

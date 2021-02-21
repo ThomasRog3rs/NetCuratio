@@ -1,9 +1,68 @@
 ﻿@model System.Web.Mvc.HandleErrorInfo
 @{
-    Layout = null;
+    Layout = "_Layout.cshtml";
 }
 @{
     ViewBag.Title = (!String.IsNullOrEmpty(ViewBag.StatusCode)) ? ViewBag.StatusCode : "500 Error";
 }
+@*(!String.IsNullOrEmpty(ViewBag.StatusCode)) ? ViewBag.StatusCode : "500 Error";*@
+@*<h1 class="error">@(!String.IsNullOrEmpty(ViewBag.StatusCode) ? ViewBag.StatusCode : "500 Error"):</h1>*@
+<!-- Page Top section -->
+<section class="page-top-section-small set-bg" data-setbg="@Url.Content("~/Content/img/page-top-bg.jpg")">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 pr-0">
+                <h2 class="mb-3">@ViewBag.Title</h2>
+                <div class="site-breadcrumb">
+                    <span>Hmmm, something has gone wrong!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Page Top section end -->
+<!-- Contact section -->
+<section class="spad" id="Error">
+    <div class="container h-90 mt-5">
+        <div class="text-center">
+            @*<i class="fas fa-rocket fa-4x icon-gradient mb-4"></i>*@
+            <div class="section-title">
+                @if (ViewBag.Title == "404 Error")
+                {
+                    <img src="https://cdn.dribbble.com/users/3167939/screenshots/10422336/media/b618a0e73996c3b24b58b2db1c881ee3.png?compress=1&resize=1000x750" alt="404 Error isometric image" style="max-height: 300px">
+                }
+                else
+                {
+                    <img src="@Url.Content("~/Content/img/serverError.gif")" alt="Error isometric image" style="max-height: 300px">
+                }
 
-<h1 class="error">@(!String.IsNullOrEmpty(ViewBag.StatusCode) ? ViewBag.StatusCode : "500 Error"):</h1>
+                @if (ViewBag.Title == "404 Error")
+                {
+                    <h2>We can't find the page you are looking for!</h2>
+                }
+                else
+                {
+                    <h2>Something has gone wrong on our server!</h2>
+                }
+            </div>
+            @if (ViewBag.Title == "404 Error")
+            {
+                <p class="lead mt-3 mb-5">This page doesn't seem to exist, please try again later.</p>
+
+            }
+            else
+            {
+                <p class="lead mt-3 mb-5">An error has occurred on our server, we are working hard to fix it!</p>
+
+            }
+            <a href="@Url.Action("Index","Home")" class="site-btn site-btn-lg">Go Home</a>
+        </div>
+    </div>
+</section>
+<!-- Contact section end -->
+<script>
+    document.onload = (function () {
+        var anchor = document.querySelector('#Error');
+        anchor.scrollIntoView();
+    })();
+</script>
