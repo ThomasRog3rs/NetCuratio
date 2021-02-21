@@ -203,6 +203,9 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\img\serverError.gif" />
+    <Content Include="Content\img\startup_dark_PNG.png" />
+    <Content Include="Content\img\startup_light_PNG.png" />
     <Content Include="Content\img\Startup_PNG.png" />
     <Content Include="Content\css\animate.css" />
     <Content Include="Content\css\bootstrap.min.css" />

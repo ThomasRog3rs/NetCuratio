@@ -16,7 +16,7 @@
             <div class="col-lg-6 col-md-12">
                 <div class="pricing-plan">
                     <div class="pricing-title pricing-title-selected">
-                        <h4>Your contact details</h4>
+                        <h3>Your contact details</h3>
                     </div>
                     <div class="pricing-body pricing-body-selected package-details-form">
                         @using (Html.BeginForm("RegisterInterest", "Home", FormMethod.Post, new { @class = "contact-form plan-form", enctype = "multipart/form-data", style = "padding-top: 0px;" }))
@@ -57,7 +57,7 @@
 
                 <div class="pricing-plan gold-plan">
                     <div class="pricing-title pricing-title-selected">
-                        <h4>@Model.SelectedPackage Plan Selected</h4>
+                        <h3>@Model.SelectedPackage Plan Selected</h3>
                     </div>
                     <div class="pricing-body pricing-body-selected">
                         <h2>@Model.PackageDetails.Price</h2>

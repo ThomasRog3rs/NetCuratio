@@ -62,10 +62,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/11/2021 22:56:37</publishTime>
     </File>
     <File Include="bin/NetCuratio.dll">
-      <publishTime>02/20/2021 22:28:13</publishTime>
+      <publishTime>02/21/2021 15:57:07</publishTime>
     </File>
     <File Include="bin/NetCuratio.pdb">
-      <publishTime>02/20/2021 22:28:13</publishTime>
+      <publishTime>02/21/2021 15:57:07</publishTime>
     </File>
     <File Include="bin/NetCuratio_CommonLayer.dll">
       <publishTime>02/20/2021 20:45:19</publishTime>
@@ -221,7 +221,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/11/2021 22:56:35</publishTime>
     </File>
     <File Include="Content/css/style.css">
-      <publishTime>02/20/2021 19:30:59</publishTime>
+      <publishTime>02/21/2021 15:52:50</publishTime>
     </File>
     <File Include="Content/icon-fonts/Flaticon.eot">
       <publishTime>02/11/2021 22:56:35</publishTime>
@@ -434,22 +434,22 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/11/2021 22:56:35</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
-      <publishTime>02/19/2021 20:32:36</publishTime>
+      <publishTime>02/21/2021 14:36:18</publishTime>
     </File>
     <File Include="Views/Home/Blog.cshtml">
       <publishTime>02/11/2021 22:56:35</publishTime>
     </File>
     <File Include="Views/Home/Contact.cshtml">
-      <publishTime>02/20/2021 18:04:59</publishTime>
+      <publishTime>02/21/2021 15:51:24</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>02/20/2021 16:21:12</publishTime>
+      <publishTime>02/21/2021 15:40:44</publishTime>
     </File>
     <File Include="Views/Home/RegisterInterest.cshtml">
-      <publishTime>02/20/2021 17:10:58</publishTime>
+      <publishTime>02/21/2021 14:39:25</publishTime>
     </File>
     <File Include="Views/Home/Services.cshtml">
-      <publishTime>02/20/2021 15:50:58</publishTime>
+      <publishTime>02/21/2021 14:46:56</publishTime>
     </File>
     <File Include="Views/Home/Thanks.cshtml">
       <publishTime>02/20/2021 17:48:35</publishTime>

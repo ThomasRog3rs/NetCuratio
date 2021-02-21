@@ -44,12 +44,12 @@
                             @Html.ValidationMessageFor(m => m.Subject)
                         </div>
                         <div class="col-md-12 mb-4">
-                            <label for="Subject">@Html.DisplayNameFor(x => x.Message).ToHtmlString()</label>
+                            <label for="Message">@Html.DisplayNameFor(x => x.Message).ToHtmlString()</label>
                             @Html.TextAreaFor(x => x.Message, new { @class = "mb-0" })
                             @Html.ValidationMessageFor(m => m.Message)
                         </div>
                         <div class="col-md-12">
-                            <button class="site-btn float-right">Send &nbsp;<i class="fas fa-paper-plane"></i></button>
+                            <button class="site-btn float-right contact-submit">Send &nbsp;<i class="fas fa-paper-plane"></i></button>
                         </div>
                     </div>
                 }
@@ -63,7 +63,7 @@
     <div class="container">
         <div class="section-title">
             <img src="@Url.Content("~/Content/img/section-title-icon.png")" alt="Rocket icon">
-            <p>@ViewBag.CatchPhrase</p>
+            <p class="catch-phrase">@ViewBag.CatchPhrase</p>
             <h2>FAQ</h2>
         </div>
         <div id="accordion" class="accordion-area faq-accordion">
@@ -75,7 +75,7 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-lg-8 mb-5">
-                                <h4>No, we provide no minimum term subscription service.  </h4>
+                                <h3>No, we provide no minimum term subscription service.  </h3>
                                 <p>Our business is based on a subscription model with no contract necessary. This means, if you want to leave at any time, you are free to do so. We're so sure that you'll be happy with our service that we don't see any need to tie you down.  </p>
                             </div>
                         </div>
@@ -90,7 +90,7 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-lg-8 mb-5">
-                                <h4>We have perfected a simple and effective solution for this one.</h4>
+                                <h3>We have perfected a simple and effective solution for this one.</h3>
                                 <p>Once you have selected a package and registered your interest with us, we will send you a Getting Started Pack. We will read this information and then arrange a quick chat with you so that we can get a better feel for your business and what you need. We will then conduct our research. Once we feel like we have enough information to get started, we will create your website for you. Then, through working with you in a process of review and changes, we will end up with the perfect site for your business.  </p>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-lg-8 mb-5">
-                                <h4>Yes, you will need to buy a domain for your site.</h4>
+                                <h3>Yes, you will need to buy a domain for your site.</h3>
                                 <p>Don't worry if you aren't sure how to do this. We will guide you through the process. Your domain name may be your most valuable asset one day, so we’ll instruct you on how to keep it safely in your possession. </p>
                             </div>
                         </div>
@@ -120,7 +120,7 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-lg-8 mb-5">
-                                <h4>We take care of all of the technical stuff for you.</h4>
+                                <h3>We take care of all of the technical stuff for you.</h3>
                                 <p>Once you are happy with your website, we will deploy it to our servers and maintain it for you. We will make sure that your website stays up and running, that it’s secure, and that your data is safe.   </p>
                             </div>
                         </div>

@@ -129,13 +129,16 @@ namespace NetCuratio.Controllers
 
                 emailService.SendEmail(email);
 
+                ViewBag.CatchPhrase = PhrasesAndMessagesModel.CatchPhrase;
                 ViewBag.Plans = PlansModel.GetAllPlans();
                 return View("Index");
             }
             else
             {
                 ViewBag.ShowSuccessMessage = false;
+                ViewBag.Section = "register";
 
+                ViewBag.CatchPhrase = PhrasesAndMessagesModel.CatchPhrase;
                 ViewBag.Plans = PlansModel.GetAllPlans();
                 return View("Index");
             }

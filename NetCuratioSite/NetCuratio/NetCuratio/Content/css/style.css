@@ -1413,8 +1413,12 @@ select.input-validation-error {
 }
 
 .page-top-section-small {
-    height: 169px;
-    padding-top: 160px;
+    height: 30vh;
+    padding-top: 10vh;
+}
+
+.page-top-section-small h2 {
+    color: #fff;
 }
 
 .page-top-section {
@@ -1427,13 +1431,16 @@ select.input-validation-error {
     }
 
 .site-breadcrumb {
-    color: #fff;
-    opacity: 0.37;
+    color: #8e8e8e;
     font-size: 14px;
 }
 
     .site-breadcrumb a {
-        color: #fff;
+        color: #8e8e8e;
+    }
+
+    .site-breadcrumb span {
+        color: #8e8e8e;
     }
 
 /* ----------------
@@ -1926,6 +1933,10 @@ select.input-validation-error {
         height: 560px;
     }
 
+    .page-top-section-small {
+        padding-top: 12vh;
+    }
+
     .our-work-gallery {
         display: block;
     }
@@ -2087,6 +2098,13 @@ select.input-validation-error {
     .hero-section {
         height: 600px;
     }
+    .page-top-section-small {
+        padding-top: 15vh;
+    }
+
+        .page-top-section-small h2 {
+            font-size: 20px;
+        }
     label.hidden-label {
         display: none;
     }
@@ -2146,6 +2164,15 @@ select.input-validation-error {
     button#submit {
         margin-top: 1rem;
     }
+
+    .page-top-section-small {
+        height: 30vh;
+        padding-top: 15vh;
+    }
+
+        .page-top-section-small h2 {
+            font-size: 18px !important;
+        }
 }
 
 
