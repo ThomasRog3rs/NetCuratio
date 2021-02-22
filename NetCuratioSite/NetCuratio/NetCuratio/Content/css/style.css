@@ -19,7 +19,7 @@ body{
 }
 
 ::selection {
-    background-color: #431483 !important;
+    background-color: #eb2b63 !important;
     color: #fff;
 }
 
@@ -428,6 +428,10 @@ select.input-validation-error {
     background-color: transparent;
     border: 2px solid #eb2b63;
     transition: all .3s;
+}
+
+.btn-ghost--dark {
+    color: #eb2b63;
 }
 
 .btn-ghost:hover {

@@ -23,11 +23,12 @@
                 <h3 class="mb-4">Why choose our company?</h3>
                 <p>We specialise in supporting the whole website lifecycle, from design and development to maintenance and marketing. The core to our approach is to build a deep understanding of your business and customers. This allows us to provide you with the tools required to offer an engaging online experience to your customers.  </p>
                 <p>Modern users have high demands from their online experience. With the average attention span at around 8 seconds (and dropping) the days of a businesses' website simply being a virtual flyer are long gone. A website today has to grab the attention of visitors. At Net Curatio, we specialise in the science of user engagement. Click below to see how our services can help you make the most from every visitor to your site. </p>
-                <a href="@Url.Action("Services", "Home")" class="site-btn mt-3">Get started</a>
+                <a href="#our-work" class="site-btn mr-2 mt-3 mb-2">View our work</a>
+                <a href="@Url.Action("Services", "Home")" class="site-btn btn-ghost btn-ghost--dark">Get started</a>
             </div>
             <div class="col-lg-6 col-md-12 feature-item">
-                <div class="image-box mt-5">
-                    <img src="@Url.Content("~/Content/img/NaxianCastlePreview1.PNG")" alt="Website image preview" style="align-self: center;" />
+                <div class="mt-5">
+                    <img src="@Url.Content("~/Content/img/smartmockups_krwellness.png")" alt="Website image preview" style="align-self: center;" />
                 </div>
             </div>
         </div>
@@ -55,7 +56,7 @@
 </section>
 <!-- Service box section end -->
 <!-- Team section -->
-<section class="team-section spad">
+<section class="team-section spad" id="our-work">
     <div class="container h-100">
         <div class="section-title">
             <img src="@Url.Content("~/Content/img/section-title-icon.png")" alt="Rocket icon">
@@ -64,7 +65,7 @@
         </div>
         <div class="our-work-gallery">
             <div class="shadow mb-5">
-                <img class="d-block w-100" src="@Url.Content("~/Content/img/KRWelnessPreview1.PNG")" alt="Website work preview">
+                <img class="d-block w-100" src="@Url.Content("~/Content/img/smartmockups_krwellness.png")" alt="Website work preview">
             </div>
             <div class="shadow mb-5">
                 <img class="d-block w-100" src="@Url.Content("~/Content/img/KRWelnessPreview2.PNG")" alt="Website work preview">
@@ -91,7 +92,7 @@
         <div id="carouselExampleControls" class="carousel slide h-100 our-work-carousel" data-ride="carousel">
             <div class="carousel-inner carousel-height">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="@Url.Content("~/Content/img/KRWelnessPreview1.PNG")" alt="Website work preview">
+                    <img class="d-block w-100" src="@Url.Content("~/Content/img/smartmockups_krwellness.png")" alt="Website work preview">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="@Url.Content("~/Content/img/KRWelnessPreview2.PNG")" alt="Website work preview">
@@ -124,6 +125,10 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        <div class="text-center mt-5">
+            <a href="@Url.Action("Services", "Home")" class="site-btn">Get started</a>
+        </div>
+        
     </div>
 </section>
 <!-- Team section end-->

@@ -110,6 +110,7 @@ namespace NetCuratio.Controllers
 
             else
             {
+                ViewBag.Section = "form";
                 return View("RegisterInterest", model);
             }
         }
