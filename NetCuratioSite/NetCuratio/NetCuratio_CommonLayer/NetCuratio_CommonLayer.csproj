@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Objects\CaseStudyModel.cs" />
     <Compile Include="Objects\EmailModel.cs" />
     <Compile Include="Objects\PlansModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

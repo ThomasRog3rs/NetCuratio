@@ -23,6 +23,7 @@ namespace NetCuratio.Controllers
             return View(model);
         }
 
+        [Route("About")]
         public ActionResult About()
         {
             ViewBag.CatchPhrase = PhrasesAndMessagesModel.CatchPhrase;
@@ -30,7 +31,7 @@ namespace NetCuratio.Controllers
             return View();
         }
 
-
+        [Route("Plans")]
         public ActionResult Services()
         {
             ViewBag.CatchPhrase = PhrasesAndMessagesModel.CatchPhrase;
@@ -40,6 +41,7 @@ namespace NetCuratio.Controllers
             return View();
         }
 
+        [Route("Contact")]
         [HttpGet]
         public ActionResult Contact()
         {
@@ -51,6 +53,7 @@ namespace NetCuratio.Controllers
             return View(model);
         }
 
+        [Route("Contact")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Contact(ContactViewModel model)
@@ -75,6 +78,7 @@ namespace NetCuratio.Controllers
             }
         }
 
+        [Route("Plans/{packageCode}")]
         [HttpGet]
         public ActionResult RegisterInterest(string packageCode)
         {
@@ -92,6 +96,7 @@ namespace NetCuratio.Controllers
             return View(model);
         }
 
+        [Route("Plans/{packageCode}")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult RegisterInterest(RegisterInterestViewModel model)
@@ -113,6 +118,22 @@ namespace NetCuratio.Controllers
                 ViewBag.Section = "form";
                 return View("RegisterInterest", model);
             }
+        }
+
+        [Route("CaseStudy/{studyId}")]
+        public ActionResult CaseStudy(string studyId)
+        {
+            var model = new CaseStudyViewModel
+            {
+                ProjectDetails = CaseStudyModel.GetCaseStudy(studyId)
+            };
+
+            if (model.ProjectDetails == null)
+            {
+                return RedirectToAction("Lost");
+            }
+
+            return View(model);
         }
 
         [HttpPost]
@@ -145,6 +166,7 @@ namespace NetCuratio.Controllers
             }
         }
 
+        //[Route("Plans/Thanks")]
         public ActionResult Thanks()
         {
 

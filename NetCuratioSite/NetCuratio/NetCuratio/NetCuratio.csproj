@@ -193,6 +193,7 @@
     <Compile Include="Helpers\EmailTransform.cs" />
     <Compile Include="Helpers\Validation.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CaseStudyViewModel.cs" />
     <Compile Include="Models\EmailSignUpModel.cs" />
     <Compile Include="Models\PhrasesAndMessagesModel.cs" />
     <Compile Include="Models\ContactViewModel.cs" />
@@ -203,8 +204,18 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\img\case-studies\KRWellness\KRWellness_homepage.jpg" />
+    <Content Include="Content\img\case-studies\KRWellness\KRWellness_homepage_mobile.jpg" />
+    <Content Include="Content\img\case-studies\NaxianCastle\NaxianCastle_homepage.jpg" />
+    <Content Include="Content\img\case-studies\NaxianCastle\NaxianCastle_homepage_mobile.jpg" />
+    <Content Include="Content\img\case-studies\TalkNHeal\TalkNHeal_homepage.jpg" />
+    <Content Include="Content\img\case-studies\TalkNHeal\TalkNHeal_homepage_mobile.jpg" />
     <Content Include="Content\img\serverError.gif" />
     <Content Include="Content\img\smartmockups_krwellness.png" />
+    <Content Include="Content\img\smartmockups_krwellness_image.jpg" />
+    <Content Include="Content\img\smartmockups_krwellness_responsive.png" />
+    <Content Include="Content\img\smartmockups_NaxianCastle_image.jpg" />
+    <Content Include="Content\img\smartmockups_TalknHeal_image.jpg" />
     <Content Include="Content\img\startup_dark_PNG.png" />
     <Content Include="Content\img\startup_light_PNG.png" />
     <Content Include="Content\img\Startup_PNG.png" />
@@ -301,6 +312,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\CaseStudy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

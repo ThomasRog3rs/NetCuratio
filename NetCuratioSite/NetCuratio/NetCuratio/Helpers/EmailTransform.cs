@@ -16,6 +16,8 @@ namespace NetCuratio.Helpers
             email.From = "netcuratio@gmail.com";
             email.To.Add("matthewajc@outlook.com");
             email.To.Add("thomasrogerswebdev@gmail.com");
+            email.To.Add("tom.rogers@netcuratio.com");
+
 
             email.Subject = contact.Subject;
 
@@ -34,6 +36,7 @@ namespace NetCuratio.Helpers
             email.From = "netcuratio@gmail.com";
             email.To.Add("matthewajc@outlook.com");
             email.To.Add("thomasrogerswebdev@gmail.com");
+            email.To.Add("tom.rogers@netcuratio.com");
 
             email.Subject = $"Customer registed for {contact.SelectedPackage} Plan";
 
@@ -55,6 +58,7 @@ namespace NetCuratio.Helpers
             email.From = "netcuratio@gmail.com";
             email.To.Add("matthewajc@outlook.com");
             email.To.Add("thomasrogerswebdev@gmail.com");
+            email.To.Add("tom.rogers@netcuratio.com");
 
             email.Subject = "Customer signed up to mailing list.";
 

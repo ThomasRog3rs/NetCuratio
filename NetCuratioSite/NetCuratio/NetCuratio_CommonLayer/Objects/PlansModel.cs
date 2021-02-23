@@ -55,13 +55,14 @@ namespace NetCuratio_CommonLayer.Objects
 
         public static Plan GetPlan(string packageCode)
         {
+            packageCode = packageCode.ToLower();
             switch (packageCode)
             {
-                case "Basic":
+                case "basic":
                     return BasicPlan;
-                case "Star":
+                case "star":
                     return StarPlan;
-                case "Vip":
+                case "vip":
                     return VipPlan;
                 default:
                     return null;

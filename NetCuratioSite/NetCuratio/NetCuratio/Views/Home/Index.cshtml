@@ -51,10 +51,17 @@
                     <p>4. Your website will be visually appealing and engage users straight away.</p>*@
             </div>
             <div class="col-lg-6 col-md-12 feature-item">
-                <div>
-                    <video class="med-8x6 lazyloaded" preload="auto" muted="" loop="" playsinline="" autoplay="" src="https://cdn.dribbble.com/users/1124806/screenshots/10980356/media/b6734c68a4dce2fd8d1666a16561bc02.mp4" width="500">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <video class="lazyload" preload="auto" muted="" loop="" playsinline="" autoplay="" src="https://cdn.dribbble.com/users/1124806/screenshots/10980356/media/b6734c68a4dce2fd8d1666a16561bc02.mp4" width="500">
                     </video>
                     @*<img src="@Url.Content("~/Content/img/startup_light_PNG.png")" style="max-height:350px; width:auto" alt="Website Launch Image" />*@
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 mb-3">
+            <div class="container">
+                <div class="u-text-left u-small-text-center">
+                    <a href="@Url.Action("About", "Home")" class="btn-inline">Learn More <span>&rarr;</span></a>
                 </div>
             </div>
         </div>
@@ -80,53 +87,61 @@
     <div class="container">
         <div class="section-title">
             <img src="@Url.Content("~/Content/img/section-title-icon.png")" alt="#">
-            <p class="catch-phrase">@ViewBag.CatchPhrase</pclass="catch-phrase">
+            <p class="catch-phrase">
+                @ViewBag.CatchPhrase</pclass="catch-phrase">
             <h2>We'll make it as easy as possible for you</h2>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 feature-item">
+            <div class="ft-icon">
+                <i class="fas fa-pound-sign"></i>
+            </div>
+            <h3>No upfront cost</h3>
+            <p>Save thousands on upfront development costs and ongoing maintenance. Get your business online with no risk.  </p>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 feature-item">
-                <div class="ft-icon">
-                    <i class="fas fa-pound-sign"></i>
-                </div>
-                <h3>No upfront cost</h3>
-                <p>Save thousands on upfront development costs and ongoing maintenance. Get your business online with no risk.  </p>
+        <div class="col-lg-4 col-md-6 mb-3 feature-item">
+            <div class="ft-icon">
+                <i class="far fa-money-bill-alt"></i>
             </div>
-            <div class="col-lg-4 col-md-6 feature-item">
-                <div class="ft-icon">
-                    <i class="far fa-money-bill-alt"></i>
-                </div>
-                <h3>Cost-effective</h3>
-                <p>Our subscription model is the most cost-effective way to get your business online. Everything you need in one very reasonable monthly fee. </p>
+            <h3>Cost-effective</h3>
+            <p>Our subscription model is the most cost-effective way to get your business online. Everything you need in one very reasonable monthly fee. </p>
+        </div>
+        <div class="col-lg-4 col-md-6 feature-item">
+            <div class="ft-icon">
+                <i class="fas fa-server"></i>
             </div>
-            <div class="col-lg-4 col-md-6 feature-item">
-                <div class="ft-icon">
-                    <i class="fas fa-server"></i>
-                </div>
-                <h3>Free hosting</h3>
-                <p>Our packages come with everything you need to keep your business online. This includes hosting, maintenance, and security. </p>
+            <h3>Free hosting</h3>
+            <p>Our packages come with everything you need to keep your business online. This includes hosting, maintenance, and security. </p>
+        </div>
+        <div class="col-lg-4 col-md-6 feature-item">
+            <div class="ft-icon">
+                <i class="far fa-clock"></i>
             </div>
-            <div class="col-lg-4 col-md-6 feature-item">
-                <div class="ft-icon">
-                    <i class="far fa-clock"></i>
-                </div>
-                <h3>24/7 Support</h3>
-                <p>We make sure that your website is always in working order by providing 24/7 support. Never miss out on a potential customer again.</p>
+            <h3>24/7 Support</h3>
+            <p>We make sure that your website is always in working order by providing 24/7 support. Never miss out on a potential customer again.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 feature-item">
+            <div class="ft-icon">
+                <i class="fas fa-chart-line"></i>
             </div>
-            <div class="col-lg-4 col-md-6 feature-item">
-                <div class="ft-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3>Boost your revenue</h3>
-                <p>Our data-driven design approach has a proven record in boosting revenue. We specialise in converting visitors to customers. </p>
+            <h3>Boost your revenue</h3>
+            <p>Our data-driven design approach has a proven record in boosting revenue. We specialise in converting visitors to customers. </p>
+        </div>
+        <div class="col-lg-4 col-md-6 feature-item">
+            <div class="ft-icon">
+                <i class="fas fa-search"></i>
             </div>
-            <div class="col-lg-4 col-md-6 feature-item">
-                <div class="ft-icon">
-                    <i class="fas fa-search"></i>
-                </div>
-                <h3>SEO optimised</h3>
-                <p>We develop sites that are Search Engine Optimised. This means that your site will look good in the eyes of Google and rank higher as a result.</p>
+            <h3>SEO optimised</h3>
+            <p>We develop sites that are Search Engine Optimised. This means that your site will look good in the eyes of Google and rank higher as a result.</p>
+        </div>
+    </div>
+    <div class="row mt-3 mb-3">
+        <div class="container">
+            <div class="text-center">
+                <a href="@Url.Action("About", "Home")" class="btn-inline">Learn More <span>&rarr;</span></i></a>
             </div>
         </div>
+    </div>
     </div>
 </section>
 <!-- Features section end -->
@@ -176,29 +191,30 @@
             <p class="catch-phrase">@ViewBag.CatchPhrase</p>
             <h2 id="services-section">Chose the perfect plan for you</h2>
         </div>
-    <div class="row">
-        @foreach (var plan in ViewBag.Plans)
-        {
-        <div class="col-lg-4 col-md-8 offset-md-2 offset-lg-0 h-100">
+        <div class="row">
+            @foreach (var plan in ViewBag.Plans)
+            {
+                <div class="col-lg-4 col-md-8 offset-md-2 offset-lg-0 h-100">
 
-            <div class="pricing-plan flex-grow-1 @(plan.Name == "Star" ? "gold-plan" : "")">
-                <div class="pricing-title">
-                    <h3>@plan.Name Plan</h3>
+                    <div class="pricing-plan flex-grow-1 @(plan.Name == "Star" ? "gold-plan" : "")">
+                        <div class="pricing-title">
+                            <h3>@plan.Name Plan</h3>
+                        </div>
+                        <div class="pricing-body">
+                            <h2>@plan.Price</h2>
+                            <span>per month</span>
+                            <ul>
+                                @foreach (var detail in plan.Features)
+                                {
+                                    <li>@detail</li>
+                                }
+                            </ul>
+                            <a href="@Url.Action("RegisterInterest", "Home", new { packageCode = plan.Name })" class="site-btn">Get Plan</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="pricing-body">
-                    <h2>@plan.Price</h2>
-                    <span>per month</span>
-                    <ul>
-                        @foreach (var detail in plan.Features) { 
-                            <li>@detail</li>
-                        }
-                    </ul>
-                    <a href="@Url.Action("RegisterInterest", "Home", new { packageCode = plan.Name })" class="site-btn">Get Plan</a>
-                </div>
-            </div>
+            }
         </div>
-        }
-    </div>
     </div>
 </section>
 <!-- Pricing section end -->
