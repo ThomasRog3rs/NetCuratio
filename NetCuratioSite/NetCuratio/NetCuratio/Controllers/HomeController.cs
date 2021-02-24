@@ -180,6 +180,7 @@ namespace NetCuratio.Controllers
             return View();
         }
 
+        //[Route("Blog")]
         //public ActionResult Blog()
         //{
         //    ViewBag.CatchPhrase = "Beautiful websites, expertly made.";

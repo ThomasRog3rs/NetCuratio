@@ -24,7 +24,7 @@
         </div>
         <div class="row">
             <div class="col-lg-6 col-md-12">
-                <div class="pricing-plan">
+                <div class="pricing-plan" id="form">
                     <div class="pricing-title pricing-title-selected">
                         <h3>Your contact details</h3>
                     </div>
@@ -45,7 +45,7 @@
                                     @Html.ValidationMessageFor(m => m.Email, null, new { @class = "pt-1" })
                                 </div>
                                 <div class="col-lg-12 mb-4">
-                                    <label for="PhoneNumber">@Html.DisplayNameFor(x => x.PhoneNumber).ToHtmlString()</label>
+                                    <label for="PhoneNumber">@Html.DisplayNameFor(x => x.PhoneNumber).ToHtmlString() <span>(optional)</span></label>
                                     @Html.TextBoxFor(x => x.PhoneNumber, new { @class = "mb-1 bg-white" })
                                     @Html.ValidationMessageFor(m => m.PhoneNumber, null, new { @class = "pt-1" })
                                 </div>
@@ -105,5 +105,15 @@
 {
     <script>
         document.getElementById("WebsiteType").value = "@Model.WebsiteType";
+    </script>
+}
+
+@if (ViewBag.Section != null)
+{
+    <script>
+        document.onload = (function () {
+            var anchor = document.querySelector('#form');
+            anchor.scrollIntoView();
+        })();
     </script>
 }
