@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-lg-8 pr-0">
                 <h2 class="mb-md-3 mb-lg-3">@ViewBag.Title</h2>
-                <p class="info-small">Pickled palo santo 8-bit authentic raw denim, flexitarian deep v before they sold out banh mi tbh migas. Locavore sartorial cardigan, messenger bag gochujang wayfarers listicle palo santo. </p>
+                <p class="info-small">@Model.ProjectDetails.Intro</p>
                 <div class="site-breadcrumb">
                     <a href="@Url.Action("Index", "Home")">Home</a> / <a href="#">Case Studies</a> / <span>@ViewBag.Title</span>
                 </div>
@@ -122,41 +122,22 @@
             <h2>Our work</h2>
         </div>
         <div class="row" style="margin-bottom: 80px;">
-            <div class="col-lg-4 col-md-6 min-h-100 mb-5">
-                <div class="card shadow min-h-100">
-                    <img src="@Url.Content("~/Content/img/smartmockups_krwellness_image.jpg")" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">KR Wellness</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="row" style="margin-bottom: 80px;">
+                @for (int i = 0; i < 3; i++)
+                {
+                    <div class="col-lg-4 col-md-6 min-h-100 mb-5">
+                        <div class="card shadow min-h-100">
+                            <img src="@Url.Content("~/Content/img/case-studies/"+@Model.AllCaseStudies[i].Id+"/thumbnail.jpg")" class="card-img-top" alt="@Model.AllCaseStudies[i].Name Thumbnail Image">
+                            <div class="card-body">
+                                <h5 class="card-title">@Model.AllCaseStudies[i].Name</h5>
+                                <p class="card-text">@Model.AllCaseStudies[i].Intro</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="@Url.Action("CaseStudy", "Home", new { studyId= @Model.AllCaseStudies[i].Id })" class="btn-inline">View case study<span>&rarr;</span></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <a href="@Url.Action("CaseStudy", "Home", new { studyId = "KRWellness" })" class="btn-inline">View case study<span>&rarr;</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 min-h-100 mb-5">
-                <div class="card shadow min-h-100">
-                    <img src="@Url.Content("~/Content/img/smartmockups_NaxianCastle_image.jpg")" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Naxian Castle</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="@Url.Action("CaseStudy", "Home", new { studyId = "NaxianCastle" })" class="btn-inline">View case study<span>&rarr;</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 min-h-100 mb-5">
-                <div class="card shadow min-h-100">
-                    <img src="@Url.Content("~/Content/img/smartmockups_TalknHeal_image.jpg")" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Talk'N'Heal</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="@Url.Action("CaseStudy", "Home", new { studyId = "TalkNHeal" })" class="btn-inline">View case study<span>&rarr;</span></a>
-                    </div>
-                </div>
+                }
             </div>
         </div>
         @*<div class="our-work-gallery">

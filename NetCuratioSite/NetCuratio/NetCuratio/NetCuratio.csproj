@@ -212,10 +212,10 @@
     <Content Include="Content\img\case-studies\TalkNHeal\TalkNHeal_homepage_mobile.jpg" />
     <Content Include="Content\img\serverError.gif" />
     <Content Include="Content\img\smartmockups_krwellness.png" />
-    <Content Include="Content\img\smartmockups_krwellness_image.jpg" />
+    <Content Include="Content\img\case-studies\KRWellness\thumbnail.jpg" />
     <Content Include="Content\img\smartmockups_krwellness_responsive.png" />
-    <Content Include="Content\img\smartmockups_NaxianCastle_image.jpg" />
-    <Content Include="Content\img\smartmockups_TalknHeal_image.jpg" />
+    <Content Include="Content\img\case-studies\NaxianCastle\thumbnail.jpg" />
+    <Content Include="Content\img\case-studies\TalkNHeal\thumbnail.jpg" />
     <Content Include="Content\img\startup_dark_PNG.png" />
     <Content Include="Content\img\startup_light_PNG.png" />
     <Content Include="Content\img\Startup_PNG.png" />

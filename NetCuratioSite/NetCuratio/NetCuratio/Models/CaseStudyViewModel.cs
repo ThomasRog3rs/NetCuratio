@@ -9,5 +9,6 @@ namespace NetCuratio.Models
     public class CaseStudyViewModel
     {
         public CaseStudy ProjectDetails { get; set; }
+        public List<CaseStudy> AllCaseStudies { get; set; }
     }
 }

@@ -26,9 +26,15 @@ namespace NetCuratio.Controllers
         [Route("About")]
         public ActionResult About()
         {
+            var model = new CaseStudyViewModel
+            {
+                AllCaseStudies = CaseStudyModel.GetAllCaseStudies()
+            };
+
             ViewBag.CatchPhrase = PhrasesAndMessagesModel.CatchPhrase;
 
-            return View();
+
+            return View(model);
         }
 
         [Route("Plans")]
@@ -125,7 +131,8 @@ namespace NetCuratio.Controllers
         {
             var model = new CaseStudyViewModel
             {
-                ProjectDetails = CaseStudyModel.GetCaseStudy(studyId)
+                ProjectDetails = CaseStudyModel.GetCaseStudy(studyId),
+                AllCaseStudies = CaseStudyModel.GetAllCaseStudies()
             };
 
             if (model.ProjectDetails == null)
