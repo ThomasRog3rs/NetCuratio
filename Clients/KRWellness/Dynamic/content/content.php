@@ -106,7 +106,7 @@
     $sectionOneBtnLocation = null;
 
     //3 IMAGE COMPOSITION Component
-    $imageComposition = ["content/img/about1.jpg","content/img/about3.jpg","content/img/about2.jpg"];
+    $imageComposition = ["content/img/about1.jpg","content/img/KezImageOne.jpg","content/img/about2.jpg"];
 
     // Feature cards section
     $infoColumns = array(
