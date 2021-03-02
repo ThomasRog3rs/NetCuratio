@@ -62,28 +62,28 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/11/2021 22:56:37</publishTime>
     </File>
     <File Include="bin/NetCuratio.dll">
-      <publishTime>02/24/2021 11:50:24</publishTime>
+      <publishTime>03/01/2021 17:14:42</publishTime>
     </File>
     <File Include="bin/NetCuratio.pdb">
-      <publishTime>02/24/2021 11:50:24</publishTime>
+      <publishTime>03/01/2021 17:14:42</publishTime>
     </File>
     <File Include="bin/NetCuratio_CommonLayer.dll">
-      <publishTime>02/24/2021 11:50:23</publishTime>
+      <publishTime>03/01/2021 17:13:03</publishTime>
     </File>
     <File Include="bin/NetCuratio_CommonLayer.pdb">
-      <publishTime>02/24/2021 11:50:23</publishTime>
+      <publishTime>03/01/2021 17:13:03</publishTime>
     </File>
     <File Include="bin/NetCuratio_DataAccessLayer.dll">
-      <publishTime>02/24/2021 11:50:23</publishTime>
+      <publishTime>03/01/2021 17:13:12</publishTime>
     </File>
     <File Include="bin/NetCuratio_DataAccessLayer.pdb">
-      <publishTime>02/24/2021 11:50:23</publishTime>
+      <publishTime>03/01/2021 17:13:12</publishTime>
     </File>
     <File Include="bin/NetCuratio_ServiceLayer.dll">
-      <publishTime>02/24/2021 11:50:23</publishTime>
+      <publishTime>03/01/2021 17:13:12</publishTime>
     </File>
     <File Include="bin/NetCuratio_ServiceLayer.pdb">
-      <publishTime>02/24/2021 11:50:23</publishTime>
+      <publishTime>03/01/2021 17:13:12</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>02/11/2021 22:56:37</publishTime>
@@ -221,7 +221,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/11/2021 22:56:35</publishTime>
     </File>
     <File Include="Content/css/style.css">
-      <publishTime>02/23/2021 13:27:22</publishTime>
+      <publishTime>02/24/2021 13:19:16</publishTime>
     </File>
     <File Include="Content/icon-fonts/Flaticon.eot">
       <publishTime>02/11/2021 22:56:35</publishTime>
@@ -476,19 +476,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/11/2021 22:56:35</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
-      <publishTime>02/24/2021 11:40:13</publishTime>
+      <publishTime>02/28/2021 21:51:29</publishTime>
     </File>
     <File Include="Views/Home/Blog.cshtml">
-      <publishTime>02/11/2021 22:56:35</publishTime>
+      <publishTime>02/24/2021 13:13:52</publishTime>
     </File>
     <File Include="Views/Home/CaseStudy.cshtml">
-      <publishTime>02/24/2021 11:46:23</publishTime>
+      <publishTime>02/28/2021 21:51:29</publishTime>
     </File>
     <File Include="Views/Home/Contact.cshtml">
-      <publishTime>02/22/2021 10:54:22</publishTime>
+      <publishTime>02/28/2021 21:51:29</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>02/22/2021 11:41:03</publishTime>
+      <publishTime>02/28/2021 21:51:29</publishTime>
     </File>
     <File Include="Views/Home/RegisterInterest.cshtml">
       <publishTime>02/21/2021 20:48:23</publishTime>
@@ -524,7 +524,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/11/2021 22:56:35</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>02/21/2021 20:41:34</publishTime>
+      <publishTime>02/28/2021 21:51:29</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>02/11/2021 22:56:35</publishTime>

@@ -221,7 +221,7 @@ i.icon-gradient {
     background-position: right .75rem center;
     background-size: 16px 12px;
     border: 1px solid #ced4da;
-    border-radius: .25rem;
+    border-radius: 14px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -1767,21 +1767,26 @@ select.input-validation-error {
             height: 59px;
             padding-left: 15px;
             padding-right: 75px;
-            border: none;
-            background: #f5f1f8;
-            border-radius: 12px;
+            /*border: none;*/
+            background: #eff4f7;
+            border-radius: 14px;
+            border: 1px solid #585858;
+            border-right: none;
         }
 
         .sb-widget .sb-search-widget button {
             position: absolute;
             height: 100%;
-            right: 15px;
+            width: 40%;
+            right: 1px;
             top: 0;
             font-size: 14px;
-            color: #acacac;
-            background-color: transparent;
+            color: #fff;
+            background-color: #eb2b63;
             border: none;
             cursor: pointer;
+            border-radius: 14px;
+            font-weight: 600;
         }
 
     .sb-widget .sb-tag-widget a {
@@ -1851,7 +1856,7 @@ select.input-validation-error {
         border: none;
         padding: 0 29px;
         background: #eff4f7;
-        border-radius: 4px;
+        border-radius: 14px;
         border: 1px solid #585858;
     }
 
