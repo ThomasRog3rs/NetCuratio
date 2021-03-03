@@ -10,3 +10,9 @@ C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\Ne
 C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_CommonLayer\obj\Release\NetCuratio_CommonLayer.csproj.CoreCompileInputs.cache
 C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_CommonLayer\obj\Release\NetCuratio_CommonLayer.dll
 C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_CommonLayer\obj\Release\NetCuratio_CommonLayer.pdb
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_CommonLayer\bin\Release\NetCuratio_CommonLayer.dll
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_CommonLayer\bin\Release\NetCuratio_CommonLayer.pdb
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_CommonLayer\obj\Release\NetCuratio_CommonLayer.csprojAssemblyReference.cache
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_CommonLayer\obj\Release\NetCuratio_CommonLayer.csproj.CoreCompileInputs.cache
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_CommonLayer\obj\Release\NetCuratio_CommonLayer.dll
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_CommonLayer\obj\Release\NetCuratio_CommonLayer.pdb

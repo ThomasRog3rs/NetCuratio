@@ -20,3 +20,14 @@ C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\Ne
 C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.csproj.CopyComplete
 C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.dll
 C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.pdb
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NetCuratio_ServiceLayer.dll
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NetCuratio_ServiceLayer.pdb
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NetCuratio_CommonLayer.dll
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NetCuratio_DataAccessLayer.dll
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NetCuratio_CommonLayer.pdb
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NetCuratio_DataAccessLayer.pdb
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.csprojAssemblyReference.cache
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.csproj.CoreCompileInputs.cache
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.csproj.CopyComplete
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.dll
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.pdb
