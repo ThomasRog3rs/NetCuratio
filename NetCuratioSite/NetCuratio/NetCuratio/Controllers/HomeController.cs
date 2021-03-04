@@ -4,6 +4,7 @@ using NetCuratio_CommonLayer.Objects;
 using NetCuratio_ServiceLayer.IServices;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net.Mail;
 using System.Web;
@@ -18,6 +19,7 @@ namespace NetCuratio.Controllers
             ViewBag.CatchPhrase = PhrasesAndMessagesModel.CatchPhrase;
             ViewBag.ShowSuccessMessage = false;
             ViewBag.Plans = PlansModel.GetAllPlans();
+            ViewBag.Root = ConfigurationManager.AppSettings["SiteRoot"];
 
             var model = new EmailSignUpModel();
             return View(model);
@@ -32,7 +34,7 @@ namespace NetCuratio.Controllers
             };
 
             ViewBag.CatchPhrase = PhrasesAndMessagesModel.CatchPhrase;
-
+            ViewBag.Root = ConfigurationManager.AppSettings["SiteRoot"];
 
             return View(model);
         }
@@ -42,7 +44,8 @@ namespace NetCuratio.Controllers
         {
             ViewBag.CatchPhrase = PhrasesAndMessagesModel.CatchPhrase;
             ViewBag.ShowSuccessMessage = false;
-                        ViewBag.Plans = PlansModel.GetAllPlans();
+            ViewBag.Plans = PlansModel.GetAllPlans();
+            ViewBag.Root = ConfigurationManager.AppSettings["SiteRoot"];
 
             return View();
         }
@@ -53,6 +56,7 @@ namespace NetCuratio.Controllers
         {
             ViewBag.CatchPhrase = PhrasesAndMessagesModel.CatchPhrase;
             ViewBag.ShowSuccessMessage = false;
+            ViewBag.Root = ConfigurationManager.AppSettings["SiteRoot"];
 
             var model = new ContactViewModel();
 
@@ -73,13 +77,15 @@ namespace NetCuratio.Controllers
                 emailService.SendEmail(email);
 
                 ViewBag.ShowSuccessMessage = true;
-                
+                ViewBag.Root = ConfigurationManager.AppSettings["SiteRoot"];
 
                 return View("Contact", model); 
             }
             else
             {
                 ViewBag.ShowSuccessMessage = false;
+                ViewBag.Root = ConfigurationManager.AppSettings["SiteRoot"];
+
                 return View("Contact", model);
             }
         }
@@ -98,6 +104,8 @@ namespace NetCuratio.Controllers
             {
                 return RedirectToAction("Services", "Home");
             }
+
+            ViewBag.Root = ConfigurationManager.AppSettings["SiteRoot"];
 
             return View(model);
         }
@@ -122,6 +130,8 @@ namespace NetCuratio.Controllers
             else
             {
                 ViewBag.Section = "form";
+                ViewBag.Root = ConfigurationManager.AppSettings["SiteRoot"];
+
                 return View("RegisterInterest", model);
             }
         }
@@ -140,13 +150,23 @@ namespace NetCuratio.Controllers
                 return RedirectToAction("Lost");
             }
 
-            return View(model);
+            var root = ConfigurationManager.AppSettings["SiteRoot"];
+            ViewBag.Root = root;
+            ViewBag.HomepageImage = string.Format("{0}/Content/img/case-studies/{1}/{1}_homepage.jpg", root, model.ProjectDetails.Id);
+            ViewBag.MobileImage = string.Format("{0}/Content/img/case-studies/{1}/{1}_homepage_mobile.jpg", root, model.ProjectDetails.Id);
+
+            return View("CaseStudy", model);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult EmailSignUp(EmailSignUpModel model)
         {
+            ViewBag.Root = ConfigurationManager.AppSettings["SiteRoot"];
+            ViewBag.Section = "register";
+            ViewBag.CatchPhrase = PhrasesAndMessagesModel.CatchPhrase;
+            ViewBag.Plans = PlansModel.GetAllPlans();
+
             if (ModelState.IsValid)
             {
                 IEmailService emailService = new NetCuratio_ServiceLayer.Services.EmailService();
@@ -154,21 +174,14 @@ namespace NetCuratio.Controllers
                 var email = new EmailTransform().TransformEmailSignUp(model);
 
                 ViewBag.ShowSuccessMessage = true;
-                ViewBag.Section = "register";
 
                 emailService.SendEmail(email);
 
-                ViewBag.CatchPhrase = PhrasesAndMessagesModel.CatchPhrase;
-                ViewBag.Plans = PlansModel.GetAllPlans();
                 return View("Index");
             }
             else
             {
                 ViewBag.ShowSuccessMessage = false;
-                ViewBag.Section = "register";
-
-                ViewBag.CatchPhrase = PhrasesAndMessagesModel.CatchPhrase;
-                ViewBag.Plans = PlansModel.GetAllPlans();
                 return View("Index");
             }
         }
@@ -176,6 +189,7 @@ namespace NetCuratio.Controllers
         //[Route("Plans/Thanks")]
         public ActionResult Thanks()
         {
+            ViewBag.Root = ConfigurationManager.AppSettings["SiteRoot"];
 
             return View();
         }

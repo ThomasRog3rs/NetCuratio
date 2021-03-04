@@ -7,19 +7,19 @@
     <meta name="keywords" content="cloud, hosting, creative, html, website, design, development, responsive, mobile, modern">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-    <link href="@Url.Content("~/Content/img/favicon.png")" rel="shortcut icon" type="image/png"/>
+    <link href="@ViewBag.Root/Content/img/favicon.png" rel="shortcut icon" type="image/png"/>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i" rel="stylesheet" type="text/css">
 
 
     <!-- Stylesheets -->
-    <link href="@Url.Content("~/Content/css/bootstrap.min.css")" rel="stylesheet" type="text/css"/>
-    <link href="@Url.Content("~/Content/css/font-awesome.min.css")" rel="stylesheet" type="text/css"/>
-    <link href="@Url.Content("~/Content/css/flaticon.css")" rel="stylesheet" type="text/css"/>
-    <link href="@Url.Content("~/Content/css/owl.carousel.min.css")" rel="stylesheet" type="text/css"/>
-    <link href="@Url.Content("~/Content/css/animate.css")" rel="stylesheet" type="text/css"/>
-    <link href="@Url.Content("~/Content/css/style.css")" rel="stylesheet" type="text/css"/>
+    <link href="@ViewBag.Root/Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" runat="server"/>
+    <link href="@ViewBag.Root/Content/css/font-awesome.min.css" rel="stylesheet" type="text/css" runat="server"/>
+    <link href="@ViewBag.Root/Content/css/flaticon.css" rel="stylesheet" type="text/css" runat="server"/>
+    <link href="@ViewBag.Root/Content/css/owl.carousel.min.css" rel="stylesheet" type="text/css" runat="server"/>
+    <link href="@ViewBag.Root/Content/css/animate.css" rel="stylesheet" type="text/css" runat="server"/>
+    <link href="@ViewBag.Root/Content/css/style.css" rel="stylesheet" type="text/css" runat="server"/>
 
     <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -35,11 +35,7 @@
 
     <!-- Header section -->
     <header class="header-section">
-<<<<<<< Updated upstream
-        <a href="@Url.Action("Index", "Home")" class="site-logo fw-title text-white font-weight-bold"><img src="@Url.Content("~/Content/img/section-title-icon.png")" loading="lazy"  alt="logo"> Net Curatio</a>
-=======
-        <a href="@Url.Action("Index", "Home")" class="site-logo fw-title text-white font-weight-bold"><img src="@Url.Content("~/Content/img/section-title-icon.png")" loading="lazy"  alt="logo" typeof="image/png"> Net Curatio</a>
->>>>>>> Stashed changes
+        <a href="@Url.Action("Index", "Home")" class="site-logo fw-title text-white font-weight-bold"><img src="@ViewBag.Root/Content/img/section-title-icon.png" loading="lazy"  alt="logo" typeof="image/png"> Net Curatio</a>
         <div class="nav-switch">
             <i class="fa fa-bars"></i>
         </div>
@@ -63,7 +59,7 @@
     <div class="elfsight-app-ca513ca0-68a0-4677-b078-6c0947f85fe5"></div>
     <!-- Footer top section -->
     <!-- Milestones section -->
-    <section class="milestones-section set-bg" data-setbg="@Url.Content("~/Content/img/milestones-bg.jpg")">
+    <section class="milestones-section set-bg" data-setbg="@ViewBag.Root/Content/img/milestones-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
@@ -106,24 +102,20 @@
             </ul>
             <div class="copyright">
                 Copyright &copy;
-<<<<<<< Updated upstream
-                @DateTime.Now.Year All rights reserved | Net Curatio <img src="@Url.Content("~/Content/img/favicon.png")" alt="Logo" loading="lazy"  style="max-height: 30px" />
-=======
-                @DateTime.Now.Year All rights reserved | Net Curatio <img src="@Url.Content("~/Content/img/favicon.png")" alt="Logo" loading="lazy"  style="max-height: 30px" typeof="image/png"/>
->>>>>>> Stashed changes
+                @DateTime.Now.Year All rights reserved | Net Curatio <img src="@ViewBag.Root/Content/img/favicon.png" alt="Logo" loading="lazy"  style="max-height: 30px" typeof="image/png"/>
             </div>
         </div>
     </footer>
 
     <!-- Footer top section end -->
     <!--====== Javascripts & Jquery ======-->
-    <script src="@Url.Content("~/Scripts/js/jquery-3.2.1.min.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/js/bootstrap.min.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/js/owl.carousel.min.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/js/circle-progress.min.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/js/main.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+    <script src="@ViewBag.Root/Scripts/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="@ViewBag.Root/Scripts/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="@ViewBag.Root/Scripts/js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="@ViewBag.Root/Scripts/js/circle-progress.min.js" type="text/javascript"></script>
+    <script src="@ViewBag.Root/Scripts/js/main.js" type="text/javascript"></script>
+    <script src="@ViewBag.Root/Scripts/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="@ViewBag.Root/Scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/c59cb3ca97.js" crossorigin="anonymous" type="text/javascript"></script>
 
 </body>
