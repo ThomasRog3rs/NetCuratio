@@ -31,3 +31,5 @@ C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Relea
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.csproj.CopyComplete
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.dll
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.pdb
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NLog.dll
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NLog.xml

@@ -28,7 +28,9 @@ C:\Users\matth\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\Ne
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\bin\Debug\NetCuratio_DataAccessLayer.dll
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\bin\Debug\NetCuratio_DataAccessLayer.pdb
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\bin\Debug\NetCuratio_CommonLayer.dll
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\bin\Debug\NLog.dll
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\bin\Debug\NetCuratio_CommonLayer.pdb
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\bin\Debug\NLog.xml
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\obj\Debug\NetCuratio_DataAccessLayer.csprojAssemblyReference.cache
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\obj\Debug\NetCuratio_DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\obj\Debug\NetCuratio_DataAccessLayer.csproj.CopyComplete

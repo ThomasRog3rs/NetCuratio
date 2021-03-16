@@ -1,7 +1,9 @@
 ﻿using NetCuratio_CommonLayer.Objects;
 using NetCuratio_DataAccessLayer.IRepositories;
+using NLog;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
@@ -12,48 +14,40 @@ namespace NetCuratio_DataAccessLayer.Repositories
 {
     public class EmailRepository : IEmailRepository
     {
+        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
+
         public void SendEmail(EmailModel email)
         {
-            SmtpClient client = new SmtpClient()
-            {
-                Host = "smtp.gmail.com",
-                Port = 587,
-                EnableSsl = true,
-                DeliveryMethod = SmtpDeliveryMethod.Network,
-                UseDefaultCredentials = true,
-                Credentials = new NetworkCredential()
-                {
-                    UserName = "NetCuratio@gmail.com",
-                    Password = "pufhfvchnpulhuyq"
-                },
-            };
+            int port = 0;
 
-            MailAddress fromEmail = new MailAddress("NetCuratio@gmail.com", "Net Curatio");
-
-            List<MailAddress> toEmails = new List<MailAddress>();
-            MailMessage messages = new MailMessage()
+            if (!Int32.TryParse(ConfigurationManager.AppSettings["SmtpPort"], out port))
             {
-                From = fromEmail,
-                Subject = email.Subject,
-                Body = email.Body
-            };
+                Logger.Error("The port number, in web.config, isn't an integer... you fool!");
+            }
+
+            MailMessage message = new MailMessage();
+            message.From = new MailAddress("info@netcuratio.com");
+            message.Subject = email.Subject;
+            message.IsBodyHtml = true;
+            message.Body = email.Body;
 
             foreach (var to in email.To)
             {
-                messages.To.Add(new MailAddress(to, to));
+                message.To.Add(to);
             }
 
-            messages.IsBodyHtml = true;
-
+            SmtpClient smtp = new SmtpClient("auth.smtp.1and1.fr", port);
+            smtp.Credentials = new NetworkCredential("info@netcuratio.com", "H@z5!mssiHyL!Pi");
+            smtp.EnableSsl = true;
             try
             {
-                client.Send(messages);
+                // smtp.Send(Msg);
+                smtp.Send(message);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                //Log
+                Logger.Error(string.Format("Message: {0} | Inner exception: {1} |", ex.Message, ex.InnerException), "Email error.");
             }
-
         }
     }
 }

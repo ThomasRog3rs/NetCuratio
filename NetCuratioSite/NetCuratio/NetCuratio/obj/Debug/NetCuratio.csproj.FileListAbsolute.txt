@@ -336,6 +336,7 @@ C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\Microsoft.Web.Infr
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\NetCuratio_CommonLayer.dll
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\NetCuratio_ServiceLayer.dll
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\Newtonsoft.Json.dll
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\NLog.dll
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\Owin.dll
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\System.Web.Helpers.dll
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\System.Web.Mvc.dll
@@ -361,6 +362,7 @@ C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\Microsoft.Owin.Sec
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\Microsoft.Owin.Security.OAuth.xml
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\Microsoft.Owin.Security.Twitter.xml
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\Newtonsoft.Json.xml
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\NLog.xml
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\System.Web.Helpers.xml
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\System.Web.Mvc.xml
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\System.Web.Optimization.xml
