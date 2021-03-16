@@ -24,7 +24,7 @@ namespace NetCuratio_DataAccessLayer.Repositories
                 Credentials = new NetworkCredential()
                 {
                     UserName = "NetCuratio@gmail.com",
-                    Password = "qjsttpnvvgmfzvzn"
+                    Password = "pufhfvchnpulhuyq"
                 },
             };
 

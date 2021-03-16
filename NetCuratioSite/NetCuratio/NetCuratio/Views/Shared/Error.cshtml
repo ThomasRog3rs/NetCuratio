@@ -13,7 +13,7 @@
     }
 </style>
 <!-- Page Top section -->
-<section class="page-top-section-small set-bg" data-setbg="@Url.Content("~/Content/img/page-top-bg.jpg")">
+<section class="page-top-section-small set-bg" data-setbg="@ViewBag.Root/Content/img/page-top-bg.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 pr-0">
@@ -38,7 +38,7 @@
                 }
                 else
                 {
-                    <img src="@Url.Content("~/Content/img/serverError.gif")" alt="Error isometric image" style="max-height: 300px">
+                    <img src="@ViewBag.Root/Content/img/serverError.gif" alt="Error isometric image" style="max-height: 300px">
                 }
 
                 @if (ViewBag.Title == "404 Error")
