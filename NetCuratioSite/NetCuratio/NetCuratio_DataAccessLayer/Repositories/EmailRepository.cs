@@ -26,7 +26,7 @@ namespace NetCuratio_DataAccessLayer.Repositories
             }
 
             MailMessage message = new MailMessage();
-            message.From = new MailAddress("info@netcuratio.com");
+            message.From = new MailAddress("info@netcuratio.com", "Net Curatio");
             message.Subject = email.Subject;
             message.IsBodyHtml = true;
             message.Body = email.Body;
