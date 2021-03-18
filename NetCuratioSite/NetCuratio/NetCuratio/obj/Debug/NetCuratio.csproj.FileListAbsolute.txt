@@ -380,3 +380,5 @@ C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\obj\Debug\NetCuratio.c
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\obj\Debug\NetCuratio.csproj.CopyComplete
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\obj\Debug\NetCuratio.dll
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\obj\Debug\NetCuratio.pdb
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\NLog.dll
+C:\Users\compu\OneDrive\Documents\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\NLog.xml

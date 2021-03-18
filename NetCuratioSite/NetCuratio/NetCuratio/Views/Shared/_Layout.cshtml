@@ -35,16 +35,16 @@
 
     <!-- Header section -->
     <header class="header-section">
-        <a href="@Url.Action("Index", "Home")" class="site-logo fw-title text-white font-weight-bold"><img src="@ViewBag.Root/Content/img/section-title-icon.png" loading="lazy"  alt="logo" typeof="image/png"> Net Curatio</a>
+        <a href="@Url.Action("Index", "Home")" class="site-logo fw-title text-white font-weight-bold"><img src="@ViewBag.Root/Content/img/section-title-icon.png" loading="lazy" alt="logo" typeof="image/png"> Net Curatio</a>
         <div class="nav-switch">
             <i class="fa fa-bars"></i>
         </div>
         <div class="nav-warp mr-5">
             <ul class="main-menu">
-                <li><a href="@Url.Action("Index", "Home")">Home</a></li>
-                <li><a href="@Url.Action("About", "Home")">About us</a></li>
-                <li><a href="@Url.Action("Services", "Home")">Services</a></li>
-                <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
+                <li><a class="main-menu-link" href="@Url.Action("Index", "Home")">Home</a></li>
+                <li><a class="main-menu-link" href="@Url.Action("About", "Home")">About us</a></li>
+                <li><a class="main-menu-link" href="@Url.Action("Services", "Home")">Services</a></li>
+                <li><a class="main-menu-link" href="@Url.Action("Contact", "Home")">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -102,7 +102,7 @@
             </ul>
             <div class="copyright">
                 Copyright &copy;
-                @DateTime.Now.Year All rights reserved | Net Curatio <img src="@ViewBag.Root/Content/img/favicon.png" alt="Logo" loading="lazy"  style="max-height: 30px" typeof="image/png"/>
+                @DateTime.Now.Year All rights reserved | Net Curatio <img src="@ViewBag.Root/Content/img/favicon.png" alt="Logo" loading="lazy" style="max-height: 30px" typeof="image/png" />
             </div>
         </div>
     </footer>
@@ -117,6 +117,48 @@
     <script src="@ViewBag.Root/Scripts/jquery.validate.min.js" type="text/javascript"></script>
     <script src="@ViewBag.Root/Scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/c59cb3ca97.js" crossorigin="anonymous" type="text/javascript"></script>
+
+    <!-- for the navbar -->
+    <script>
+        const navBar = document.querySelector("header.header-section");
+        const navLinks = document.querySelectorAll("a.main-menu-link");
+        //const navBrand = document.querySelector(".navbar-brand");
+
+        window.onscroll = function (e) {
+            // console.log(document.getScroll());
+            if (document.getScroll()[1] > 1000) {
+                navBar.classList += " shadow-lg";
+                navBar.style.background = "rgba(33, 0, 79, 0.97)";
+                navBar.style.background = "#1b043b";
+                navBar.style.position = "fixed";
+                //navBrand.style.color = "rgb(82, 82, 82)";
+                navLinks.forEach((el) => {
+                    //el.style.color = "#fff"
+                });
+            } else {
+                navBar.style.background = "transparent";
+                navBar.classList.remove("shadow-lg");
+                navBar.style.position = "absolute";
+                //navBrand.style.color = "#fff";
+                navLinks.forEach((el) => {
+                    //el.style.color = "#fff";
+                });
+            }
+        }
+
+        document.getScroll = function () {
+            if (window.pageYOffset != undefined) {
+                return [pageXOffset, pageYOffset];
+            } else {
+                var sx, sy, d = document,
+                    r = d.documentElement,
+                    b = d.body;
+                sx = r.scrollLeft || b.scrollLeft || 0;
+                sy = r.scrollTop || b.scrollTop || 0;
+                return [sx, sy];
+            }
+        }
+    </script>
 
 </body>
 </html>
