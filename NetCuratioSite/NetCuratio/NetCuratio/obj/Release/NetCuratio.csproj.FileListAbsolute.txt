@@ -283,3 +283,5 @@ C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\obj\Release\NetCuratio
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\obj\Release\NetCuratio.csproj.CopyComplete
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\obj\Release\NetCuratio.dll
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\obj\Release\NetCuratio.pdb
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\NLog.dll
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio\bin\NLog.xml

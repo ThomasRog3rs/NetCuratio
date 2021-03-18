@@ -35,8 +35,10 @@ C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Debug
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NetCuratio_ServiceLayer.pdb
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NetCuratio_CommonLayer.dll
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NetCuratio_DataAccessLayer.dll
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NLog.dll
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NetCuratio_CommonLayer.pdb
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NetCuratio_DataAccessLayer.pdb
+C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Debug\NLog.xml
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Debug\NetCuratio_ServiceLayer.csprojAssemblyReference.cache
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Debug\NetCuratio_ServiceLayer.csproj.CoreCompileInputs.cache
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Debug\NetCuratio_ServiceLayer.csproj.CopyComplete
