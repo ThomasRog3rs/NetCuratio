@@ -19,7 +19,7 @@ namespace NetCuratio_CommonLayer.Objects
                 "20 monthly support credits",
                 "24/7 security monitoring",
                 "10GB storage",
-                "20GB bandwith"
+                "20GB bandwdith"
             }
         };
 
@@ -34,7 +34,7 @@ namespace NetCuratio_CommonLayer.Objects
                 "100 monthly support credits", 
                 "24/7 security monitoring", 
                 "20GB storage", 
-                "Unlimited bandwith"
+                "Unlimited bandwidth"
             }
         };
 
@@ -49,7 +49,7 @@ namespace NetCuratio_CommonLayer.Objects
                 "40 monthly support credits",
                 "24/7 security monitoring",
                 "15GB storage",
-                "100GB bandwith"
+                "100GB bandwidth"
             }
         };
 
