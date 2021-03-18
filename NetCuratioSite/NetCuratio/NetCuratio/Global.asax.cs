@@ -21,15 +21,15 @@ namespace NetCuratio
 
         protected void Application_BeginRequest()
         {
-            if (!Context.Request.IsSecureConnection
-                && !Context.Request.IsLocal // to avoid switching to https when local testing
-                )
-            {
-                Response.Clear();
-                Response.Status = "301 Moved Permanently";
-                Response.AddHeader("Location", Context.Request.Url.ToString().Insert(4, "s"));
-                Response.End();
-            }
+            //if (!Context.Request.IsSecureConnection
+            //    && !Context.Request.IsLocal // to avoid switching to https when local testing
+            //    )
+            //{
+            //    Response.Clear();
+            //    Response.Status = "301 Moved Permanently";
+            //    Response.AddHeader("Location", Context.Request.Url.ToString().Insert(4, "s"));
+            //    Response.End();
+            //}
         }
 
         public void Application_Error(Object sender, EventArgs e)
