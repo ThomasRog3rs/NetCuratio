@@ -809,6 +809,7 @@ select.input-validation-error {
     padding-top: 10px;
     padding-bottom: 10px;
     z-index: 99;
+    transition: top 0.3s;
 }
 
 .site-logo {
