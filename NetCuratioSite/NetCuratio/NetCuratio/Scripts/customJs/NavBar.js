@@ -1,5 +1,5 @@
 ﻿//Variables required
-const navBar = document.querySelector("header.header-section");
+const navBar = document.querySelector("nav.header-section");
 const navLinks = document.querySelectorAll("a.main-menu-link");
 let prevScrollpos = window.pageYOffset;
 
