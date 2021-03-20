@@ -13,7 +13,7 @@ window.onscroll = () => {
         //show the navbar
         navBar.style.top = "0";
         navBar.classList += " shadow-lg";
-        navBar.style.background = "rgba(33, 0, 79, 0.97)";
+        navBar.style.background = "rgba(33, 0, 79, 0.97)";s
         navBar.style.background = "#1b043b";
         navBar.style.position = "fixed";
     } else {
@@ -28,7 +28,7 @@ window.onscroll = () => {
     if (prevScrollpos == 0) {
         navBar.style.background = "transparent";
         navBar.classList.remove("shadow-lg");
-        navBar.style.position = "absolute";
+        //navBar.style.position = "absolute";
     }
 
 }
