@@ -33,3 +33,16 @@ C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Relea
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.pdb
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NLog.dll
 C:\GitHub\NetCuratio\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NLog.xml
+C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NetCuratio_ServiceLayer.dll
+C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NetCuratio_ServiceLayer.pdb
+C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NetCuratio_CommonLayer.dll
+C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NetCuratio_DataAccessLayer.dll
+C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NLog.dll
+C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NetCuratio_CommonLayer.pdb
+C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NetCuratio_DataAccessLayer.pdb
+C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\NLog.xml
+C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.csprojAssemblyReference.cache
+C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.csproj.CoreCompileInputs.cache
+C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.csproj.CopyComplete
+C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.dll
+C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.pdb

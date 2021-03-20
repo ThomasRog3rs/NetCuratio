@@ -274,6 +274,7 @@
     <Content Include="Content\img\team\4.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <None Include="Properties\PublishProfiles\FolderProfileTom.pubxml" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\customJs\NavBar.js" />
     <Content Include="Scripts\jquery.validate.js" />

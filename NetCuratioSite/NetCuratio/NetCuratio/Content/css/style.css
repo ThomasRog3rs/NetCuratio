@@ -812,6 +812,15 @@ select.input-validation-error {
     transition: top 0.3s;
 }
 
+.test {
+    transform: translateZ(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    -webkit-transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
+}
+
 .site-logo {
     display: inline-block;
     margin-left: 50px;
