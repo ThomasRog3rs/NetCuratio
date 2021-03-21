@@ -62,28 +62,28 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/14/2021 15:40:04</publishTime>
     </File>
     <File Include="bin/NetCuratio.dll">
-      <publishTime>03/18/2021 00:47:10</publishTime>
+      <publishTime>03/20/2021 23:13:05</publishTime>
     </File>
     <File Include="bin/NetCuratio.pdb">
-      <publishTime>03/18/2021 00:47:10</publishTime>
+      <publishTime>03/20/2021 23:13:05</publishTime>
     </File>
     <File Include="bin/NetCuratio_CommonLayer.dll">
-      <publishTime>03/18/2021 00:47:08</publishTime>
+      <publishTime>03/20/2021 21:51:49</publishTime>
     </File>
     <File Include="bin/NetCuratio_CommonLayer.pdb">
-      <publishTime>03/18/2021 00:47:08</publishTime>
+      <publishTime>03/20/2021 21:51:49</publishTime>
     </File>
     <File Include="bin/NetCuratio_DataAccessLayer.dll">
-      <publishTime>03/18/2021 00:47:09</publishTime>
+      <publishTime>03/20/2021 21:51:49</publishTime>
     </File>
     <File Include="bin/NetCuratio_DataAccessLayer.pdb">
-      <publishTime>03/18/2021 00:47:09</publishTime>
+      <publishTime>03/20/2021 21:51:49</publishTime>
     </File>
     <File Include="bin/NetCuratio_ServiceLayer.dll">
-      <publishTime>03/18/2021 00:47:09</publishTime>
+      <publishTime>03/20/2021 21:51:49</publishTime>
     </File>
     <File Include="bin/NetCuratio_ServiceLayer.pdb">
-      <publishTime>03/18/2021 00:47:09</publishTime>
+      <publishTime>03/20/2021 21:51:49</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>02/14/2021 15:40:04</publishTime>
@@ -224,7 +224,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/14/2021 15:40:02</publishTime>
     </File>
     <File Include="Content/css/style.css">
-      <publishTime>03/03/2021 01:22:10</publishTime>
+      <publishTime>03/21/2021 00:40:59</publishTime>
     </File>
     <File Include="Content/icon-fonts/Flaticon.eot">
       <publishTime>02/14/2021 15:40:02</publishTime>
@@ -415,6 +415,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="NLog.config">
       <publishTime>03/15/2021 22:53:18</publishTime>
     </File>
+    <File Include="Scripts/customJs/NavBar.js">
+      <publishTime>03/21/2021 00:38:10</publishTime>
+    </File>
     <File Include="Scripts/jquery.validate.js">
       <publishTime>02/14/2021 15:40:02</publishTime>
     </File>
@@ -494,7 +497,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/04/2021 22:42:11</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>03/04/2021 22:49:46</publishTime>
+      <publishTime>03/20/2021 22:58:12</publishTime>
     </File>
     <File Include="Views/Home/RegisterInterest.cshtml">
       <publishTime>03/04/2021 22:49:46</publishTime>
@@ -530,7 +533,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/14/2021 15:40:02</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>03/16/2021 20:48:55</publishTime>
+      <publishTime>03/21/2021 00:28:12</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>02/14/2021 15:40:02</publishTime>
@@ -542,7 +545,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/14/2021 15:40:02</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/17/2021 21:42:28</publishTime>
+      <publishTime>03/20/2021 23:13:05</publishTime>
     </File>
   </ItemGroup>
 </Project>

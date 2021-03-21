@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="description" content="Beautiful websites, expertly made. Get your business online today for as little as £19.99/month. That's half the price of your average monthly phone bill. Not bad, hey!">
     <meta name="keywords" content="cloud, hosting, creative, html, website, design, development, responsive, mobile, modern">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <!-- Favicon -->
-    <link href="@ViewBag.Root/Content/img/favicon.png" rel="shortcut icon" type="image/png"/>
+    <link href="@ViewBag.Root/Content/img/favicon.png" rel="shortcut icon" type="image/png" />
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i" rel="stylesheet" type="text/css">
 
 
     <!-- Stylesheets -->
-    <link href="@ViewBag.Root/Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" runat="server"/>
-    <link href="@ViewBag.Root/Content/css/font-awesome.min.css" rel="stylesheet" type="text/css" runat="server"/>
-    <link href="@ViewBag.Root/Content/css/flaticon.css" rel="stylesheet" type="text/css" runat="server"/>
-    <link href="@ViewBag.Root/Content/css/owl.carousel.min.css" rel="stylesheet" type="text/css" runat="server"/>
-    <link href="@ViewBag.Root/Content/css/animate.css" rel="stylesheet" type="text/css" runat="server"/>
-    <link href="@ViewBag.Root/Content/css/style.css" rel="stylesheet" type="text/css" runat="server"/>
+    <link href="@ViewBag.Root/Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" runat="server" />
+    <link href="@ViewBag.Root/Content/css/font-awesome.min.css" rel="stylesheet" type="text/css" runat="server" />
+    <link href="@ViewBag.Root/Content/css/flaticon.css" rel="stylesheet" type="text/css" runat="server" />
+    <link href="@ViewBag.Root/Content/css/owl.carousel.min.css" rel="stylesheet" type="text/css" runat="server" />
+    <link href="@ViewBag.Root/Content/css/animate.css" rel="stylesheet" type="text/css" runat="server" />
+    <link href="@ViewBag.Root/Content/css/style.css" rel="stylesheet" type="text/css" runat="server" />
 
     <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -35,6 +35,23 @@
 
     <!-- Navbar section -->
     <nav class="header-section">
+        <a href="@Url.Action("Index", "Home")" class="site-logo fw-title text-white font-weight-bold"><img src="@ViewBag.Root/Content/img/section-title-icon.png" loading="lazy" alt="logo" typeof="image/png"> Net Curatio</a>
+        <div class="nav-switch">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="nav-warp mr-5">
+            <ul class="main-menu">
+                <li><a class="main-menu-link" href="@Url.Action("Index", "Home")">Home</a></li>
+                <li><a class="main-menu-link" href="@Url.Action("About", "Home")">About us</a></li>
+                <li><a class="main-menu-link" href="@Url.Action("Services", "Home")">Services</a></li>
+                <li><a class="main-menu-link" href="@Url.Action("Contact", "Home")">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar section end -->
+
+    <!-- Navbar section -->
+    <nav class="header-section-secondary">
         <a href="@Url.Action("Index", "Home")" class="site-logo fw-title text-white font-weight-bold"><img src="@ViewBag.Root/Content/img/section-title-icon.png" loading="lazy" alt="logo" typeof="image/png"> Net Curatio</a>
         <div class="nav-switch">
             <i class="fa fa-bars"></i>
@@ -90,7 +107,6 @@
         </div>
     </section>
     <!-- Milestones section end -->
-
     <!-- Footer section -->
     <footer class="footer-section">
         <div class="container">
@@ -108,7 +124,6 @@
     </footer>
 
     <!-- Footer top section end -->
-
     <!--====== Javascripts & Jquery ======-->
     <script src="@ViewBag.Root/Scripts/js/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="@ViewBag.Root/Scripts/js/bootstrap.min.js" type="text/javascript"></script>

@@ -812,6 +812,18 @@ select.input-validation-error {
     transition: top 0.3s;
 }
 
+.header-section-secondary {
+    position: absolute;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 99;
+    transition: top 0.3s;
+   /* hidden*/
+    opacity: 0;
+    pointer-events: none;
+}
+
 .test {
     transform: translateZ(0);
     -moz-transform: translatez(0);
@@ -2220,7 +2232,7 @@ select.input-validation-error {
     }
 
     .hero-content p {
-        max-width: 90%;
+        max-width: 95%;
         margin-top: 45px
     }
 
@@ -2244,6 +2256,15 @@ select.input-validation-error {
     .contact-submit {
         display: block !important;
         min-width: 100% !important
+    }
+
+    .site-btn{
+        display: block;
+        max-width: 100%;
+    }
+
+    .cta-btn{
+        max-width: 95% !important;
     }
 }
 
