@@ -416,7 +416,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/15/2021 22:53:18</publishTime>
     </File>
     <File Include="Scripts/customJs/NavBar.js">
-      <publishTime>03/21/2021 00:38:10</publishTime>
+      <publishTime>03/21/2021 01:41:28</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.js">
       <publishTime>02/14/2021 15:40:02</publishTime>
@@ -533,7 +533,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/14/2021 15:40:02</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>03/21/2021 00:28:12</publishTime>
+      <publishTime>03/21/2021 01:11:55</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>02/14/2021 15:40:02</publishTime>

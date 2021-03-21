@@ -35,7 +35,7 @@ window.onscroll = () => {
     prevScrollpos = currentScrollPos;
 
     //If user is at the top of the page
-    if (prevScrollpos == 0) {
+    if (prevScrollpos <= 0) {
         navBar.style.opacity = "0";
         navBar.style.pointerEvents = "none";
     }
