@@ -46,7 +46,7 @@ namespace NetCuratio_DataAccessLayer.Repositories
             }
             catch (Exception ex)
             {
-                Logger.Error(string.Format("Message: {0} | Inner exception: {1} |", ex.Message, ex.InnerException), "Email error.");
+                Logger.Error(string.Format("Message: {0} | Inner exception: {1} | Email message: {2}", ex.Message, ex.InnerException, email.Body), "Email error.");
             }
         }
     }
