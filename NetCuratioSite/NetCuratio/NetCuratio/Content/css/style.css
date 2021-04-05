@@ -436,6 +436,10 @@ select.input-validation-error {
     background-color: #eb2b63
 }
 
+.link-inline, .link-inline:hover, .link-inline:active{
+    text-decoration:underline;
+}
+
 .btn-inline {
     border: 0;
     color: #eb2b63;
