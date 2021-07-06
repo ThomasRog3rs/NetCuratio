@@ -46,5 +46,3 @@ C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\ob
 C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.csproj.CopyComplete
 C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.dll
 C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\obj\Release\NetCuratio_ServiceLayer.pdb
-C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\Newtonsoft.Json.dll
-C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_ServiceLayer\bin\Release\Newtonsoft.Json.xml

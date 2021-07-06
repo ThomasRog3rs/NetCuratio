@@ -2,10 +2,12 @@
 using NetCuratio.Models;
 using NetCuratio_CommonLayer.Objects;
 using NetCuratio_ServiceLayer.IServices;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Net;
 using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
@@ -181,9 +183,37 @@ namespace NetCuratio.Controllers
                     email = model.Email
                 };
 
-                //Does not work
-                //emailService.SendEmailToMailingList(userEmail);
+                //This needs refactoring and moving to DataAccessLayer
+                #region send user's email to email list API
+                string result = "";
+                try
+                {
+                    Uri uri = new Uri("http://api.trwebdev.com/api/create.php");
+                    var credentialCache = new CredentialCache();
+                    credentialCache.Add(
+                      new Uri(uri.GetLeftPart(UriPartial.Authority)), // request url's host
+                      "Basic",  // authentication type. hopefully they don't change it.
+                      new NetworkCredential("netcuratio_admin", "D*P0mwHRJj?3") // credentials 
+                    );
 
+                    using (var client = new WebClient())
+                    {
+                        client.UseDefaultCredentials = true;
+                        client.Credentials = credentialCache;
+
+                        client.Headers[HttpRequestHeader.ContentType] = "application/json";
+                        string content = JsonConvert.SerializeObject(userEmail);
+                        result = client.UploadString(uri, "POST", content);
+                    }
+                }
+                catch (Exception e)
+                {
+                    result = e.Message;
+                }
+                #endregion
+
+                //ViewBag.result = result;
+                //ViewBag.content = JsonConvert.SerializeObject(userEmail);
                 return View("Index");
             }
             else
@@ -201,13 +231,13 @@ namespace NetCuratio.Controllers
             return View();
         }
 
-        //[Route("Blog")]
-        //public ActionResult Blog()
-        //{
-        //    ViewBag.CatchPhrase = "Beautiful websites, expertly made.";
+        [Route("Blog")]
+        public ActionResult Blog()
+        {
+            ViewBag.CatchPhrase = "Beautiful websites, expertly made.";
 
-        //    return View();
-        //}
+            return View();
+        }
 
     }
 }

@@ -18,11 +18,6 @@ namespace NetCuratio_DataAccessLayer.Repositories
     public class EmailRepository : IEmailRepository
     {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
-        private static string Base64Encode(string textToEncode)
-        {
-            byte[] textAsBytes = Encoding.UTF8.GetBytes(textToEncode);
-            return Convert.ToBase64String(textAsBytes);
-        }
         public void SendEmail(EmailModel email)
         {
             int port = 0;
@@ -56,26 +51,6 @@ namespace NetCuratio_DataAccessLayer.Repositories
                 Logger.Error(string.Format("Message: {0} | Inner exception: {1} | Email message: {2}", ex.Message, ex.InnerException, email.Body), "Email error.");
             }
         }
-
-        //This method does not work
-        public void SendEmailToMailingList(JustEmailModel email)
-        {
-            string path = "http://api.trwebdev.com/api/create.php";
-
-            //send the user email to the mailing list API
-            using (HttpClient client = new HttpClient())
-            {
-                client.BaseAddress = new Uri(path);
-                client.DefaultRequestHeaders.Accept.Clear();
-                client.DefaultRequestHeaders.Add("Content-Type", "application/json");
-                var byteArray = Encoding.ASCII.GetBytes("netcuratio_admin:D*P0mwHRJj?3");
-                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Convert.ToBase64String(byteArray));
-
-                string content = JsonConvert.SerializeObject(email);
-                client.PostAsync(path, new System.Net.Http.StringContent(content, Encoding.UTF8, "application/json"));
-            }
-        }
-
 
     }
 }

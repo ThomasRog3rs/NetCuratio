@@ -171,6 +171,8 @@
                 <div>
                     @Html.ValidationMessageFor(m => m.Email, null, new { @class = "pt-1" })
                 </div>
+                <p>@ViewBag.result</p>
+                <p>@ViewBag.content </p>
                 if (ViewBag.ShowSuccessMessage == true)
                 {
                     <div class="alert-box alert-box-success mt-3" id="sign-up-success" role="alert">

@@ -10,6 +10,5 @@ namespace NetCuratio_DataAccessLayer.IRepositories
     public interface IEmailRepository
     {
         void SendEmail(EmailModel email);
-        void SendEmailToMailingList(JustEmailModel email);
     }
 }

@@ -17,12 +17,6 @@ namespace NetCuratio_ServiceLayer.Services
             IEmailRepository emailRepo = new EmailRepository();
             emailRepo.SendEmail(email);
         }
-        //This does not work
-        void IEmailService.SendEmailToMailingList(JustEmailModel email)
-        {
-            IEmailRepository emailRepo = new EmailRepository();
-            emailRepo.SendEmailToMailingList(email);
-        }
 
     }
 }
