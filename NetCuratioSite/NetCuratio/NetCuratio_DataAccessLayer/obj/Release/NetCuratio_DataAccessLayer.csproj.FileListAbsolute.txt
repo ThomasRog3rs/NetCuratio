@@ -38,3 +38,5 @@ C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer
 C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\obj\Release\NetCuratio_DataAccessLayer.csproj.CopyComplete
 C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\obj\Release\NetCuratio_DataAccessLayer.dll
 C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\obj\Release\NetCuratio_DataAccessLayer.pdb
+C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\bin\Release\Newtonsoft.Json.dll
+C:\Users\compu\source\repos\NetCuratioSite\NetCuratio\NetCuratio_DataAccessLayer\bin\Release\Newtonsoft.Json.xml

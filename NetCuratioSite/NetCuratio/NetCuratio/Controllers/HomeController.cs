@@ -177,6 +177,13 @@ namespace NetCuratio.Controllers
 
                 emailService.SendEmail(email);
 
+                var userEmail = new JustEmailModel() {
+                    email = model.Email
+                };
+
+                //Does not work
+                //emailService.SendEmailToMailingList(userEmail);
+
                 return View("Index");
             }
             else

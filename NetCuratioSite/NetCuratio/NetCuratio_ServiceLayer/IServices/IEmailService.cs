@@ -10,5 +10,6 @@ namespace NetCuratio_ServiceLayer.IServices
     public interface IEmailService
     {
         void SendEmail(EmailModel email);
+        void SendEmailToMailingList(JustEmailModel email);
     }
 }

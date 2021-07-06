@@ -14,4 +14,9 @@ namespace NetCuratio_CommonLayer.Objects
         public string Body { get; set; }
 
     }
+
+    public class JustEmailModel
+    {
+        public string email { get; set; }
+    }
 }
