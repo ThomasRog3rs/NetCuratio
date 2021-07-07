@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NetCuratio_DataAccessLayer.IRepositories;
 using NetCuratio_DataAccessLayer.Repositories;
+using Newtonsoft.Json;
 
 namespace NetCuratio_ServiceLayer.Services
 {
@@ -18,5 +19,10 @@ namespace NetCuratio_ServiceLayer.Services
             emailRepo.SendEmail(email);
         }
 
+        string IEmailService.SaveEmailToEmailList(JustEmailModel email)
+        {
+            IEmailRepository emailRepo = new EmailRepository();
+            return emailRepo.SaveEmailToEmailList(email);
+        }
     }
 }

@@ -175,45 +175,51 @@ namespace NetCuratio.Controllers
 
                 var email = new EmailTransform().TransformEmailSignUp(model);
 
-                ViewBag.ShowSuccessMessage = true;
-
                 emailService.SendEmail(email);
 
-                var userEmail = new JustEmailModel() {
-                    email = model.Email
-                };
-
-                //This needs refactoring and moving to DataAccessLayer
+                //For some reason this only works when the code is directly in the HomeController, not when in DataAccessLayer
                 #region send user's email to email list API
-                string result = "";
-                try
-                {
-                    Uri uri = new Uri("http://api.trwebdev.com/api/create.php");
-                    var credentialCache = new CredentialCache();
-                    credentialCache.Add(
-                      new Uri(uri.GetLeftPart(UriPartial.Authority)), // request url's host
-                      "Basic",  // authentication type. hopefully they don't change it.
-                      new NetworkCredential("netcuratio_admin", "D*P0mwHRJj?3") // credentials 
-                    );
+                //var userEmail = new JustEmailModel()
+                //{
+                //    email = model.Email
+                //};
 
-                    using (var client = new WebClient())
-                    {
-                        client.UseDefaultCredentials = true;
-                        client.Credentials = credentialCache;
+                ////string result = emailService.SaveEmailToEmailList(userEmail);
 
-                        client.Headers[HttpRequestHeader.ContentType] = "application/json";
-                        string content = JsonConvert.SerializeObject(userEmail);
-                        result = client.UploadString(uri, "POST", content);
-                    }
-                }
-                catch (Exception e)
-                {
-                    result = e.Message;
-                }
-                #endregion
+                //string result = "";
+                //Uri uri = new Uri(ConfigurationManager.AppSettings["EmailListAPI"]);
+
+                ////Credentials
+                //var credentialCache = new CredentialCache();
+                //credentialCache.Add(
+                //  new Uri(uri.GetLeftPart(UriPartial.Authority)), // request url's host
+                //  "Basic",  // authentication type.
+                //  new NetworkCredential(ConfigurationManager.AppSettings["EmailListAPIUsername"], ConfigurationManager.AppSettings["EmailListAPIPswd"]) // credentials 
+                //);
+
+                ////Make Post
+                //try
+                //{
+                //    using (var client = new WebClient())
+                //    {
+                //        client.UseDefaultCredentials = true;
+                //        client.Credentials = credentialCache;
+
+                //        client.Headers[HttpRequestHeader.ContentType] = "application/json";
+                //        string content = JsonConvert.SerializeObject(userEmail);
+                //        result = client.UploadString(uri, "POST", content);
+                //    }
+
+                //}
+                //catch (Exception e)
+                //{
+                //    result = e.Message;
+                //}
 
                 //ViewBag.result = result;
-                //ViewBag.content = JsonConvert.SerializeObject(userEmail);
+                #endregion
+
+                ViewBag.ShowSuccessMessage = true;
                 return View("Index");
             }
             else
@@ -231,13 +237,29 @@ namespace NetCuratio.Controllers
             return View();
         }
 
-        [Route("Blog")]
-        public ActionResult Blog()
+        [Route("Privacy")]
+        public ActionResult Privacy()
         {
-            ViewBag.CatchPhrase = "Beautiful websites, expertly made.";
+            ViewBag.Root = ConfigurationManager.AppSettings["SiteRoot"];
 
             return View();
         }
+
+        [Route("Terms")]
+        public ActionResult Terms()
+        {
+            ViewBag.Root = ConfigurationManager.AppSettings["SiteRoot"];
+
+            return View();
+        }
+
+        //[Route("Blog")]
+        //public ActionResult Blog()
+        //{
+        //    ViewBag.CatchPhrase = "Beautiful websites, expertly made.";
+
+        //    return View();
+        //}
 
     }
 }

@@ -52,5 +52,40 @@ namespace NetCuratio_DataAccessLayer.Repositories
             }
         }
 
+        public string SaveEmailToEmailList(JustEmailModel email)
+        {
+            string result = "";
+            Uri uri = new Uri("http://api.trwebdev.com/api/create.php");
+
+            //Credentials
+            var credentialCache = new CredentialCache();
+            credentialCache.Add(
+              new Uri(uri.GetLeftPart(UriPartial.Authority)), // request url's host
+              "Basic",  // authentication type. hopefully they don't change it.
+              new NetworkCredential("netcuratio_admin", "D*P0mwHRJj?3") // credentials 
+            );
+
+            //Make Post
+            try
+            {
+                using (var client = new WebClient())
+                {
+                    client.UseDefaultCredentials = true;
+                    client.Credentials = credentialCache;
+
+                    client.Headers[HttpRequestHeader.ContentType] = "application/json";
+                    string content = JsonConvert.SerializeObject(email);
+                    result = client.UploadString(uri, "POST", content);
+                }
+
+            }
+            catch (Exception e)
+            {
+                result = e.Message;
+            }
+
+            return result;
+        }
+
     }
 }
