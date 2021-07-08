@@ -1,0 +1,55 @@
+﻿@model NetCuratio.Models.DocViewModel
+<!-- Page Top section -->
+<section class="page-top-section-small set-bg" data-setbg="@ViewBag.Root/Content/img/page-top-bg.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 pr-0">
+                <h2 class="mb-3">@Model.DocContents.Title</h2>
+                <div class="site-breadcrumb">
+                    <a href="@Url.Action("Index", "Home")">Home</a> / <a href="@Url.Action("Docs", "Home")">Docs</a> / <span>@Model.DocContents.Title</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Page Top section end -->
+<!-- Blog posts section -->
+<section class="blog-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="blog-post">
+                    <img src="https://freesite.netcuratio.com/SaaS/themes/agency.jpg" alt="" class="post-thumb" typeof="image/png">
+                    <div class="post-date">@Model.DocContents.Date</div>
+                    <h4>Agency Theme - how to use</h4>
+                    <div class="post-metas">
+                        <div class="post-meta">By @Model.DocContents.Author</div>
+                    </div>
+                    <div class="blog-post-body">
+                        @Html.Raw(Model.DocContents.Body)
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar -->
+            <div class="col-lg-3 sidebar">
+                <!-- widget -->
+                <div class="sb-widget">
+                    <a href="@ViewBag.Root/plans" class="add">
+                        <img src="@ViewBag.Root/Content/img/add.jpg" alt="Add">
+                    </a>
+                </div>
+                <!-- widget -->
+                <div class="sb-widget">
+                    <h2 class="sb-title">Themes</h2>
+                    <ul>
+                        <li><a href="">Agency Theme</a></li>
+                        <li><a href="">Blog Theme</a></li>
+                        <li><a href="">Coming Soon Theme</a></li>
+                        <li><a href="">Other</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer top section end -->

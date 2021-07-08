@@ -253,6 +253,33 @@ namespace NetCuratio.Controllers
             return View();
         }
 
+        //[Route("Docs")]
+        //public ActionResult Docs()
+        //{
+        //    ViewBag.Root = ConfigurationManager.AppSettings["SiteRoot"];
+
+        //    return View();
+        //}
+
+        //[Route("Docs/{Id}")]
+        //public ActionResult Docs(string Id)
+        //{
+        //    ViewBag.Root = ConfigurationManager.AppSettings["SiteRoot"];
+
+        //    var model = new DocViewModel
+        //    {
+        //        DocContents = DocsModel.GetDoc(Id),
+        //        AllDocs = DocsModel.GetAllDocs()
+        //    };
+
+        //    if(model.DocContents == null)
+        //    {
+        //        return RedirectToAction("Lost");
+        //    }
+
+        //    return View("SingleDoc", model);
+        //}
+
         //[Route("Blog")]
         //public ActionResult Blog()
         //{

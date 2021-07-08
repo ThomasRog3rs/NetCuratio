@@ -11,4 +11,10 @@ namespace NetCuratio.Models
         public CaseStudy ProjectDetails { get; set; }
         public List<CaseStudy> AllCaseStudies { get; set; }
     }
+
+    public class DocViewModel
+    {
+        public Doc DocContents { get; set; }
+        public List<Doc> AllDocs { get; set; }
+    }
 }

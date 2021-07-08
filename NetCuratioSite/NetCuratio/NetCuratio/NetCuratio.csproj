@@ -325,6 +325,8 @@
     <Content Include="NLog.config" />
     <Content Include="Views\Home\Privacy.cshtml" />
     <Content Include="Views\Home\Terms.cshtml" />
+    <Content Include="Views\Home\Docs.cshtml" />
+    <Content Include="Views\Home\SingleDoc.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -62,10 +62,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/20/2021 14:02:22</publishTime>
     </File>
     <File Include="bin/NetCuratio.dll">
-      <publishTime>07/07/2021 16:48:07</publishTime>
+      <publishTime>07/07/2021 17:38:31</publishTime>
     </File>
     <File Include="bin/NetCuratio.pdb">
-      <publishTime>07/07/2021 16:48:07</publishTime>
+      <publishTime>07/07/2021 17:38:31</publishTime>
     </File>
     <File Include="bin/NetCuratio_CommonLayer.dll">
       <publishTime>07/06/2021 21:39:34</publishTime>
@@ -499,11 +499,17 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Views/Home/Index.cshtml">
       <publishTime>07/07/2021 16:47:39</publishTime>
     </File>
+    <File Include="Views/Home/Privacy.cshtml">
+      <publishTime>07/07/2021 17:29:10</publishTime>
+    </File>
     <File Include="Views/Home/RegisterInterest.cshtml">
       <publishTime>03/20/2021 14:02:18</publishTime>
     </File>
     <File Include="Views/Home/Services.cshtml">
       <publishTime>03/20/2021 14:02:18</publishTime>
+    </File>
+    <File Include="Views/Home/Terms.cshtml">
+      <publishTime>07/07/2021 17:44:17</publishTime>
     </File>
     <File Include="Views/Home/Thanks.cshtml">
       <publishTime>03/20/2021 14:02:18</publishTime>

@@ -1574,7 +1574,21 @@ p > a, p > a:hover, p > a:active{
 }
 
 .blog-post {
-    margin-bottom: 70px
+    margin-bottom: 70px;
+    padding: 40px;
+    border: 1px solid #eb2b63;
+    border-radius: 14px;
+}
+
+.blog-post-body > h2, h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.blog-body-img {
+    border-radius: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
     .blog-post h4 {
@@ -1666,7 +1680,7 @@ p > a, p > a:hover, p > a:active{
     .sb-widget .sb-title {
         font-size: 18px;
         font-weight: 700;
-        margin-bottom: 45px
+        margin-bottom: 25px
     }
 
     .sb-widget ul {
