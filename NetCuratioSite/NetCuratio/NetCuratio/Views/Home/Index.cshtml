@@ -14,7 +14,7 @@
                     <h2>Your friendly neighbourhood web developers</h2>
                     <p><span class="text-accent">@ViewBag.CatchPhrase</span> Get your business online today for as little as <span class="text-accent">£19.99/month</span>. That's half the price of your average monthly phone bill. Not bad, hey!</p>
                     <a href="@Url.Action("About", "Home")" class="site-btn cta-btn mr-2">Learn More</a>
-                    <a href="#services-section" class="site-btn btn-ghost d-none d-md-inline d-lg-inline">Start your journey</a>
+                    <a href="https://freesite.netcuratio.com" target="_blank" class="site-btn btn-ghost d-none d-md-inline d-lg-inline">Claim A Free Demo</a>
                 </div>
             </div>
             <div class="hero-rocket">
@@ -72,10 +72,11 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-9 banner-text text-white u-margin-bottom">
-                <h3>Bespoke website, hosting, and maintenance for as little as £19.99/month</h3>
+                <h3>Claim a free demo website to get your business online today.</h3>
+                @*<h3>Bespoke website, hosting, and maintenance for as little as £19.99/month</h3>*@
             </div>
             <div class="col-lg-3 text-left text-lg-right">
-                <a href="#services-section" class="site-btn">Get Started</a>
+                <a href="https://freesite.netcuratio.com" target="_blank" class="site-btn">Claim Free Demo</a>
             </div>
         </div>
     </div>
@@ -196,7 +197,7 @@
             {
                 <div class="col-lg-4 col-md-8 offset-md-2 offset-lg-0 h-100">
 
-                    <div class="pricing-plan flex-grow-1 @(plan.Name == "Star" ? "gold-plan" : "")">
+                    <div class="pricing-plan flex-grow-1 @(plan.Name == "Demo" ? "gold-plan" : "")">
                         <div class="pricing-title">
                             <h3>@plan.Name Plan</h3>
                         </div>
@@ -209,7 +210,15 @@
                                     <li>@detail</li>
                                 }
                             </ul>
-                            <a href="@Url.Action("RegisterInterest", "Home", new { packageCode = plan.Name })" class="site-btn">Get Plan</a>
+                            @if (plan.Name != "Demo")
+                            {
+                                <a href="@Url.Action("RegisterInterest", "Home", new { packageCode = plan.Name })" class="site-btn">Register Intrest</a>
+                            }
+                            else
+                            {
+                                <a href="https://freesite.netcuratio.com" class="site-btn">Get Started</a>
+                            }
+
                         </div>
                     </div>
                 </div>

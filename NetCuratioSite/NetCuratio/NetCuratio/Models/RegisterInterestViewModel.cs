@@ -15,7 +15,7 @@ namespace NetCuratio.Models
         public string SelectedPackage { get; set; }
         public Plan PackageDetails { get; set; }
 
-        [Required(ErrorMessage = "The Name field is required.")]
+        //[Required(ErrorMessage = "The Name field is required.")]
         [DisplayName("Your Name")]
         public string Name { get; set; }
 

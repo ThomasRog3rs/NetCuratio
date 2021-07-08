@@ -10,22 +10,21 @@ namespace NetCuratio_CommonLayer.Objects
     {
         public static Plan BasicPlan = new Plan()
         {
-            Price = "£19.99",
-            Name = "Basic",
+            Price = "£0.00",
+            Name = "Demo",
             Features = new List<string>() {
-                "No upfront costs",
-                "Bespoke website",
+                "No costs",
+                "Select a pre-made theme",
                 "Free hosting",
-                "20 monthly support credits",
-                "24/7 security monitoring",
-                "10GB storage",
-                "20GB bandwidth"
+                "Docs to help you build",
+                "No Risk",
+                "Our latest CMS",
             }
         };
 
         public static Plan StarPlan = new Plan()
         {
-            Price = "£39.99",
+            Price = "£29.99",
             Name = "Star",
             Features = new List<string>() {
                 "No upfront costs", 
@@ -40,7 +39,7 @@ namespace NetCuratio_CommonLayer.Objects
 
         public static Plan VipPlan = new Plan()
         {
-            Price = "£29.99",
+            Price = "£19.99",
             Name = "Vip",
             Features = new List<string>() {
                 "No upfront costs",
@@ -58,7 +57,7 @@ namespace NetCuratio_CommonLayer.Objects
             packageCode = packageCode.ToLower();
             switch (packageCode)
             {
-                case "basic":
+                case "demo":
                     return BasicPlan;
                 case "star":
                     return StarPlan;
@@ -70,7 +69,7 @@ namespace NetCuratio_CommonLayer.Objects
         }
         public static List<Plan> GetAllPlans()
         {
-            return new List<Plan>() { BasicPlan, StarPlan, VipPlan};
+            return new List<Plan>() { VipPlan, BasicPlan, StarPlan };
         }
     }
 
